@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');    
     
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 :root {
   /**
@@ -22,9 +23,10 @@
 
   --ff-Gilmer: "Gilmer", sans-serif;
   --ff-Roboto: "Roboto", sans-serif;
+  --ff-Inter: "Inter", sans-serif;
 
   --fs-72: 72px;
-  --fs-60: 60px;
+  --fs-60: 3.75rem;
   --fs-20: 20px;
   --fs-18: 18px;
   --fs-16: 16px;
@@ -37,6 +39,8 @@
 .wrapper {
   /* max-width: 1440px; */
   margin: auto;
+  padding-top: 8.75rem;
+  padding-bottom: 8.75rem;
 }
 
 .flex {
@@ -51,7 +55,7 @@
   flex-direction: column;
 }
 html{
-    font-family: var(--ff-Roboto);
+    font-family: var(--ff-Inter);
 }
 
 h1{

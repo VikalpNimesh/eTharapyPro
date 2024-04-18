@@ -1,0 +1,38 @@
+.expertise-main{
+    /* height: 100vh; */
+    background-image: url("https://img.pikbest.com/ai/illus_our/20230424/5f14e94ae9dc62de5f6ceaded95b306f.jpg!f305cw");
+    /* max-height: 797px; */
+    background-size: cover ;
+    background-repeat: no-repeat;
+    
+    
+}
+.expertise-main>h1{
+/* padding-top: 8.75rem; */
+padding-bottom: 4.5rem;
+}
+
+.expertise-box{
+    max-width: 1240px;
+    margin: auto;
+    background: rgb(245, 245, 245);
+    padding: 40px 0;
+    border-radius: 16px;
+}
+
+.exprtise-item{max-width: 228px;}
+
+.exprtise-item>div{
+    display: flex;justify-content: space-between;
+    align-items: center;
+    padding: 17px 0;
+    border-bottom: 1px solid #62CF6E4D;
+}
+
+.exprtise-item h2{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25.2px;
+    text-align: left;
+    
+}
