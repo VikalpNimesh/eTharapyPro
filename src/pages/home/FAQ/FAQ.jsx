@@ -24,8 +24,7 @@ const FAQ = () => {
               <br />
               <br />
               <span
-                className="disount-price"
-                style={{ display: "inline-block" }}
+                className="span-green"
               >
                 Start a consultation
               </span>{" "}
@@ -57,8 +56,7 @@ const FAQ = () => {
               <br />
               <br />
               <span
-                className="disount-price"
-                style={{ display: "inline-block" }}
+                className="span-green"
               >
                 Start a consultation
               </span>{" "}
@@ -93,8 +91,7 @@ const FAQ = () => {
               <br />
               <br />
               <span
-                className="disount-price"
-                style={{ display: "inline-block" }}
+                className="span-green"
               >
                 Start a consultation
               </span>
@@ -136,8 +133,7 @@ const FAQ = () => {
               <br />
               <br />
               <span
-                className="disount-price"
-                style={{ display: "inline-block" }}
+                className="span-green"
               >
                 Start a consultation
               </span>
@@ -174,8 +170,7 @@ const FAQ = () => {
               <br />
               <br />
               <span
-                className="disount-price"
-                style={{ display: "inline-block" }}
+                className="span-green"
               >
                 Start a consultation
               </span>
@@ -204,8 +199,7 @@ const FAQ = () => {
               <br />
               <br />
               <span
-                className="disount-price"
-                style={{ display: "inline-block" }}
+                className="span-green"
               >
                 Start a consultation
               </span>
@@ -230,8 +224,7 @@ const FAQ = () => {
               <br />
               <br />
               <span
-                className="disount-price"
-                style={{ display: "inline-block" }}
+                className="span-green"
               >
                 Start a consultation
               </span>

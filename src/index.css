@@ -80,6 +80,10 @@ h1{
   font-size: var(--fs-3);
 }
 
+.span-green{
+  display: inline-block;
+  color: var(--light-green);
+}
 *,
 *::before,
 *::after {

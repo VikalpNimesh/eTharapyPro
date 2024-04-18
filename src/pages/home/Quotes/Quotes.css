@@ -1,0 +1,21 @@
+.Quotes-main {
+}
+
+.quotes-top {
+  padding: 0 6.375rem;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.quotes-top .right {
+  align-items: start;
+  padding-top: 20px;
+  max-width: 500px;
+}
+
+.quotes-top .right p {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  color: #565774;
+}

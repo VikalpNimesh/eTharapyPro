@@ -7,7 +7,7 @@ const Header = () => {
         <div></div>
         <div>
           <span>
-            <h2 className="disount-price">45% discount </h2>
+            <h2 className="span-green">45% discount </h2>
           </span>
           <span>
             <h2>for the first month with code JOURNEY</h2>
