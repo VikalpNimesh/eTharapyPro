@@ -1,24 +1,19 @@
 import "./FAQ.css"
+import { Accordion ,Placeholder } from 'rsuite';
 
 const FAQ = () => {
   return (
-    <div className="faq-questions">
-          <h1>FAQ</h1>
-          <div className="faq-questions-box column">
-              <div className="questions ">
-                  <h2 className="question">How can I learn to manage my social anxiety?</h2>
-                  <div>+</div>
-              </div>
-              <div className="questions">
-                  <h2 className="question">How can I learn to manage my social anxiety?</h2>
-                  <div>+</div>
-              </div>
-              <div className="questions">
-                  <h2 className="question">How can I learn to manage my social anxiety?</h2>
-                  <div>+</div>
-              </div>
-          </div>
-    </div>
+    <Accordion>
+    <Accordion.Panel header="Accordion Panel 1" defaultExpanded>
+      <Placeholder.Paragraph />
+    </Accordion.Panel>
+    <Accordion.Panel header="Accordion Panel 2">
+      <Placeholder.Paragraph />
+    </Accordion.Panel>
+    <Accordion.Panel header="Accordion Panel 3">
+      <Placeholder.Paragraph />
+    </Accordion.Panel>
+  </Accordion>
   )
 }
 

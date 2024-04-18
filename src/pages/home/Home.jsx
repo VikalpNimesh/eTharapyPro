@@ -5,7 +5,7 @@ import FAQ from './FAQ/FAQ'
 const Home = () => {
     return (
         <div className="wrapper" >
-        <Header />
+        {/* <Header /> */}
         <FAQ/>
     </div>
   )
