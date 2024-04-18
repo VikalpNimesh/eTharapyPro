@@ -1,0 +1,81 @@
+.header-close {
+  background: var(--dark-blue);
+  height: 48px;
+}
+
+.header-close {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.header-close span {
+  display: inline-block;
+  margin-left: 6px;
+  color: var(--white);
+  line-height: 21.6px;
+  text-align: center;
+}
+
+.disount-price {
+  color: var(--light-green);
+}
+
+.close-bar {
+  color: var(--light-green);
+}
+
+/* ************************header-box*************** */
+
+.haeder-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  padding: 20px 100px;
+  border-bottom: 1px solid #EBEBFF;
+}
+.header-logo {
+  width: 207.95px;
+  height: 60px;
+}
+.nav-links-box ul {
+  display: flex;
+  gap: 8px;
+}
+
+.haeder-section ul li {
+  width: 83px;
+  height: 39px;
+  padding: 10px 20px;
+  font-weight: 600;
+  line-height: 19.2px;
+  color: var(--dark-blue);
+}
+
+.btn-box {
+  display: flex;
+}
+.btn-box {
+  gap: 20px;
+  display: flex;
+  align-items: center;
+}
+.sign-btn {
+  width: 53px;
+  height: 19px;
+  color: var(--dark-blue);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19.2px;
+}
+.start-therapy-btn {
+  background: var(--dark-blue);
+  color: var(--white);
+  width: 154px;
+  height: 40px;
+  padding: 9px 24px 11px 24px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.2px;
+}

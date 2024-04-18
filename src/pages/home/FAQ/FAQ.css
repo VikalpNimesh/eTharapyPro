@@ -1,0 +1,22 @@
+.faq-questions{
+    padding: 140px 308px;
+
+}
+.faq-questions-box{
+padding-top: 60px ;
+}
+.questions{
+    width: 823px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 0;
+    border-top: 1px solid #62CF6E66 ;
+}
+.question{
+font-size: 20px;
+font-weight: 600;
+line-height: 24px;
+text-align: left;
+color: var(--dark-blue);
+}

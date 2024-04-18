@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');    
+    
+
+:root {
+  /**
+   * colors
+   */
+
+  --dark-blue: #023856;
+  --light-green: #62cf6e;
+  --button-green: #43b95d;
+  --white: #ffffff;
+  --text-grey-40: #575875;
+  --text-black: #10131d;
+  --middle-blue: #035e7c;
+  --bg-grey: #f5f5ff;
+  --light-blue: #2fa2c6;
+
+  /**
+   * typography
+   */
+
+  --ff-Gilmer: "Gilmer", sans-serif;
+  --ff-Roboto: "Roboto", sans-serif;
+
+  --fs-72: 72px;
+  --fs-60: 60px;
+  --fs-20: 20px;
+  --fs-18: 18px;
+  --fs-16: 16px;
+
+  --fw-700: 700;
+  --fw-400: 400;
+  --fw-600: 600;
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: auto;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+html{
+    font-family: var(--ff-Roboto);
+}
+
+h1{
+    font-size: var(--fs-60);
+    font-weight: var(--fw-700);
+    text-align: center;
+    color: var(--dark-blue);
+}
+
+.h2,
+.h3 {
+  color: var(--white);
+  font-weight: var(--fw-700);
+  /* line-height: 1.4; */
+}
+
+.h2 {
+  font-size: var(--fs-2);
+}
+
+.h3 {
+  font-size: var(--fs-3);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a,
+img,
+span,
+button,
+ion-icon {
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  height: auto;
+}
+
+button {
+  background: none;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+}
