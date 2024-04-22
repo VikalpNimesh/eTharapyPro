@@ -1,0 +1,132 @@
+.hero-main {
+  /* height: 100vh; */
+  background-image: url("https://png.pngtree.com/element_origin_min_pic/17/09/19/c41d7885a670bfa2ff5190d9f69d63bd.jpg");
+  /* max-height: 797px; */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.hero-left h1 {
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 4.5rem;
+}
+.hero-left .span-ball {
+  background: #62cf6e;
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+}
+.hero-left p {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  color: #575875;
+  padding: 3.3125rem 0;
+}
+
+.hero-btn-box {
+  /* display: flex;align-items: center; */
+  gap: 3.1875rem;
+}
+
+.price-content span {
+  display: inline-block;
+  font-weight: 400;
+}
+.ctabuttonStyle {
+  /* display: flex; */
+  width: 100%;
+  background: #2fa2c6;
+  color: var(--white);
+  max-width: 257px;
+  height: auto;
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 33.6px;
+}
+
+/* ***********hero-right************** */
+
+.hero-right {
+  /* width: 32.6875rem; */
+  margin-top: -40px;
+}
+.hero-right img {
+  width: 100%;
+  background: center;
+}
+
+.hero-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* gap: 48px; */
+  padding: 48px 56px;
+  border-radius: 20px;
+  max-width: 1240px;
+  margin: auto;
+  background: #023856;
+  margin-top: 225px;
+}
+
+.hero-cta p {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 26.4px;
+  text-align: left;
+  color: white;
+}
+
+.hero-cta div {
+  max-width: 50px;
+  border-radius: 8px;
+  border: 2px solid white;
+  color: white;
+  padding: 1rem 1.25rem;
+}
+
+@media (max-width: 730px) {
+  .hero-left h1 {
+    font-size: 44px;
+    font-weight: 600;
+    line-height: 46.2px;
+    text-align: center;
+  }
+  .hero-left p{
+    padding: 20px 0;
+   
+
+  }
+  .span-ball {
+    width: 36px !important ;
+    height: 36px !important ;
+  }
+
+  .hero-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero-cta{
+    padding: 20px;
+    gap: 20px;
+  }
+  .hero-cta button{
+    text-align: center;
+    max-width: 100%;
+  }
+  .hero-cta div {
+display: none;
+}
+
+.hero-cta p{
+  font-size: 1rem;
+  line-height: normal;
+}
+}

@@ -25,20 +25,35 @@
   --ff-Roboto: "Roboto", sans-serif;
   --ff-Inter: "Inter", sans-serif;
 
-  --fs-72: 72px;
-  --fs-60: 3.75rem;
-  --fs-20: 20px;
-  --fs-18: 18px;
-  --fs-16: 16px;
-
-  --fw-700: 700;
-  --fw-400: 400;
-  --fw-600: 600;
+  :root {
+    --fs-72: 4.5rem; 
+    --fs-60: 3.75rem; 
+    --fs-44:2.75rem;
+    --fs-32:2rem;
+    --fs-20: 1.25rem; 
+    --fs-18: 1.125rem; 
+    --fs-16: 1rem; 
+  
+    --fw-700: 700; 
+    --fw-400: 400; 
+    --fw-600: 600; 
+  }
+  
 }
+
+.p-wrapper{
+
+  padding-left: 6.25rem;
+  padding-right: 6.25rem;
+}
+
+
 
 .wrapper {
   /* max-width: 1440px; */
   margin: auto;
+  padding-left: 6.25rem;
+  padding-right: 6.25rem;
   padding-top: 8.75rem;
   padding-bottom: 8.75rem;
 }
@@ -59,8 +74,8 @@ html{
 }
 
 h1{
-    font-size: var(--fs-60);
-    font-weight: var(--fw-700);
+    font-size: 60px;
+    font-weight: 700;
     text-align: center;
     color: var(--dark-blue);
 }
@@ -118,4 +133,23 @@ button {
   border: none;
   font: inherit;
   cursor: pointer;
+}
+@media (max-width:730px) {
+ 
+  .p-wrapper{
+   padding: 0 20px;
+  }
+  .wrapper{
+ padding: 5rem 1.25rem;
+  
+  }
+  h1{
+    font-size: 32px;
+    font-weight: 700;
+        line-height: 38.4px;
+  }
+  p{
+    font-size: 16px;
+  }
+
 }

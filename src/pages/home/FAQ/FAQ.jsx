@@ -1,6 +1,6 @@
 import Button from "./button/Button";
 import "./FAQ.css";
-import { Accordion, Placeholder } from "rsuite";
+import { Accordion } from "rsuite";
 
 const FAQ = () => {
   return (
@@ -27,7 +27,7 @@ const FAQ = () => {
                 className="span-green"
               >
                 Start a consultation
-              </span>{" "}
+              </span>
               with one of our counselors and they can help you put together a
               plan to address social anxiety
             </p>

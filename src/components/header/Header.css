@@ -35,15 +35,19 @@
   width: 207.95px;
   height: 60px;
 }
-.nav-links-box ul {
+.nav-links-box {
   display: flex;
   gap: 8px;
 }
 
-.haeder-section ul li {
+.nav-links-box  li h2{
+
+  font-size: 16px!important;
+}
+.nav-links-box  li {
   width: 83px;
-  height: 39px;
-  padding: 10px 20px;
+  /* height: 39px; */
+  /* padding: 10px 20px; */
   font-weight: 600;
   line-height: 19.2px;
   color: var(--dark-blue);
