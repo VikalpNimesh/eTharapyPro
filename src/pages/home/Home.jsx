@@ -7,11 +7,13 @@ import Quotes from './Quotes/Quotes'
 import Hero from './hero/Hero'
 import HowWorks from './how it works/HowWorks'
 import WhyTherapy from './why therapy/WhyTherapy'
+import Testimonials from './testimonials/Testimonials'
 
 const Home = () => {
     return (
       <div className="" >
-        <WhyTherapy/>
+      <Testimonials/>
+        {/* <WhyTherapy/> */}
         {/* <Header />
         <Hero/>
         <HowWorks/>
