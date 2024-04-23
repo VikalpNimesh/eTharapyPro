@@ -53,14 +53,8 @@
   color: var(--dark-blue);
 }
 
-.btn-box {
-  display: flex;
-}
-.btn-box {
-  gap: 20px;
-  display: flex;
-  align-items: center;
-}
+
+
 .sign-btn {
   width: 53px;
   height: 19px;

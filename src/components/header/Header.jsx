@@ -2,7 +2,7 @@ import "./Header.css";
 
 const Header = () => {
   return (
-    <div className="header-main">
+    <div className="header-main ">
       <div className="header-close">
         <div></div>
         <div>
@@ -17,7 +17,10 @@ const Header = () => {
       </div>
       <nav className="navbar navbar-expand-lg bg-body-tertiary p-wrapper  ">
         <div className="container-fluid p-0 ">
-          <a className="navbar-brand header-logo d-flex  align-items-center " href="#">
+          <a
+            className="navbar-brand header-logo d-flex  align-items-center "
+            href="#"
+          >
             LOGO
           </a>
           {/* ***********menu-btn ************** */}
@@ -32,26 +35,29 @@ const Header = () => {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse " id="navbarSupportedContent">
+          <div
+            className="collapse navbar-collapse "
+            id="navbarSupportedContent"
+          >
             <div></div>
             <ul className=" nav-links-box navbar-nav me-auto mb-2 mb-lg-0 mx-auto ">
-            <li>
-              <h2  >About</h2>
-            </li>
-            <li>
-              <h2 >Plans</h2>
-            </li>
-            <li>
-              <h2 >Blog</h2>
-            </li>
-            <li>
-              <h2 >FAQ</h2>
-            </li>
+              <li>
+                <h2>About</h2>
+              </li>
+              <li>
+                <h2>Plans</h2>
+              </li>
+              <li>
+                <h2>Blog</h2>
+              </li>
+              <li>
+                <h2>FAQ</h2>
+              </li>
             </ul>
-            <div className="btn-box d-flex">
-          <button className="sign-btn">Sign in</button>
-          <button className="start-therapy-btn">Start therapy</button>
-        </div>
+            <div className="btn-box d-lg-flex  flex-sm-column align-items-lg-center  ">
+              <button className="sign-btn pb-5">Sign in</button>
+              <button className="start-therapy-btn">Start therapy</button>
+            </div>
           </div>
         </div>
       </nav>

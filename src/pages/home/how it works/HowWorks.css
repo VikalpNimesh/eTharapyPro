@@ -1,0 +1,35 @@
+.works-mid{
+    padding: 100px 0;
+}
+
+.works-mid img{
+    width:120px ;
+
+}
+
+.works-mid p{
+    width: 280px;
+    font-family: Gilmer;
+font-size: 18px;
+font-weight: 600;
+line-height: 21.6px;
+text-align: center;
+color: #023856;
+padding: 24px 0;
+}
+
+.works-mid-padding{
+    padding-top: 150px;
+}
+
+@media (max-width:700px) {
+    .works-mid-padding{
+        padding-top: 0;
+    } 
+    
+    .works-mid{
+        padding: 0;
+    }
+
+    
+}

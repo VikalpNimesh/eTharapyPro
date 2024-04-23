@@ -5,16 +5,18 @@ import Footer from '../../components/header/footer/Footer'
 import OurExpertise from './Our Expertise/OurExpertise'
 import Quotes from './Quotes/Quotes'
 import Hero from './hero/Hero'
+import HowWorks from './how it works/HowWorks'
 
 const Home = () => {
     return (
         <div className="" >
         <Header />
-        <Hero/>
-        <FAQ />
-        <OurExpertise />
+        {/* <HowWorks/> */}
+        {/* <Hero/> */}
+        {/* <FAQ /> */}
+        {/* <OurExpertise /> */}
         <Quotes/>
-        <Footer/>
+        {/* <Footer/> */}
     </div>
   )
 }
