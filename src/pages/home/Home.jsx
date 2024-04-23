@@ -8,18 +8,23 @@ import Hero from './hero/Hero'
 import HowWorks from './how it works/HowWorks'
 import WhyTherapy from './why therapy/WhyTherapy'
 import Testimonials from './testimonials/Testimonials'
+import CtaBanner from './cta banner/CtaBanner'
 
 const Home = () => {
     return (
       <div className="" >
-      <Testimonials/>
-        {/* <WhyTherapy/> */}
-        {/* <Header />
+       
+       
+        <Header />
         <Hero/>
         <HowWorks/>
         <OurExpertise />
         <Quotes/>
-        <FAQ /> */}
+        <WhyTherapy />
+        
+        <Testimonials />
+        <FAQ />
+        <CtaBanner/>
         {/* <Footer/> */}
     </div>
   )

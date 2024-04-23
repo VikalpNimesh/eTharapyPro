@@ -1,0 +1,41 @@
+.ctaBanner-main{
+   
+    padding: 0 100px;
+}
+
+.ctaBanner-main>div{
+    background: #62CF6E;
+    width: 100%;
+    border-radius: 20px;
+    padding: 3.625rem 3rem;
+    display: flex;flex-direction: column;
+    align-items: start;
+    gap: 5.75rem;
+}
+
+.ctaBanner-main h1{
+color: white;
+font-size: 64px;
+font-weight: 700;
+line-height: 70.4px;
+text-align: left;
+
+}
+
+@media (max-width:738px) {
+    .ctaBanner-main{
+        padding: 0 20px;
+    }
+
+    .ctaBanner-main h1{
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 35.2px;
+        text-align: left;
+        
+    }
+
+    .ctaBanner-main>div{
+    padding: 80px 32px;
+    }
+}
