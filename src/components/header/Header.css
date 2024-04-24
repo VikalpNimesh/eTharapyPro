@@ -1,3 +1,6 @@
+.header-main{
+  /* padding-bottom: 10px; */
+}
 .header-close {
   background: var(--dark-blue);
   height: 48px;
@@ -17,8 +20,9 @@
 }
 
 
-.close-bar {
+.close-bar i{
   color: var(--light-green);
+  font-size: 30px;
 }
 
 /* ************************header-box*************** */
@@ -34,6 +38,7 @@
 .header-logo {
   width: 207.95px;
   height: 60px;
+  
 }
 .nav-links-box {
   display: flex;
@@ -53,15 +58,21 @@
   color: var(--dark-blue);
 }
 
+.btn-box{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
 
 
 .sign-btn {
-  width: 53px;
-  height: 19px;
+
   color: var(--dark-blue);
   font-size: 16px;
   font-weight: 600;
   line-height: 19.2px;
+    /* padding-bottom: 10px; */
+
 }
 .start-therapy-btn {
   background: var(--dark-blue);
@@ -73,4 +84,8 @@
   font-size: 16px;
   font-weight: 700;
   line-height: 19.2px;
+}
+
+@media (max-width:738px) {
+  .header-close{display: none;}
 }

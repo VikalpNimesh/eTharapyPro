@@ -1,4 +1,5 @@
 import "./Header.css";
+import logo from "../../assets/images/logo.png"
 
 const Header = () => {
   return (
@@ -13,7 +14,7 @@ const Header = () => {
             <h2>for the first month with code JOURNEY</h2>
           </span>
         </div>
-        <div className="close-bar">X</div>
+        <div className="close-bar"><i className="fa-solid fa-xmark"></i></div>
       </div>
       <nav className="navbar navbar-expand-lg bg-body-tertiary p-wrapper  ">
         <div className="container-fluid p-0 ">
@@ -21,7 +22,7 @@ const Header = () => {
             className="navbar-brand header-logo d-flex  align-items-center "
             href="#"
           >
-            LOGO
+            <img src={logo} alt="LOGO" />
           </a>
           {/* ***********menu-btn ************** */}
           <button
@@ -54,9 +55,9 @@ const Header = () => {
                 <h2>FAQ</h2>
               </li>
             </ul>
-            <div className="btn-box d-lg-flex  flex-sm-column align-items-lg-center  ">
-              <button className="sign-btn pb-5">Sign in</button>
-              <button className="start-therapy-btn">Start therapy</button>
+            <div className="btn-box    ">
+              <button className="sign-btn">Sign in</button>
+              <button className="start-therapy-btn d-none  d-md-block ">Start therapy</button>
             </div>
           </div>
         </div>

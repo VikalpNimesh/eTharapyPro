@@ -1,0 +1,11 @@
+.start-therapy-btn {
+  background: var(--dark-blue);
+  color: var(--white);
+  width: 154px;
+  height: 40px;
+  padding: 9px 24px 11px 24px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.2px;
+}

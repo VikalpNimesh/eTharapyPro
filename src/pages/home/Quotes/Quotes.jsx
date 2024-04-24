@@ -1,4 +1,3 @@
-import { Col, FlexboxGrid } from "rsuite";
 import "./Quotes.css";
 import pic from "../../../assets/images/quotes-img.png"
 
@@ -6,13 +5,13 @@ const Quotes = () => {
   return (
     <div className="Quotes-main container-fluid  flex-column  ">
       <div className="quotes-top row">
-        <div className="left col-lg-6 col-sm-12 ">
+        <div className="left col-lg-6 col-12 ">
           <h1>
             You're <span className="span-green">Not Alone</span>
             <br /> In Your Journey
           </h1>
         </div>
-        <div className="right col-lg-6 col-sm-12 text-sm-center text-md-start ">
+        <div className="right col-lg-6 col-12 text-sm-center text-md-start ">
           <p>
             Knowing others walked the same path before you is like having a
             helping hand.

@@ -1,6 +1,6 @@
 .hero-main {
   /* height: 100vh; */
-  background-image: url("../../../assets/images/mountain.jpg");
+  /* background-image: url("../../../assets/images/mountain.jpg"); */
   /* max-height: 797px; */
   background-size: cover;
   background-repeat: no-repeat;
@@ -17,7 +17,7 @@
   width: 4rem;
   height: 4rem;
 }
-.hero-left p {
+.hero-left>p {
   font-size: 20px;
   font-weight: 600;
   line-height: 28px;
@@ -26,26 +26,32 @@
 }
 
 .hero-btn-box {
-  /* display: flex;align-items: center; */
+  display: flex;align-items: center;
   gap: 3.1875rem;
+}
+
+.hero-btn-box p {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  color: #575875;
+  /* padding: 3.3125rem 0; */
 }
 
 .price-content span {
   display: inline-block;
   font-weight: 400;
 }
-.ctabuttonStyle {
-  /* display: flex; */
-  width: 100%;
-  background: #2fa2c6;
+.start-therapy-btn {
+  background: var(--dark-blue);
   color: var(--white);
-  max-width: 257px;
-  height: auto;
-  padding: 12px 24px;
-  border-radius: 10px;
-  font-size: 16px;
+  width: 203px;
+  height: 60px;
+  padding: 20px 32px;
+  border-radius: 50px;
+  font-size: 18px;
   font-weight: 700;
-  line-height: 33.6px;
+  line-height: 21.6px;
 }
 
 /* ***********hero-right************** */
@@ -93,12 +99,11 @@
     font-size: 44px;
     font-weight: 600;
     line-height: 46.2px;
-    text-align: center;
+    text-align: left;
   }
   .hero-left p{
-    padding: 20px 0;
-   
-
+text-align: left; 
+ /* padding: 20px 0; */
   }
   .span-ball {
     width: 36px !important ;
@@ -130,5 +135,15 @@ display: none;
 .hero-cta p{
   font-size: 1rem;
   line-height: normal;
+}
+
+.hero-btn-box{
+  width: 100%;
+  flex-direction: column-reverse;
+  gap: 20px;
+}
+.start-therapy-btn{
+  width: 100%;
+  padding: 20px 40px;
 }
 }
