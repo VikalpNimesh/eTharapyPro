@@ -4,11 +4,11 @@ const WhyTherapy = () => {
   return (
       <div className="why-therapy-main wrapper column container ">
           
-          <div className="row">
-          <h1>Why <span className="span-green">Online</span> Therapy?</h1>
+          <div className="row m-0 p-0 ">
+          <h1 className="" >Why <span className="span-green">Online</span> Therapy?</h1>
           <p>Affordable, effective therapy from the convenience of home.</p>
 
-          <div className="therapy-boxes d-lg-flex    ">
+          <div className="therapy-boxes d-lg-flex p-0    ">
               <div className="online-therapy ">
                   <h2>Online Therapy</h2>
                   <p><span className="span-green">Affordable</span>  —  A fraction of the cost $45 per week</p>

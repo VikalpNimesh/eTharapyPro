@@ -1,4 +1,3 @@
-import Button from "./button/Button";
 import "./HowWorks.css";
 import pic1 from "../../../assets/images/Screenshot 2024-04-22 172356.png";
 import pic2 from "../../../assets/images/Screenshot 2024-04-22 172434.png";
@@ -25,7 +24,7 @@ const HowWorks = () => {
           <p>Work together to reach your goals</p>
         </div>
       </div>
-      <Button />
+      <button className="how-works-btn">Start Your Journey</button>
     </div>
   );
 };

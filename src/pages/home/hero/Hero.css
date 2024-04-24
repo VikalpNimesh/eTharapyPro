@@ -42,13 +42,13 @@
   display: inline-block;
   font-weight: 400;
 }
-.start-therapy-btn {
-  background: var(--dark-blue);
+.ctabuttonStyle {
+  background: #2FA2C6;
   color: var(--white);
   width: 203px;
   height: 60px;
-  padding: 20px 32px;
-  border-radius: 50px;
+  padding: 12px 24px;
+  border-radius: 10px;
   font-size: 18px;
   font-weight: 700;
   line-height: 21.6px;
@@ -120,7 +120,7 @@ text-align: left;
 
   .hero-cta{
     flex-direction: column;
-    padding: 20px;
+    padding: 40px;
     gap: 20px;
     margin-top: 60px;
   }
@@ -133,8 +133,16 @@ display: none;
 }
 
 .hero-cta p{
-  font-size: 1rem;
+  font-size: 18px;
   line-height: normal;
+}
+.hero-left>p {
+padding: 20px 0;
+font-size: 16px;
+font-weight: 600;
+line-height: 22.4px;
+text-align: left;
+
 }
 
 .hero-btn-box{
@@ -142,8 +150,8 @@ display: none;
   flex-direction: column-reverse;
   gap: 20px;
 }
-.start-therapy-btn{
+.ctabuttonStyle{
   width: 100%;
-  padding: 20px 40px;
+  padding: 15px 40px;
 }
 }

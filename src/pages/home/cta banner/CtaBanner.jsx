@@ -1,4 +1,3 @@
-import Button  from "./button/Button"
 import "./CtaBanner.css"
 
 const CtaBanner = () => {
@@ -6,7 +5,8 @@ const CtaBanner = () => {
       <div className='ctaBanner-main '>
           <div>
           <h1>Every Journey begins with single step</h1>
-          <Button/>
+          <button  className="ctabanner-btn">Start Your Journey</button>
+
           </div>
     </div>
   )

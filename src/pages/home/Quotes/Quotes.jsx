@@ -6,7 +6,7 @@ const Quotes = () => {
     <div className="Quotes-main container-fluid  flex-column  ">
       <div className="quotes-top row">
         <div className="left col-lg-6 col-12 ">
-          <h1>
+          <h1 className=" text-start text-sm-center  ">
             You're <span className="span-green">Not Alone</span>
             <br /> In Your Journey
           </h1>

@@ -6,7 +6,7 @@ const Testimonials = () => {
     <div className="testimonial-main   ">
       <div className="wrapper">
         <div className=" testimonial-top ">
-          <img src={pic} alt="" />
+          <img className=" d-none d-md-block" src={pic} alt="" />
           <h1>
             See why clients choose{" "}
             <span className="span-green">eTherapyPro</span>

@@ -1,0 +1,72 @@
+.list-item-content {
+  padding: 20px 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #dadada;
+  /* width: 285px; */
+}
+
+.bottom-bor {
+  border-bottom: 1px solid #dadada;
+}
+
+.p-box{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.p-box :nth-child(2){
+font-size: 16px;
+font-weight: 600;
+line-height: 24px;
+text-align: left;
+color: #575875;
+}
+.icon {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.img-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 85px;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 85px;
+}
+
+
+.text {
+  font-size: 18px;
+}
+
+.whyus-img {
+
+  max-width: 431.14px;
+  max-height: 474px;
+}
+
+.main button {
+  background: var(--button-green);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  /* color: var(-); */
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21.6px;
+  outline: none;
+  margin-top: 60px;
+  text-align: left;
+}

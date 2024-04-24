@@ -1,4 +1,4 @@
-.why-therapy-main>div>p {
+.why-therapy-main > div > p {
   font-size: 20px;
   font-weight: 600;
   line-height: 28px;
@@ -13,40 +13,37 @@
 }
 
 .online-therapy {
-
   gap: 40px;
-  border-radius: 40px;
-  padding: 3rem;
+  border-radius: 18px;
+  padding: 40px;
   opacity: 0px;
   /* width: 55%; */
   background: #023856;
 }
 
-.online-therapy h2{
-font-size: 36px;
-    color: white;
-font-weight: 700;
-line-height: 43.2px;
-text-align: left;
-padding-bottom: 40px;
-margin-bottom: 0;
+.online-therapy h2 {
+  font-size: 36px;
+  color: white;
+  font-weight: 700;
+  line-height: 43.2px;
+  text-align: left;
+  padding-bottom: 40px;
+  margin-bottom: 0;
 }
- .online-therapy p{
-
-font-size: 22px;
-font-weight: 600;
-line-height: 30.8px;
-text-align: left; 
-color: white;
-padding-bottom: 32px;
- }
- .online-therapy span{
-font-size: 24px;
-font-weight: 700;
-line-height: 33.6px;
-text-align: left;
-
- }
+.online-therapy p {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 30.8px;
+  text-align: left;
+  color: white;
+  padding-bottom: 32px;
+}
+.online-therapy span {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 33.6px;
+  text-align: left;
+}
 
 .in-person-therapy {
   /* width: 45%; */
@@ -55,21 +52,65 @@ text-align: left;
   border-radius: 40px;
 }
 
-.in-person-therapy h2{
-font-size: 30px;
-font-weight: 700;
-line-height: 36px;
-text-align: left;
-padding-bottom: 40px;
-color: #575875;
+.in-person-therapy h2 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: left;
+  padding-bottom: 40px;
+  color: #575875;
 }
 
-.in-person-therapy p{
-font-size: 18px;
-font-weight: 600;
-line-height: 25.2px;
-text-align: left;
-padding-bottom: 32px;
-color: #575875;
+.in-person-therapy p {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 25.2px;
+  text-align: left;
+  padding-bottom: 32px;
+  color: #575875;
+}
 
+@media (max-width: 576px) {
+  .why-therapy-main > div > p {
+    text-align: left;
+  }
+
+  .therapy-boxes {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+  }
+  .why-therapy-main h1 {
+    width: 90%;
+    text-align: left;
+  }
+  .why-therapy-main > p {
+  }
+  .online-therapy h2 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+    text-align: left;
+  }
+  .online-therapy span {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25.2px;
+    text-align: left;
+  }
+
+  .online-therapy p {
+    padding-bottom: 24px;
+  }
+
+  .in-person-therapy h2 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+  }
+
+  .online-therapy :last-child , .in-person-therapy :last-child{
+    padding-bottom: 0;
+  }
 }

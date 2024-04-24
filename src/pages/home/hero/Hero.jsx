@@ -1,6 +1,5 @@
 import "./Hero.css";
 import right from "../../../assets/images/hero-right.png";
-import Button from "./button/Button";
 
 const Hero = () => {
   return (
@@ -12,11 +11,12 @@ const Hero = () => {
             <span className="span-green">Happiness</span>
           </h1>
           <p>
-            Experience life's journey with eTherapyPro's online <br />
+            Experience life's journey with eTherapyPro's online 
             therapy guidance.
           </p>
-          <div className="hero-btn-box">
-            <Button />
+          <div className="hero-btn-box d-none d-sm-flex ">
+          <button className="start-therapy-btn">Start therapy</button>
+
             <p className="price-content">
               From $5 <span>/ 3 days</span>
             </p>
@@ -29,6 +29,13 @@ const Hero = () => {
           />
         </div>
       </div>
+      <div className="hero-btn-box d-flex d-sm-none py-3  ">
+      <button className="start-therapy-btn">Start therapy</button>
+
+            <p className="price-content">
+              From $5 <span>/ 3 days</span>
+            </p>
+          </div>
       <div className="">
         <div className="hero-cta  d-lg-flex ">
           <button className="ctabuttonStyle col-lg-2 ">

@@ -5,28 +5,28 @@ const Footer = () => {
   return (
     <footer className="footer wrapper">
       <div className="container p-0 ">
-        <div className="row p-0  ">
-          <div className="col-3 ">
+        <div className="row   ">
+          <div className="col-6 col-sm-3 p-0   ">
             <ul>
               <p>Login</p>
               <p>Start therapy </p>
               <p>Plans</p>
             </ul>
           </div>
-          <div className="col-3 ">
+          <div className="col-6 col-sm-3 p-0   ">
             <ul>
               <p>Aboutus</p>
               <p>Blog</p>
               <p>FAQ</p>
             </ul>
           </div>
-          <div className="col-3 ">
+          <div className="col-6 col-sm-3 p-0   ">
             <ul>
               <p>Mental health tests</p>
               <p>Online-therapy</p>
             </ul>
           </div>
-          <div className="col-3 ">
+          <div className="col-6 col-sm-3 p-0   ">
             <ul>
               <p>For counselors</p>
               <p>Contact</p>
@@ -46,7 +46,9 @@ const Footer = () => {
               If you are in a life threatening situation - don’t use this site.
               Call +1 (800) 273-8255 or use these resources to get immediate
               help.
-            </span>
+          </span>
+          <div className="end d-block  d-md-none ">eTherapy.com</div>
+          <div className="black-line d-block  d-md-none "></div>
         </div>
       </div>
     </footer>
