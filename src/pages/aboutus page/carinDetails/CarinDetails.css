@@ -10,13 +10,11 @@
   text-align: left;
 }
 
-.carim-img img {
-  width: 100%;
-  width: 100%;
-}
-.carim-img {
- width: 100%;
+.carin .carim-img img {
 
+}
+.carin .carim-img {
+  width: 37.5rem!important;
   height: 345px;
 }
 

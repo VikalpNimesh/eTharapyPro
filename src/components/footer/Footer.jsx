@@ -37,9 +37,9 @@ const Footer = () => {
               <i className="fa-brands fa-twitter"></i>
               <i className="fa-brands fa-facebook"></i>
             </div>
-            <div className=" d-flex footer-right ">
-              <p>Privacy policy</p>
-              <p>Term of service</p>
+            <div className=" d-flex footer-right  ">
+              <p className=" d-flex  text-wrap  text-md-nowrap">Privacy policy</p>
+              <p className=" d-flex  text-wrap  text-md-nowrap">Term of service</p>
             </div>
           </div>
             <span className=" last">

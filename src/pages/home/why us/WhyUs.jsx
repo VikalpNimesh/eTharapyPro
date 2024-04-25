@@ -7,7 +7,7 @@ const WhyUs = () => {
     <div className="wrapper whyus-main pb-0 ">
       <div className="row main m-0 ">
         <div className="upper row gap-5 gap-md-0  m-0 p-0 ">
-          <h1 className="heading col-12 col-md-6 text-start text-sm-center  ">
+          <h1 className="heading col-12 col-md-6 text-start  ">
             Why <span className="span-green">Us ?</span>
           </h1>
           <div className=" p-box col-12 col-md-6 p-0 m-0  ">

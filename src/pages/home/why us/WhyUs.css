@@ -1,3 +1,7 @@
+.whyus-main{
+  padding-top : 0!important;
+}
+
 .whyus-main .list-item-content {
   padding: 20px 5px;
   display: flex;

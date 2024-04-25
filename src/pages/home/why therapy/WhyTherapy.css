@@ -1,3 +1,4 @@
+
 .why-therapy-main > div > p {
   font-size: 20px;
   font-weight: 600;
@@ -8,6 +9,9 @@
 }
 
 .therapy-boxes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   max-width: 100%;
   gap: 20px;
 }

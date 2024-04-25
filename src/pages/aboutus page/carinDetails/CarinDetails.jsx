@@ -1,12 +1,13 @@
 import React from "react";
 import "./CarinDetails.css";
+import pic1 from "../../../assets/images/aboutus/white-mountain.png"
 
 const CarinDetails = () => {
   return (
     <div className="wrapper carin mx-1  text-center  ">
       <div className="row ">
         <div className="col-lg-6 p-0    carim-img ">
-          <img src="" alt="img" />
+          <img src={pic1} alt="img" />
         </div>
         <div className="col-lg-6 d-flex justify-content-between flex-column px-4  text-lg-start  text-md-start">
           <h6 className="head ">

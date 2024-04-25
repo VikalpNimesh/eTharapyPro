@@ -18,12 +18,14 @@ const Header = () => {
       </div>
       <nav className="navbar navbar-expand-lg bg-body-tertiary p-wrapper  ">
         <div className="container-fluid p-0 ">
+          <div className="header-logo-box">
           <a
             className="navbar-brand header-logo d-flex  align-items-center "
             href="#"
           >
             <img src={logo} alt="LOGO" />
           </a>
+          </div>
           {/* ***********menu-btn ************** */}
           <button
             className="navbar-toggler"
