@@ -34,6 +34,7 @@ const OurExpertise = () => {
               <div><i className="fa-solid fa-angle-right"></i></div>
             </div>
           </FlexboxGrid.Item>
+          
           <FlexboxGrid.Item
             className="exprtise-item"
             as={Col}
@@ -115,8 +116,23 @@ const OurExpertise = () => {
               <div><i className="fa-solid fa-angle-right"></i></div>
             </div>
           </FlexboxGrid.Item>
+          <FlexboxGrid.Item
+            className="exprtise-item"
+            as={Col}
+            colspan={24}
+            md={6}
+          >
+<h6 className="show-more  d-block  d-sm-none ">
+        Show More
+      </h6>
+      <h6 className="show-more d-block  d-sm-none ">
+        Show Less
+      </h6>
+          </FlexboxGrid.Item>
         </FlexboxGrid>
+        
       </div>
+     
     </div>
   );
 };

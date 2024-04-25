@@ -1,0 +1,42 @@
+.carin p {
+  color: #565774;
+  text-align: start;
+}
+.carin .box {
+  padding-left: 100px;
+  padding-right: 25px;
+  margin-bottom: 7.5rem;
+}
+
+.head {
+  color: black;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: left;
+}
+
+.carim-img img {
+  width: 100%;
+  width: 100%;
+}
+.carim-img {
+  /* background: red; */
+  width: 429px;
+  height: 429px;
+  top: 140px;
+  left: 829px;
+  padding: 47.8px 5.88px 45.56px 5.88px;
+  gap: 0px;
+  opacity: 0px;
+
+  height: 345px;
+}
+
+.carin h6 {
+  /* font-family: Gilmer; */
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  margin-bottom: 60px;
+}

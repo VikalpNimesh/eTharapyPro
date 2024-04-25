@@ -5,7 +5,8 @@ import 'rsuite/dist/rsuite-no-reset.min.css';
 import { CustomProvider } from "rsuite";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
-
+import LandingPage from "./pages/landing page/LandingPage";
+import AboutUs from "./pages/aboutus page/AboutUs";
 // import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 function App() {
@@ -18,8 +19,10 @@ function App() {
     <CustomProvider theme="light">
     <Header/>
       <Home />
-
+      {/* <LandingPage /> */}
+      {/* <AboutUs/> */}
       <Footer/>
+
     </CustomProvider>
   );
 }

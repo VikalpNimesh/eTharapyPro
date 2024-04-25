@@ -1,4 +1,4 @@
-.list-item-content {
+.whyus-main .list-item-content {
   padding: 20px 5px;
   display: flex;
   justify-content: space-between;
@@ -7,36 +7,36 @@
   /* width: 285px; */
 }
 
-.bottom-bor {
+.whyus-main .bottom-bor {
   border-bottom: 1px solid #dadada;
 }
 
-.p-box{
+.whyus-main .p-box{
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
 
-.p-box :nth-child(2){
+.whyus-main .p-box :nth-child(2){
 font-size: 16px;
 font-weight: 600;
 line-height: 24px;
 text-align: left;
 color: #575875;
 }
-.icon {
+.whyus-main .icon {
   font-size: 1.5rem;
   margin-top: 10px;
 }
 
-.img-box {
+.whyus-main .img-box {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 85px;
 }
 
-.main {
+.whyus-main .main {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -44,7 +44,7 @@ color: #575875;
 }
 
 
-.text {
+.whyus-main .text {
   font-size: 18px;
 }
 
@@ -54,7 +54,7 @@ color: #575875;
   max-height: 474px;
 }
 
-.main button {
+.whyus-main .main button {
   background: var(--button-green);
   padding: 20px;
   display: flex;

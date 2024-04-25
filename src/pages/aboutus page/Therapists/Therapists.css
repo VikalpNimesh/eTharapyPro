@@ -1,0 +1,40 @@
+.therapist-main .main {
+  background: #023856;
+ width: 90%;
+ padding: 6.25rem 0 6rem 0;
+
+
+border-radius: 40px ;
+
+
+}
+
+.therapist h1 {
+  color: white;
+}
+.therapist {
+  color: white;
+  max-width: 583px;
+}
+
+.therapist h1 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  text-align: center;
+}
+.therapist .p1 {
+  margin: 48px 0;
+  /* background: red; */
+}
+.therapist .p2 {
+  margin-top: 48px;
+}
+
+.therapist-main  p {
+  /* font-family: Gilmer; */
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  text-align: center;
+}

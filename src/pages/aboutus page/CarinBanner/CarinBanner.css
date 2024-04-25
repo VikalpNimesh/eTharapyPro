@@ -1,0 +1,25 @@
+.expertise-main {
+  /* height: 100vh; */
+  background-image: url("../../../assets/images/mountain.jpg");
+  /* max-height: 797px; */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.inner-box {
+  background: white;
+  border-radius: 20px;
+}
+.expertise-main  .box h2 {
+  margin-bottom: 42px;
+  margin-top: 40px;
+}
+
+.expertise-main  .box p {
+  color: #565774;
+  line-height: 25.2px;
+}
+.expertise-main  .box {
+  max-width: 714px;
+  /* height: 232px; */
+}

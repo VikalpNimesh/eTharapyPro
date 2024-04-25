@@ -1,0 +1,59 @@
+.ctaBanner-main {
+  padding: 0 100px;
+}
+
+.ctaBanner-main > div {
+  background: #62cf6e;
+  width: 100%;
+  border-radius: 20px;
+  padding: 3.625rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  
+}
+
+.ctaBanner-main h1 {
+  color: white;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 70.4px;
+  text-align: center;
+  max-width: 860px;
+  margin: 2rem 0 3rem 0;
+}
+.ctaBanner-main .main p{
+    color: white;
+}
+
+.ctaBanner-main  .main  button {
+    background: #023856;
+    color: var(--white);
+    width: auto;
+    /* margin: auto; */
+    height: 60px;
+    padding: 20px 32px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.2px;
+    /* word-spacing: 8px; */
+  }
+  
+
+@media (max-width: 738px) {
+  .ctaBanner-main {
+    padding: 0 20px;
+  }
+
+  .ctaBanner-main h1 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 35.2px;
+    text-align: left;
+  }
+
+  .ctaBanner-main > div {
+    padding: 80px 32px;
+  }
+}

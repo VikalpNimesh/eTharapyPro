@@ -20,6 +20,7 @@
 }
 
 
+
 .close-bar i{
   color: var(--light-green);
   font-size: 30px;
@@ -39,6 +40,13 @@
   width: 207.95px;
   height: 60px;
   
+}
+
+.navbar-toggler{
+
+color: black;
+border: none;
+padding: 0;
 }
 .nav-links-box {
   display: flex;
