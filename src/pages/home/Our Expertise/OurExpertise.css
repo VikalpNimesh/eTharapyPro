@@ -8,7 +8,7 @@
     
 }
 .expertise-main>h1{
-padding-top: 8.75rem;
+/* padding-top: 8.75rem; */
 padding-bottom: 5vw;
 /* color: white; */
 }
@@ -21,7 +21,10 @@ padding-bottom: 5vw;
     border-radius: 16px;
 }
 
-.exprtise-item{max-width: 228px;}
+.exprtise-item{
+    max-width: 228px;
+
+}
 
 .exprtise-item>div{
     display: flex;justify-content: space-between;
@@ -47,4 +50,14 @@ color: #62CF6E;
 text-decoration: underline;
 
 padding: 20px 0 0 0 ;
+}
+
+@media (max-width:576px) {
+    .exprtise-item{
+        max-width: 280px!important;
+    }
+
+    .expertise-main>h1{
+        /* padding-top: 0px; */
+    }
 }

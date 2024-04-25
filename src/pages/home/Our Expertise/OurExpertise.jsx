@@ -117,7 +117,7 @@ const OurExpertise = () => {
             </div>
           </FlexboxGrid.Item>
           <FlexboxGrid.Item
-            className="exprtise-item"
+            className="exprtise-item d-block d-lg-none "
             as={Col}
             colspan={24}
             md={6}

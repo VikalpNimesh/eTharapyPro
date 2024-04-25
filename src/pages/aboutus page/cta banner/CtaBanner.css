@@ -51,9 +51,11 @@
     font-weight: 700;
     line-height: 35.2px;
     text-align: left;
+    margin: 0;
   }
 
   .ctaBanner-main > div {
     padding: 80px 32px;
+    gap: 40px;
   }
 }
