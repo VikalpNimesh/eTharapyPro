@@ -25,3 +25,10 @@
   line-height: 28px;
   margin-bottom: 60px;
 }
+
+@media (max-width:738px) {
+  .carin .carim-img {
+    width: 37.5rem!important;
+    height: auto;
+  }
+}

@@ -12,10 +12,9 @@
 
 .carim-img img {
   width: 100%;
-  width: 100%;
 }
 .carim-img {
-  height: 345px;
+  height: auto;
 }
 
 .carin h6 {
@@ -24,4 +23,33 @@
   font-weight: 600;
   line-height: 28px;
   margin-bottom: 60px;
+}
+
+@media  (max-width:786px) {
+  .carin .upper {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 6rem !important;
+  }
+  .carim-img img {
+    width: 100%;
+    height: auto;
+  }
+
+  .carin h6{
+font-size: 18px;
+font-weight: 700;
+line-height: 24.3px;
+text-align: left;
+
+  }
+
+  .carin p{
+font-size: 16px;
+font-weight: 600;
+line-height: 22.4px;
+text-align: left;
+
+  }
+  
 }

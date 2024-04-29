@@ -2,11 +2,13 @@ import React from "react";
 
 import "./CarinTravel.css"
 import travel from "./travel.png"
+import twoman from "../../../assets/images/aboutus/two-man.png"
+import map from "../../../assets/images/aboutus/map.png"
 
 const CarinTravel = () => {
   return (
     <div className="wrapper carin mx-1  text-center  ">
-      <div className="row pb-5 d-flex gap-5  ">
+      <div className="row pb-5 d-flex gap-5 upper ">
         <div className="col-lg-6  px-4  text-lg-start  text-md-start">
           <h6 className="head ">
             Cairns are particularly useful over rocky terrain where it can be
@@ -21,12 +23,12 @@ const CarinTravel = () => {
           </p>
         </div>
         <div className="col-lg-6 p-0    carim-img ">
-          <img src={travel} alt="img" />
+          <img src={twoman} alt="img" />
         </div>
       </div>
-      <div className="row pt-5  d-flex gap-5  ">
+      <div className="row pt-5  d-flex gap-5 lower ">
         <div className="col-lg-6   carim-img  p-0 ">
-          <img src={travel} alt="img" />
+          <img src={map} alt="img" />
         </div>
         <div className="col-lg-6 d-flex justify-content-between flex-column px-4  text-lg-start  text-md-start">
           <h6 className="head ">

@@ -5,7 +5,7 @@ const CtaBanner = () => {
     <div className="ctaBanner-main   ">
       <div className="main d-flex justify-content-center  align-items-center ">
         <p>
-          If you feel you are in need of guidance, <br/> the Cairn will show you the
+          If you feel you are in need of guidance,  the Cairn will show you the
           way
         </p>
 

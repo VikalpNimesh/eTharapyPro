@@ -1,5 +1,6 @@
 import React from "react";
 import "./AboutTherapist.css";
+import treeman from "../../../assets/images/aboutus/tree-man.png"
 
 const AboutTherapist = () => {
   return (
@@ -9,7 +10,7 @@ const AboutTherapist = () => {
           <div className=" box ">
             {" "}
             <h6 className="head ">
-              It’s as if each person who works with a therapist is adding stones
+              It’s as if each person who works with a <span className="bold">therapist</span> is adding stones
               to a Cairn.
             </h6>
             <p>
@@ -24,7 +25,7 @@ const AboutTherapist = () => {
             {" "}
             <h6 className="head ">
               This means that when you work with a therapist you are indirectly
-              working with travelers before you AND that you can leave a legacy
+              working with travelers before you AND that you can <span className="bold">leave a legacy</span>
               to help those who come next.
             </h6>
             <p>
@@ -37,7 +38,7 @@ const AboutTherapist = () => {
           <div className=" box ">
             {" "}
             <h6 className="head ">
-              We hope your journey is going well and continues on that way.
+              We hope <span className="bold">your journey</span> is going well and continues on that way.
             </h6>
             <p>
               If you are facing rocky terrain then we invite you to benefit from
@@ -48,7 +49,7 @@ const AboutTherapist = () => {
           </div>
         </div>
         <div className="col-lg-6 p-0    carim-img ">
-          <img src="" alt="img" />
+          <img src={treeman} alt="img" />
         </div>
       </div>
     </div>

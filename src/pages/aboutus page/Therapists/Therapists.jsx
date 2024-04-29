@@ -1,9 +1,10 @@
 import React from "react";
 import "./Therapists.css";
 
+
 const Therapists = () => {
   return (
-    <div className=" therapist-main  text-center d-flex mx-auto   justify-content-center align-items-center flex-column main  ">
+    <div className=" therapist-main   text-center d-flex mx-auto   justify-content-center align-items-center flex-column main  ">
       <div className="therapist">
         <h1>
           <span className=" span-green">Therapists</span> who know the Way

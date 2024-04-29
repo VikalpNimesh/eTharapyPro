@@ -4,29 +4,29 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <footer className="footer wrapper">
-      <div className="container p-0 ">
-        <div className="row   ">
-          <div className="col-6 col-sm-3 p-0   ">
+      <div className="container p-0 m-0 ">
+        <div className="row p-0 m-0   ">
+          <div className="col-6 col-sm-3 p-0 m-0   ">
             <ul>
               <p>Login</p>
               <p>Start therapy </p>
               <p>Plans</p>
             </ul>
           </div>
-          <div className="col-6 col-sm-3 p-0   ">
+          <div className="col-6 col-sm-3 p-0 m-0   ">
             <ul>
               <p>Aboutus</p>
               <p>Blog</p>
               <p>FAQ</p>
             </ul>
           </div>
-          <div className="col-6 col-sm-3 p-0   ">
+          <div className="col-6 col-sm-3 p-0 m-0   ">
             <ul>
               <p>Mental health tests</p>
               <p>Online-therapy</p>
             </ul>
           </div>
-          <div className="col-6 col-sm-3 p-0   ">
+          <div className="col-6 col-sm-3 p-0 m-0   ">
             <ul>
               <p>For counselors</p>
               <p>Contact</p>

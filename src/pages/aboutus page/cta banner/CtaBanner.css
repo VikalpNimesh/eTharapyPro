@@ -47,15 +47,25 @@
   }
 
   .ctaBanner-main h1 {
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 35.2px;
-    text-align: left;
+
     margin: 0;
+font-size: 24px;
+font-weight: 700;
+line-height: 26.4px;
+text-align: center;
+
   }
 
   .ctaBanner-main > div {
-    padding: 80px 32px;
+    padding: 47px 32px;
     gap: 40px;
+  }
+
+  .ctaBanner-main p{
+font-size: 18px;
+font-weight: 600;
+line-height: 25.2px;
+text-align: center;
+
   }
 }

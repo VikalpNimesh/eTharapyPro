@@ -1,6 +1,5 @@
 .about-hero p {
   color: #565774;
-  padding: 64px 0;
   max-width: 800px;
 }
 
@@ -34,7 +33,10 @@
   line-height: 19.2px;
   /* word-spacing: 8px; */
 }
+.about-hero div{
 
+padding: 64px 0;
+}
 @media (max-width: 768px) {
   .about-hero h1 {
     padding-top: 0;
@@ -43,5 +45,21 @@
   .about-hero button {
 width: 100%;  
 }
+
+.about-hero{
+  justify-content: start;
+  height: auto;
+}
+
+.about-hero p{
+  padding: 0;
+}
+.about-hero div{
+  padding: 32px 20px;
+  display: flex;
+  flex-direction: column;
+gap: 20px;
+}
+
 
 }
