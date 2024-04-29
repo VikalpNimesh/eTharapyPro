@@ -9,10 +9,13 @@ const HeroSection = () => {
   return (
     <>
       <div className="herosection-main wrapper  container-fluid   ">
-        <div className="row  p-0  m-0 d-flex justify-content-center ">
+        <div className="row  p-0  m-0 d-flex justify-content-center  ">
           <div className="left col-12 col-lg-6 ">
             <h1>Gaslighting</h1>
-
+            <div className="right col-12 col-lg-6 d-block d-md-none ">
+            <img src={girl} alt="" />
+          </div>
+            
             <div>
               <p className="  ">
                 Have you ever wondered if someone was gaslighting you or if you
@@ -26,13 +29,13 @@ const HeroSection = () => {
             </div>
             <button className="cta-btn">Start Therapy</button>
           </div>
-          <div className="right col-12 col-lg-6 ">
+          <div className="right col-12 col-lg-6 d-none d-md-block ">
             <img src={girl} alt="" />
           </div>
         </div>
       </div>
       <div className="hero-second-main herosection-main  wrapper  container-fluid   ">
-        <div className="row col-12 p-0  m-0 d-flex justify-content-center ">
+        <div className="row col-12 p-0 d-flex   m-0  justify-content-center  ">
           <div className="right col-12 col-lg-6 ">
             <img src={man} alt="" />
           </div>
@@ -81,7 +84,7 @@ const HeroSection = () => {
       </div>
 
       <div className="landing-cta-banner  ">
-        <div className=" row d-flex justify-content-between m-0 p-0 ">
+        <div className=" row d-flex justify-content-between m-0 p-0  ">
           <div className="left col-6">
             <h1>
               Talk to a therapist now if you believe you are a victim of

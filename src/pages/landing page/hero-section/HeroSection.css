@@ -43,8 +43,8 @@
 }
 
 .herosection-main .right img {
-  max-width: 525px;
-  max-height: 525px;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 /* *****************.hero-second-main******************* */
@@ -127,7 +127,12 @@ width: 100%;
 }
 @media (max-width: 768px) {
   .hero-second-main .row {
+    display: flex;
+    flex-direction: column-reverse;
     gap: 50px;
+  }
+  .herosection-main div{
+    margin-top: 0;
   }
 
   .herosection-main h1 {

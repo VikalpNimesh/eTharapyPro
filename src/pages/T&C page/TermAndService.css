@@ -1,0 +1,103 @@
+.termAndCon-main {
+  }
+  
+  .term-heading p {
+    color: #575875;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.2px;
+    text-align: left;
+  }
+  .term-heading {
+    padding: 6.25rem 0;
+    align-items: center;justify-content: center;
+  }
+  
+  .term-left h1 {
+        font-size: 40px;
+    font-weight: 700;
+    line-height: 46px;
+    text-align: start;
+  
+    font-size: 40px;
+  }
+  
+  .general {
+    margin-top: 4.5rem;
+    display: flex;
+    justify-content: start;
+    gap: 2rem;
+    flex-direction: column;
+  }
+  
+  .general h5 {
+    color: #023856;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 33.6px;
+    text-align: left;
+  }
+  
+  .bullet-list-sec li {
+      list-style-type: decimal; /* Specify "decimal" for numbered list */
+    margin-left: 1em; /* Adjust the margin as needed */
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 26.1px;
+    text-align: left;
+    color: #565774;
+  }
+  
+  .bullet-list li {
+    list-style-type: disc;
+    margin-left: 1em;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 26.1px;
+    text-align: left;
+    color: #565774;
+  }
+  
+  .p-blue {
+    color: #10131d;
+  }
+  .termAndCon-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @media (max-width: 768px) {
+    .term-right {
+      display: none;
+    }
+  
+    .general h5 {
+      font-size: 32px;
+    }
+  
+    .p-18 {
+        font-size: 16px;
+      font-weight: 600;
+      line-height: 22.4px;
+      text-align: left;
+    }
+  
+    .term-left h1 {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 32.4px;
+      text-align: left;
+    }
+    .term-heading {
+      padding: 2rem 0;
+      justify-content: start;
+    }
+    .term-left h1 {
+      text-align: left;
+    }
+    .term-heading p {
+      font-size: 14px;
+    }
+  }
+  

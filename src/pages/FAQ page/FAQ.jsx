@@ -1,10 +1,31 @@
 import "./FAQ.css";
 import { Accordion } from "rsuite";
+import CtaBanner from "./cta banner/CtaBanner";
 
 const FAQ = () => {
   return (
-    <div className="faq-questions wrapper">
-      <h1>FAQ</h1>
+    <div className="faq-questions ">
+      <div className="top column">
+        <h1>
+          Frequently <span className="span-green">Asked</span> Questions{" "}
+        </h1>
+        <p>
+          Find answers to common questions about online therapy. Learn more how
+          online therapy works, and how it can benefit your mental health.
+        </p>
+        <div className="search-bar">
+          <i className="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="Seach" />
+        </div>
+        <div className="search-bar">
+          <i className="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="Seach" />
+        </div>
+        <div className="search-bar">
+          <i className="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="Seach" />
+        </div>
+      </div>
       <div className="faq-questions-box ">
         <Accordion>
           <Accordion.Panel
@@ -206,6 +227,8 @@ const FAQ = () => {
         </Accordion>
         <button className="faq-btn">See All</button>
       </div>
+
+      <CtaBanner/>
     </div>
   );
 };

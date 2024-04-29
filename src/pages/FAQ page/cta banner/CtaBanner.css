@@ -1,0 +1,71 @@
+.faq-ctaBanner-main {
+  padding: 0 100px;
+}
+
+.faq-ctaBanner-main .main {
+  background: #62cf6e;
+  width: 100%;
+  border-radius: 20px;
+  padding: 5.5rem 11.875rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.faq-ctaBanner-main .main p {
+  color: white;
+  padding-bottom: 2rem;
+}
+.faq-ctaBanner-main h1 {
+  color: white;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 70.4px;
+  max-width: 860px;
+  margin: 0;
+  text-align: center !important;
+  padding-bottom: 3rem;
+}
+.faq-ctaBanner-main .main p {
+  color: white;
+}
+
+.faq-ctaBanner-main .main button {
+  background: #023856;
+  color: var(--white);
+  width: auto;
+  /* margin: auto; */
+  height: 60px;
+  padding: 20px 32px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.2px;
+  /* word-spacing: 8px; */
+}
+
+@media (max-width: 738px) {
+  .faq-ctaBanner-main {
+    padding: 0 20px;
+  }
+
+  .faq-ctaBanner-main h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 26.4px;
+    text-align: center;
+  }
+
+  .faq-ctaBanner-main > div {
+    padding: 47px 32px !important;
+    /* gap: 40px; */
+  }
+
+  .faq-ctaBanner-main p {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25.2px;
+    text-align: center;
+  }
+}

@@ -1,15 +1,60 @@
 .faq-questions {
   /* padding: 8.75; */
+
+}
+.faq-questions .top {
+  /* width: 1440px; */
+  height: 663px;
+  margin: auto;
+  background: url("/src/assets/images/mountain.jpg");
+  background-size: cover;
+  position: relative;
+  margin-bottom: 129px;
 }
 
 .faq-questions h1{
 padding-bottom: 6vw;
+font-size: 60px;
+font-weight: 700;
+text-align: center;
+color: var(--dark-blue);
+line-height: 72px;
+}
+
+.faq-questions > div > p {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  text-align: center;
+  color: #565774;
+  max-width: 56.9375rem;
+  /* margin: auto; */
+}
+
+.search-bar {
+  position: absolute;
+  bottom: -36px;
+  width: 51.4375rem;
+  max-height: 72px;
+  background: white;
+  padding: 24px;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  border-radius: 12px;
+  color: #023856;
+  border: 1px solid #ebebff;
+}
+.search-bar i, .search-bar input {
+  opacity: 40%;
+  outline: none;
+  border: none;
+  font-size: 20px;
 }
 .faq-questions-box {
     width: 823px;
     margin: auto;
     /* border-top: 1px solid #62cf6e66;    */
-    
 }
 .rs-panel-title {
     color: var(--dark-blue)!important;
@@ -59,10 +104,12 @@ padding-bottom: 6vw;
   font-weight: 700;
   line-height: 19.2px;
   margin-top: 40px;
+  margin-bottom: 9.0625rem;
+
 }
 
 
-@media (max-width:823px) {
+@media (max-width:738px) {
   
   .faq-questions-box{
     width: 100%;
@@ -79,5 +126,13 @@ font-weight: 600;
 line-height: 21.6px;
 text-align: left;
 
+  }
+
+  .search-bar{
+    width: auto;
+  }
+
+  .faq-questions .top{
+    height: 444px;
   }
 }
