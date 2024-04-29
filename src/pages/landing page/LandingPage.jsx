@@ -1,7 +1,10 @@
+import HeroSection from "./hero-section/HeroSection"
 
 const LandingPage = () => {
   return (
-    <div>LandingPage</div>
+    <div>
+      <HeroSection/>
+    </div>
   )
 }
 

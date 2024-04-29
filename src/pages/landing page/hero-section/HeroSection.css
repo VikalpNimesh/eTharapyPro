@@ -1,0 +1,197 @@
+.wrapper {
+  padding-bottom: 4rem !important;
+  padding-top: 6rem !important;
+}
+.herosection-main .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+  /* height: 600px; */
+}
+
+.herosection-main h1 {
+  text-align: left;
+}
+
+.herosection-main .left div {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.herosection-main p {
+  color: #565774;
+  max-width: 600px;
+}
+
+.herosection-main button {
+  background: #43b95d;
+  color: var(--white);
+  max-width: 26.1875rem;
+  height: 60px;
+  padding: 20px 32px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.2px;
+}
+
+.herosection-main .right {
+  max-width: 525px;
+  max-height: 525px;
+}
+
+.herosection-main .right img {
+  max-width: 525px;
+  max-height: 525px;
+}
+
+/* *****************.hero-second-main******************* */
+
+.hero-second-main .right {
+  height: auto;
+}
+.hero-second-main .left {
+  /* justify-content: start; */
+  align-items: center;
+}
+
+.hero-second-main .row {
+  display: flex;
+  gap: 9.125rem;
+}
+
+/* *********************landing-banner******************* */
+
+
+.landing-banner{
+width: 100% !important;
+margin-top: -25px;
+padding: 4.5rem 3.5rem !important ;
+border-radius: 20px;
+}
+
+.landing-banner p{
+  max-width: 1128px;
+font-size: 22px;
+font-weight: 600;
+line-height: 30.8px;
+text-align: center;
+color: white;
+width: 100%;
+}
+
+/* ***********************banner******************** */
+.landing-cta-banner{
+  padding: 0 100px ;
+}
+
+.landing-cta-banner>div{
+  background: #62cf6e;
+  /* width: 100%; */
+  border-radius: 20px !important;
+  padding: 4.875rem 6rem !important;
+  
+  
+}
+
+.landing-cta-banner .left{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 5.75rem
+}
+.landing-cta-banner h1{
+  color: white;
+width: 100% !important;
+font-size: 44px !important;
+font-weight: 700 !important;
+line-height: 50.6px !important;
+text-align: left !important;
+}
+ 
+.landing-cta-banner button{
+  width:70% !important ;
+}
+
+.landing-cta-banner .right{
+  max-width: 381px;
+max-height: 381px;
+border-radius: 50%;
+position: relative;
+}
+
+.landing-cta-banner .right img{
+width: 100%;
+}
+@media (max-width: 768px) {
+  .hero-second-main .row {
+    gap: 50px;
+  }
+
+  .herosection-main h1 {
+    padding-top: 0;
+  }
+
+  .herosection-main button {
+    width: 100%;
+  }
+
+  .herosection-main {
+    justify-content: start;
+    height: auto;
+  }
+
+  .herosection-main p {
+    padding: 0;
+  }
+  .herosection-main div {
+    /* padding: 32px 20px; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .landing-banner{
+  margin-top: 40px;
+  gap: 10px;
+  }
+}
+
+
+@media (max-width: 738px) {
+  .landing-cta-banner {
+    padding: 0 20px;
+  }
+
+  .landing-cta-banner h1 {
+    margin: 0;
+font-size: 24px !important;
+font-weight: 700 !important;
+line-height: 26.4px !important;
+text-align: center !important;
+
+  }
+
+  .landing-cta-banner > div  {
+    width: 100%;
+    padding: 47px 32px !important;
+    gap: 40px !important;
+  }
+
+  .landing-cta-banner .left{
+    width: 100%;
+    gap: 40px;
+  }
+  .landing-cta-banner p{
+font-size: 18px;
+font-weight: 600;
+line-height: 25.2px;
+text-align: center;
+
+  }
+
+  .landing-cta-banner button{
+    width: 100% !important;
+  }
+}

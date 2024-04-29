@@ -8,7 +8,7 @@
 
 .therapist {
   color: white;
-  max-width: 583px;
+  /* max-width: 600px; */
 }
 
 .therapist h1 {
@@ -54,7 +54,7 @@
     font-size: 16px;
     font-weight: 600;
     line-height: 22.4px;
-    text-align: left;
+    text-align: x;
     
   }
 }

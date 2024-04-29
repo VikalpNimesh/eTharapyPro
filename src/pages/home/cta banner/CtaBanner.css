@@ -1,5 +1,4 @@
 .ctaBanner-main{
-   
     padding: 0 100px;
 }
 
@@ -18,8 +17,9 @@ color: white;
 font-size: 64px;
 font-weight: 700;
 line-height: 70.4px;
-text-align: left;
-
+text-align: left !important;
+margin: 0px !important;
+max-width: 787px !important;
 }
 .ctabanner-btn {
     background: #023856;
