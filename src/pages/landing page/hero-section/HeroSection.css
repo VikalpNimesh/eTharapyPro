@@ -1,6 +1,6 @@
 .wrapper {
-  padding-bottom: 4rem !important;
-  padding-top: 6rem !important;
+  /* padding-bottom: 4rem !important;
+  padding-top: 6rem !important; */
 }
 .herosection-main .left {
   display: flex;
@@ -164,7 +164,7 @@ width: 100%;
 }
 
 
-@media (max-width: 738px) {
+@media (max-width: 768px) {
   .landing-cta-banner {
     padding: 0 20px;
   }

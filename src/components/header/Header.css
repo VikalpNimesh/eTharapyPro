@@ -102,6 +102,10 @@ padding: 0;
   line-height: 19.2px;
 }
 
+.navbar-toggler{
+  color: white;
+}
+
 @media (max-width:738px) {
   .header-close{display: none;}
 }

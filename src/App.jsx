@@ -10,7 +10,8 @@ import AboutUs from "./pages/aboutus page/AboutUs";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import FAQ from "./pages/FAQ page/FAQ";
 import TermAndService from "./pages/T&C page/TermAndService";
-import PrivacyPolicy from "./pages/PrivacyPolicy page/PrivacyPolicy";
+// import PrivacyPolicy from "./pages/PrivacyPolicy page/PrivacyPolicy";
+import Article from "./pages/article page/Article";
 
 function App() {
   return (
@@ -22,8 +23,9 @@ function App() {
           <Route path="/aboutus" element={<AboutUs />} />
           <Route path="/landing-page" element={<LandingPage />} />
           <Route path="/faq" element={<FAQ />} />
-          <Route path="/privacy" element={<PrivacyPolicy />} />
+          {/* <Route path="/privacy" element={<PrivacyPolicy />} /> */}
           <Route path="/t&c" element={<TermAndService />} />
+          <Route path="/article" element={<Article />} />
         </Routes>
       </BrowserRouter>
       <Footer />
