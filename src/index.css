@@ -69,6 +69,14 @@ p{
   line-height: 25.2px;
 }
 
+.h32{
+font-size: 32px;
+font-weight: 700;
+line-height: 38.4px;
+text-align: left;
+color: #575875;
+
+}
 .p16{
 font-size: 16px;
 font-weight: 600;
@@ -93,20 +101,6 @@ text-align: left;
 color: #10131D;
 }
 
-.h2,
-.h3 {
-  color: var(--white);
-  font-weight: var(--fw-700);
-  /* line-height: 1.4; */
-}
-
-.h2 {
-  font-size: var(--fs-2);
-}
-
-.h3 {
-  font-size: var(--fs-3);
-}
 
 .span-green {
   display: inline-block;

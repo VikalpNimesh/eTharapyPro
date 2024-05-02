@@ -1,4 +1,3 @@
-// import "./PrivacyPolicy.css";
 
 const PrivacyPolicy = () => {
   return (

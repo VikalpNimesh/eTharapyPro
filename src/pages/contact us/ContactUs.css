@@ -1,0 +1,133 @@
+.contact-main{
+    padding: 6.25rem ;
+    /* height: 100vh; */
+    background-color: #023856;
+    /* background-size: cover;  */
+    /* background-position: center;  */
+    /* height: 40vh; */
+}
+.contact-main h1{
+    color: white;
+    padding-bottom: 100px;
+    height: auto;
+}
+
+.contact-inner {
+    /* height: 100vh; */
+    background: white;
+    padding: 3.5rem;
+    border-radius: 20px;
+    border: 1px solid  #EBEBFF;
+}
+
+.contact-inner .left {
+    display: flex;flex-direction: column;
+    gap: 4.5rem;
+}
+.left-bottom {
+    display: flex;flex-direction: column;
+    gap: 3rem;
+}
+.left-bottom h2 , .contact-inner .right :nth-child(2){
+font-size: 20px;
+font-weight: 700;
+line-height: 24px;
+text-align: left;
+color: #023856;
+padding-bottom: 1rem;
+}
+
+.right .pad{
+    padding-top: 20px !important;
+}
+.left-bottom p{
+    /* font-family: Gilmer; */
+font-size: 16px;
+font-weight: 600;
+line-height: 20.8px;
+text-align: left;
+color: #023856;
+}
+
+/* ************************form*********** */
+
+
+
+.contact-main form div{
+    display: flex;
+    flex-direction: column;
+padding-bottom: 10px;
+}
+
+.contact-inner select{
+    width: 49%;
+}
+
+.contact-main label{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.2px;
+    text-align: left;
+    color: #023856;
+    padding: 8px 0;
+}
+
+.contact-main input , .contact-main textarea , .contact-inner select{
+padding: 14px;
+border-radius: 10px;
+border:  1px solid #EBEBFF;
+outline: none;
+}
+
+.contact-btn {
+    background: #EBEBFF;
+    color: #A3A3C2;
+    width: 100%;
+    height: auto;
+    padding: 20px 32px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.2px;
+    margin-top: 10px;
+}
+
+
+@media (max-width:768px) {
+    .contact-main{
+        padding: 20px;
+    }
+    .contact-inner{
+        padding: 32px;
+    }
+
+    .contact-main .left {
+        display: none;
+    }
+    
+    .contact-main .h32{
+        /* font-family: Gilmer; */
+font-size: 20px;
+font-weight: 700;
+line-height: 24px;
+text-align: left;
+
+    }
+
+    .pad{
+        /* font-family: Gilmer; */
+font-size: 16px;
+font-weight: 700;
+line-height: 19.2px;
+text-align: left;
+
+    }
+
+    .contact-main select{
+        width: 100%;
+    }
+
+    .contact-btn{
+        font-size: 14px;
+    }
+}
