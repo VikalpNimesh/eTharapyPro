@@ -105,6 +105,7 @@ color: #10131D;
 .span-green {
   display: inline-block;
   color: var(--light-green);
+  padding-left: 4px;
 }
 *,
 *::before,

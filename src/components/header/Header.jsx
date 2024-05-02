@@ -60,7 +60,7 @@ const Header = () => {
             </ul>
             <div className="btn-box    ">
               <button className="sign-btn">Sign in</button>
-              <button className="start-therapy-btn d-none  d-md-block ">Start therapy</button>
+              <button className="nav-start-therapy-btn d-none  d-md-block ">Start therapy</button>
             </div>
           </div>
         </div>

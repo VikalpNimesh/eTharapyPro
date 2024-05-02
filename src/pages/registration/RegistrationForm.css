@@ -1,0 +1,92 @@
+.register-main {
+  /* max-width: 1440px; */
+  margin: auto;
+  /* padding-left: 6.25rem; */
+  padding-right: 6.25rem;
+  padding-top: 8.75rem;
+  padding-bottom: 8.75rem;
+  padding: 4.5rem 0;
+}
+
+.formresgiter {
+  max-width: 610px;
+  margin: auto;
+  border: 1px solid #ebebff;
+  border-radius: 20px;
+  padding: 2.5rem 3.5rem;
+}
+
+.register-main > h2 {
+  /* font-family: Gilmer; */
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38.4px;
+  text-align: center;
+  color: #023856;
+  padding-bottom: 2.5rem;
+}
+
+.register-main h3 {
+  /* font-family: Gilmer; */
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28.8px;
+  text-align: center;
+  padding-bottom: 32px;
+  margin: 0;
+}
+/* *************************form************ */
+
+.register-main form div {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+}
+
+.register-main label {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19.2px;
+  text-align: left;
+  color: #023856;
+  padding: 8px 0;
+}
+
+.register-main input,
+.register-main textarea {
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid #ebebff;
+  outline: none;
+  font-size: 16px;
+}
+
+.register-main [ placeholder ]{
+    color: #575875;
+    opacity: 50%;
+}
+
+.register-main .form-control:focus {
+  color: #023856;
+  opacity: 40%;
+  outline: none;
+  border: none;
+}
+
+.checkbox {
+  display: flex;
+  flex-direction: row !important;
+  gap: 14px;
+}
+
+.lets-begin-btn {
+  background: #ebebff;
+  color: #a3a3c2;
+}
+
+@media (max-width: 768px) {
+  .formresgiter {
+    padding: 0;
+    border: none;
+  }
+}

@@ -1,0 +1,118 @@
+.payment-detail-form {
+    /* background: #023856; */
+  /* max-width: 610px; */
+  margin: auto;
+  /* padding-left: 6.25rem; */
+  padding-right: 6.25rem;
+  padding-top: 8.75rem;
+  padding-bottom: 8.75rem;
+  padding: 4.5rem 0;
+}
+
+.payment-form {
+    background: white;
+  max-width: 610px;
+  margin: auto;
+  border: 1px solid #ebebff;
+  border-radius: 20px;
+  padding: 2.5rem 3.5rem;
+}
+
+.payment-detail-form h2 {
+  /* font-family: Gilmer; */
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38.4px;
+  text-align: center;
+  color: #023856;
+  padding-bottom: 2.5rem;
+}
+
+.payment-detail-form h3 {
+  /* font-family: Gilmer; */
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28.8px;
+  text-align: center;
+  padding-bottom: 32px;
+  margin: 0;
+}
+/* *************************form************ */
+
+.payment-detail-form form div {
+  /* display: flex; */
+  /* flex-direction: column; */
+  padding-bottom: 10px;
+}
+
+.payment-detail-form label {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19.2px;
+  text-align: left;
+  color: #023856;
+  padding: 8px 0;
+}
+
+.payment-detail-form input,
+.payment-detail-form textarea,
+.payment-detail-form select {
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid #ebebff;
+  outline: none;
+  font-size: 16px;
+}
+
+.payment-detail-form [ placeholder ]{
+    color: #575875;
+    opacity: 50%;
+}
+
+.payment-detail-form .form-control:focus {
+  color: #023856;
+  opacity: 40%;
+  outline: none;
+  border: none;
+}
+
+.checkbox {
+  display: flex;
+  flex-direction: row !important;
+  gap: 14px;
+}
+
+.makepayment-btn {
+  background: #ebebff;
+  color: #a3a3c2;
+  width: 100%;
+  padding: 20px;
+}
+
+.buy-price {
+  /* font-family: Gilmer; */
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 33.6px;
+  text-align: left;
+}
+
+.payment-form small {
+  /* font-family: Gilmer; */
+  padding-top: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 14.4px;
+  text-align: center;
+  color: #023856;
+  opacity: 50%;
+}
+@media (max-width: 768px) {
+  .payment-detail-form {
+    padding: 20px;
+  }
+  .payment-form {
+    padding: 0;
+    border: none;
+  }
+}
