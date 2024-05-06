@@ -16,6 +16,8 @@ import ContactUs from "./pages/contact us/ContactUs";
 import Questionnaire from "./pages/questionaire/Questionaire";
 import RegistrationForm from "./pages/registration/RegistrationForm";
 import PaymentDetailsForm from "./pages/PaymentDetailPage/PaymentDetailsForm";
+import PricingPage from "./pages/pricing page/PricingPage";
+import CauseDetailsPage from "./components/CauseDetailsPage";
 
 function App() {
   return (
@@ -24,6 +26,8 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/c" element={<CauseDetailsPage />} />
+          <Route path="/pricing-page" element={<PricingPage />} />
           <Route path="/payment-details-form" element={<PaymentDetailsForm />} />
           <Route path="/register" element={<RegistrationForm />} />
           <Route path="/aboutus" element={<AboutUs />} />

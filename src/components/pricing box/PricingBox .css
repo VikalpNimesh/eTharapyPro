@@ -1,0 +1,111 @@
+.pricing-page{
+background: #023856;
+}
+
+.pricing-page>h1{
+    color: white;
+}
+.price-box-outer{
+    /* max-width: 410px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #43B95D;
+    border-radius: 20px;
+    padding: 10px;
+
+}
+
+.price-box-outer h5{
+    /* font-family: Gilmer; */
+    font-size: 20px;
+    padding: 24px 0;
+font-weight: 700;
+line-height: 22px;
+text-align: left;
+color: #fff;
+}
+
+.price-box{
+    border: 2px solid #F4F4F4;
+background: #fff;
+width: 25.125rem;
+display: flex;
+flex-direction: column;
+text-align: center;
+padding: 44px 40px;
+border-radius: 16px;
+}
+
+.price-box h3{
+    /* font-family: Gilmer; */
+font-size: 28px;
+font-weight: 700;
+line-height: 33.6px;
+text-align: center;
+color: #023856;
+padding-bottom: 32px;
+margin: 0;
+}
+
+.pack-price {
+position: relative;}
+
+.pack-price h4 span{
+    position: absolute;left: 75px;
+    display: inline;
+    /* font-family: Gilmer; */
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 38.4px;
+    text-align: left;
+    padding-right: 8px;
+padding-top: -20px;
+}
+
+.pack-price h4{
+    /* font-family: Gilmer; */
+font-size: 64px;
+font-weight: 700;
+line-height: 76.8px;
+text-align: center;
+color: #023856;
+}
+
+.pack-price p{
+    /* font-family: Gilmer; */
+    padding-top: 12px;
+font-size: 20px;
+font-weight: 600;
+line-height: 24px;
+text-align: center;
+color: #565774;
+}
+.pack-btn{
+    padding: 40px 0;
+}
+
+.pack-features  .list-feature li{
+
+font-size: 15px;
+font-weight: 600;
+line-height: 18px;
+text-align: left;
+color: #575875;
+padding-bottom: 20px;
+}
+
+@media (max-width:768px) {
+    
+    .price-box-outer{
+        width: 100%;
+    }
+.price-box{
+    padding: 24px;
+    /* width: 100%; */
+}
+.pricing-page.wrapper{
+    padding: 0;
+}
+}
