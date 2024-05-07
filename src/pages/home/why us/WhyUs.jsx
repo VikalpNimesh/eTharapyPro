@@ -25,38 +25,38 @@ const WhyUs = () => {
         <div className=" lower row m-0 p-0   ">
           <div className=" col-12 col-md-6 p-md-5 p-0  m-0  ">
             <div className="row box col-12 p-0 m-0  ">
-              <ul className="list-item col-12 col-md-6  p-0 m-0  ">
+              <ul className="list-item col-12 col-md-9 col-lg-6  p-0 m-0  ">
                 <li className="list-item-content">
-                  <i className="icon fa-brands fa-wirsindhandwerk"></i>
-                  <p className="text">Most affordable</p>
-                  <i className="icon fa-solid fa-plus"></i>
+                  <i className="sp icon fa-brands fa-wirsindhandwerk"></i>
+                  <p className="text p16">Most affordable</p>
+                  <i className="p16 icon fa-solid fa-plus"></i>
                 </li>
                 <li className="list-item-content">
-                  <i className="icon fa-brands fa-wirsindhandwerk"></i>
-                  <p className="text">Most affordable</p>
-                  <i className="icon fa-solid fa-plus"></i>
+                  <i className="sp icon fa-brands fa-wirsindhandwerk"></i>
+                  <p className="text p16">Most affordable</p>
+                  <i className="p16 icon fa-solid fa-plus"></i>
                 </li>
                 <li className="list-item-content bottom-bor">
-                  <i className="icon fa-brands fa-wirsindhandwerk"></i>
-                  <p className="text">Most affordable</p>
-                  <i className="icon fa-solid fa-plus"></i>
+                  <i className="sp icon fa-brands fa-wirsindhandwerk"></i>
+                  <p className="text p16">Most affordable</p>
+                  <i className="p16 icon fa-solid fa-plus"></i>
                 </li>
               </ul>
-              <ul className="list-item  col-12 col-md-6 p-0 m-0  ">
+              <ul className="list-item  col-12 col-md-9 col-lg-6 p-0 m-0  ">
                 <li className="list-item-content">
-                  <i className="icon fa-brands fa-wirsindhandwerk"></i>
-                  <p className="text">Most affordable</p>
-                  <i className="icon fa-solid fa-plus"></i>
+                  <i className="sp icon fa-brands fa-wirsindhandwerk"></i>
+                  <p className="text p16">Most affordable</p>
+                  <i className="p16 icon fa-solid fa-plus"></i>
                 </li>
                 <li className="list-item-content">
-                  <i className="icon fa-brands fa-wirsindhandwerk"></i>
-                  <p className="text">Most affordable</p>
-                  <i className="icon fa-solid fa-plus"></i>
+                  <i className="sp icon fa-brands fa-wirsindhandwerk"></i>
+                  <p className="text p16">Most affordable</p>
+                  <i className="p16 icon fa-solid fa-plus"></i>
                 </li>
                 <li className="list-item-content bottom-bor">
-                  <i className="icon fa-brands fa-wirsindhandwerk"></i>
-                  <p className="text">Most affordable</p>
-                  <i className="icon fa-solid fa-plus"></i>
+                  <i className="sp icon fa-brands fa-wirsindhandwerk"></i>
+                  <p className="text p16">Most affordable</p>
+                  <i className="p16 icon fa-solid fa-plus"></i>
                 </li>
               </ul>
             </div>

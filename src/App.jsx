@@ -17,16 +17,18 @@ import Questionnaire from "./pages/questionaire/Questionaire";
 import RegistrationForm from "./pages/registration/RegistrationForm";
 import PaymentDetailsForm from "./pages/PaymentDetailPage/PaymentDetailsForm";
 import PricingPage from "./pages/pricing page/PricingPage";
-import CauseDetailsPage from "./components/CauseDetailsPage";
+import { Question1, Question10, Question11, Question12, Question13, Question14, Question15, Question2, Question3, Question4, Question5, Question6, Question7, Question8, Question9, } from "./pages/questionaire/index.js";
+
+
+
 
 function App() {
   return (
     <CustomProvider theme="light">
+      <BrowserRouter basename="/">
       <Header />
-      <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/c" element={<CauseDetailsPage />} />
           <Route path="/pricing-page" element={<PricingPage />} />
           <Route path="/payment-details-form" element={<PaymentDetailsForm />} />
           <Route path="/register" element={<RegistrationForm />} />
@@ -38,11 +40,27 @@ function App() {
           <Route path="/article" element={<Article />} />
           <Route path="/contact-us" element={<ContactUs />} />
           <Route path="/questionaire" element={<Questionnaire />} />
+          <Route path="/question1" element={<Question1 />} />
+          <Route path="/question2" element={<Question2 />} />
+          <Route path="/question3" element={<Question3 />} />
+          <Route path="/question4" element={<Question4 />} />
+          <Route path="/question5" element={<Question5 />} />
+          <Route path="/question6" element={<Question6 />} />
+          <Route path="/question7" element={<Question7 />} />
+          <Route path="/question8" element={<Question8 />} />
+          <Route path="/question9" element={<Question9 />} />
+          <Route path="/question10" element={<Question10 />} />
+          <Route path="/question11" element={<Question11 />} />
+          <Route path="/question12" element={<Question12 />} />
+          <Route path="/question13" element={<Question13 />} />
+          <Route path="/question14" element={<Question14 />} />
+          <Route path="/question15" element={<Question15 />} />
         </Routes>
-      </BrowserRouter>
       <Footer />
+      </BrowserRouter>
     </CustomProvider>
   );
 }
 
 export default App;
+

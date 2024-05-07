@@ -17,14 +17,14 @@ const FAQ = () => {
           <i className="fa-solid fa-magnifying-glass"></i>
           <input type="text" placeholder="Seach" />
         </div>
-        <div className="search-bar-result">
+        {/* <div className="search-bar-result">
           <i className="fa-solid fa-magnifying-glass"></i>
           <input type="text" placeholder="Seach" />
         </div>
         <div className="search-bar-result">
           <i className="fa-solid fa-magnifying-glass"></i>
           <input type="text" placeholder="Seach" />
-        </div>
+        </div> */}
       </div>
       <div className="faq-questions-box ">
         <Accordion>

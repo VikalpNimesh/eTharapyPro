@@ -1,27 +1,16 @@
 .questionnaire-main {
   padding-top: 0 !important;
+  background-image: url("../../../assets/images/questionaire/backRegister.png");
+background-repeat: no-repeat;
+background-size: cover;
+height: auto;
 }
 
-.wave {
-  /* background:
-      linear-gradient(to right, sandybrown, chocolate); */
-  height: 50px;
-  position: relative;
-}
-.wave::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background-repeat: repeat;
-  height: 10px;
-  background-size: 20px 20px;
-  background-image: radial-gradient(
-    circle at 10px -5px,
-    transparent 12px,
-    maroon 13px
-  );
+.progress-custom{
+  font-size: 39px;
+  margin: 3px;
+  font-weight: 400;
+  color: #e7e7e7;
 }
 .step-title-wrap .quest-number {
   font-weight: 500;
@@ -50,12 +39,19 @@
   padding: 18px 22px;
   border: 1px solid #dadada;
   border-radius: 20px;
-  width: 100%;
+  /* width: 100%; */
   height: auto;
   display: flex !important;
   gap: 18px;
 }
-.questionnaire-main .rating-icon:hover {
+
+.questionnaire-main .rating-icon-box{
+/* width: 95%; */
+max-width: 1070px;
+
+}
+
+.questionnaire-main .rating-icon:hover ,.questionnaire-main .rating-icon:focus  {
   background: #43b95d;
   color: white;
   cursor: pointer;
@@ -115,5 +111,12 @@
 @media (max-width: 768px) {
   .rating-icon-box select {
     width: 100% !important;
+  }
+
+  .progress-custom{
+    font-size: 27px;
+  }
+  .step-title.h32 {
+    font-size: 24px;
   }
 }

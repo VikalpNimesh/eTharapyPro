@@ -18,6 +18,8 @@ import Question15 from "./questions/Question15.jsx";
 const Questionnaire = () => {
   return (
     <>
+       
+      
       <Question1 />
       <Question2 />
       <Question3 />
@@ -33,6 +35,8 @@ const Questionnaire = () => {
       <Question13 />
       <Question14 />
       <Question15 />
+
+      
     </>
   );
 };

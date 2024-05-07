@@ -66,7 +66,7 @@ const Hero = () => {
             We will individually match you with a therapist{" "}
             <span className="span-green">based on your needs.</span>
           </p>
-          <div className="col-lg-2 ">></div>
+          <div className="col-lg-2 "><i className="fa-solid fa-angle-right"></i></div>
         </div>
       </div>
     </div>

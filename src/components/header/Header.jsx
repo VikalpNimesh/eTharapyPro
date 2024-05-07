@@ -1,6 +1,6 @@
 import "./Header.css";
-import logo from "../../assets/images/logo.png"
-
+import logo from "../../assets/images/etherapylogo.png";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -15,17 +15,19 @@ const Header = () => {
             <h2>for the first month with code JOURNEY</h2>
           </span>
         </div>
-        <div className="close-bar"><i className="fa-solid fa-xmark"></i></div>
+        <div className="close-bar">
+          <i className="fa-solid fa-xmark"></i>
+        </div>
       </div>
       <nav className="navbar navbar-expand-lg bg-body-tertiary p-wrapper  ">
         <div className="container-fluid p-0 ">
           <div className="header-logo-box">
-          <a
-            className="navbar-brand header-logo d-flex  align-items-center "
-            href="#"
-          >
-            <img src={logo} alt="LOGO" />
-          </a>
+            <a
+              className="navbar-brand header-logo d-flex  align-items-center "
+              href="#"
+            >
+              <img src={logo} alt="logo" />
+            </a>
           </div>
           {/* ***********menu-btn ************** */}
           <button
@@ -46,21 +48,19 @@ const Header = () => {
             <div></div>
             <ul className=" nav-links-box navbar-nav me-auto mb-2 mb-lg-0 mx-auto ">
               <li>
-                <h2>About</h2>
+                <h2>
+                  <Link to="/aboutus">About</Link>
+                </h2>
               </li>
-              <li>
-                <h2>Plans</h2>
-              </li>
-              <li>
-                <h2>Blog</h2>
-              </li>
-              <li>
-                <h2>FAQ</h2>
-              </li>
+              <li><h2><Link to="/pricing-page">Plans</Link></h2></li>
+              <li><h2><Link to="/">Blog</Link></h2></li>
+              <li><h2><Link to="/faq">FAQ</Link></h2></li>
             </ul>
             <div className="btn-box    ">
               <button className="sign-btn">Sign in</button>
-              <button className="nav-start-therapy-btn d-none  d-md-block ">Start therapy</button>
+              <button className="nav-start-therapy-btn d-none  d-md-block ">
+              <Link to="/question1">Start therapy</Link>
+              </button>
             </div>
           </div>
         </div>

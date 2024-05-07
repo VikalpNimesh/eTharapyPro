@@ -2,7 +2,7 @@ import "./WhyTherapy.css"
 
 const WhyTherapy = () => {
   return (
-      <div className="why-therapy-main wrapper column container ">
+      <div className="why-therapy-main wrapper column container-fluid  ">
           
           <div className="row m-0 p-0 ">
           <h1 className="" >Why <span className="span-green">Online</span> Therapy?</h1>
