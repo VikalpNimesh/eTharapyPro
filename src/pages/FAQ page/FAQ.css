@@ -52,7 +52,7 @@ line-height: 72px;
   font-size: 20px;
 }
 .faq-questions-box {
-    width: 823px;
+    max-width: 823px;
     margin: auto;
     /* border-top: 1px solid #62cf6e66;    */
 }
@@ -112,7 +112,7 @@ line-height: 72px;
 @media (max-width:738px) {
   
   .faq-questions-box{
-    width: 100%;
+    max-width: 100%;
   }
 
 .faq-questions h1{

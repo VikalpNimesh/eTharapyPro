@@ -26,7 +26,7 @@ const Header = () => {
               className="navbar-brand header-logo d-flex  align-items-center "
               href="#"
             >
-              <img src={logo} alt="logo" />
+              <Link to="/"><img src={logo} alt="logo" /></Link>
             </a>
           </div>
           {/* ***********menu-btn ************** */}
@@ -56,7 +56,7 @@ const Header = () => {
               <li><h2><Link to="/">Blog</Link></h2></li>
               <li><h2><Link to="/faq">FAQ</Link></h2></li>
             </ul>
-            <div className="btn-box    ">
+            <div className="btn-box   mb-3 mb-md-0 ">
               <button className="sign-btn">Sign in</button>
               <button className="nav-start-therapy-btn d-none  d-md-block ">
               <Link to="/question1">Start therapy</Link>

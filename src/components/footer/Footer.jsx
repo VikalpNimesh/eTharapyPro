@@ -1,5 +1,6 @@
 import React from "react";
 import "./Footer.css";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -9,15 +10,15 @@ const Footer = () => {
           <div className="col-6 col-sm-3 p-0 m-0   ">
             <ul>
               <p>Login</p>
-              <p>Start therapy </p>
-              <p>Plans</p>
+              <p><Link to="/question1">Start therapy</Link></p>
+              <p><Link to="/pricing-page">Plans</Link></p>
             </ul>
           </div>
           <div className="col-6 col-sm-3 p-0 m-0   ">
             <ul>
-              <p>Aboutus</p>
-              <p>Blog</p>
-              <p>FAQ</p>
+              <p> <Link to="/aboutus">About</Link></p>
+              <p><Link to="/">Blog</Link></p>
+              <p><Link to="/faq">FAQ</Link></p>
             </ul>
           </div>
           <div className="col-6 col-sm-3 p-0 m-0   ">
@@ -29,7 +30,7 @@ const Footer = () => {
           <div className="col-6 col-sm-3 p-0 m-0   ">
             <ul>
               <p>For counselors</p>
-              <p>Contact</p>
+              <p><Link to="/contact-us">Contact</Link></p>
             </ul>
           </div>
           <div className="col-12 d-flex  justify-content-between align-items-center mt-5 ">
@@ -38,8 +39,8 @@ const Footer = () => {
               <i className="fa-brands fa-facebook"></i>
             </div>
             <div className=" d-flex footer-right  ">
-              <p className=" d-flex  text-wrap  text-md-nowrap">Privacy policy</p>
-              <p className=" d-flex  text-wrap  text-md-nowrap">Term of service</p>
+              <p className=" d-flex  text-wrap  text-md-nowrap"><Link to="/privacy">Privacy policy</Link></p>
+              <p className=" d-flex  text-wrap  text-md-nowrap"><Link to="/t&c">Term of service</Link></p>
             </div>
           </div>
             <span className=" last">
