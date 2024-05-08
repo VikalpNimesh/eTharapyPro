@@ -111,8 +111,15 @@ line-height: 72px;
 
 @media (max-width:738px) {
   
+  .FAQ-main .faq-btn{
+    padding: 0 20px;
+    width: 95%;
+    margin: auto;
+  }
+  
   .faq-questions-box{
     max-width: 100%;
+    /* padding: 0 20px; */
   }
 
 .faq-questions h1{
@@ -134,5 +141,6 @@ text-align: left;
 
   .faq-questions .top{
     height: 444px;
+    margin-bottom: 60px;
   }
 }

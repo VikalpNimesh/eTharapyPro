@@ -33,7 +33,7 @@ const Quotes = () => {
       <div className="quotes-mid-img">
         <img src={pic} alt="pic" />
       </div>
-      <div className="embla__viewport" ref={emblaRef}>
+      <div className="embla__viewport d-none  d-md-block " ref={emblaRef}>
         <div className="embla__container quotes-lower  d-lg-flex gap-4   pb-3 pe-3 ps-3  ">
           <div className="quote-box-1">
             <p>
@@ -54,25 +54,7 @@ const Quotes = () => {
               Anxiety feels like a weight on me every time I try to socialize
             </p>
           </div>
-          <div className="quote-box-1">
-            <p>I just can’t control my anger sometimes.</p>
-          </div>
-          <div className="quote-box-2">
-            <p>
-              Anxiety feels like a weight on me every time I try to socialize
-            </p>
-          </div>
-          <div className="quote-box-1">
-            <p>I just can’t control my anger sometimes.</p>
-          </div>
-          <div className="quote-box-2">
-            <p>
-              Anxiety feels like a weight on me every time I try to socialize
-            </p>
-          </div>
-          <div className="quote-box-1">
-            <p>I just can’t control my anger sometimes.</p>
-          </div>
+          
         </div>
       </div>
       
@@ -99,25 +81,7 @@ const Quotes = () => {
               Anxiety feels like a weight on me every time I try to socialize
             </p>
           </div>
-          <div className="quote-box-1">
-            <p>I just can’t control my anger sometimes.</p>
-          </div>
-          <div className="quote-box-2">
-            <p>
-              Anxiety feels like a weight on me every time I try to socialize
-            </p>
-          </div>
-          <div className="quote-box-1">
-            <p>I just can’t control my anger sometimes.</p>
-          </div>
-          <div className="quote-box-2">
-            <p>
-              Anxiety feels like a weight on me every time I try to socialize
-            </p>
-          </div>
-          <div className="quote-box-1">
-            <p>I just can’t control my anger sometimes.</p>
-          </div>
+          
         </div>
       </div>
 

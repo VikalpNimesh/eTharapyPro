@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "./Questionaire.css";
+import { ProgressBar, QuestionHeading } from "../Questionaire";
 const Question10 = () => {
 
   const areasOfLife = ["Single", "Dating", "Married", "Domestic Partnership","Open Relationship", "Separated", "Not Sure", "Divorced","It's complicated", "Polyamorous", "Widowed", "Other"]
@@ -17,18 +18,9 @@ const Question10 = () => {
   return (
     <div className="row questionnaire-main flex wrapper">
       
-      <div className="col-12" style={{ textAlign: 'center' }}>
-      {[...Array(8)].map((_, index) => (
-        <i key={index} className="fa fa-window-minimize progress-custom"></i>
-      ))}
-    </div>
-      <div className="col-sm-12 column p-0  m-0 ">
-        <div className="step-title-wrap ">
-          <h3 className=" quest-number text-center ">Question 10 of 15</h3>
-          <h4 className="h32 step-title text-center ">
-          What is your relationship status? </h4>
-        </div>
-      </div>
+     <ProgressBar />
+      <QuestionHeading num={10 } question={" What is your relationship status?"} />
+      
 
        <div
         className="  rating-icon-box gap-3 p-0 m-0 "

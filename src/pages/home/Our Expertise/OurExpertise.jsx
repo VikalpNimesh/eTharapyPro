@@ -5,10 +5,10 @@ const OurExpertise = () => {
   return (
     <div className="expertise-main wrapper">
       <h1>Our Expertise</h1>
-      <div className="show-grid">
-        <FlexboxGrid className="expertise-box" justify="space-around">
+      <div className="show-grid ">
+        <FlexboxGrid className="expertise-box p-2 p-lg-0 " justify="space-around">
           <FlexboxGrid.Item
-            className="exprtise-item"
+            className="exprtise-item "
             as={Col}
             colspan={24}
             md={6}

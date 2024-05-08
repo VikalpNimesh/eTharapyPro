@@ -15,7 +15,39 @@ import Question13 from "./questions/Question13.jsx";
 import Question14 from "./questions/Question14.jsx"; 
 import Question15 from "./questions/Question15.jsx"; 
 
+
+export const ProgressBar = () => {
+  return (
+<div className="col-12" style={{ textAlign: "center" }}>
+        {[...Array(8)].map((_, index) => (
+          <i key={index} className="fa fa-window-minimize progress-custom"></i>
+        ))}
+      </div>
+  )
+}
+export const QuestionHeading = ({ num , question}) => {
+  return (
+    <div className="col-sm-12 column p-0  m-0 ">
+    <div className="step-title-wrap ">
+      <h3 className=" quest-number text-center ">Question {num} of 15</h3>
+      <h4 className="h32 step-title text-center ">
+        {question}
+      </h4>
+    </div>
+  </div>
+  )
+}
+
+
 const Questionnaire = () => {
+
+
+
+  const QuestionResult = () => {
+    
+
+  } 
+
   return (
     <> 
       

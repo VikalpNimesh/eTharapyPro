@@ -4,7 +4,7 @@ import CtaBanner from "./cta banner/CtaBanner";
 
 const FAQ = () => {
   return (
-    <div className="faq-questions ">
+    <div className="faq-questions FAQ-main ">
       <div className="top column">
         <h1>
           Frequently <span className="span-green">Asked</span> Questions{" "}

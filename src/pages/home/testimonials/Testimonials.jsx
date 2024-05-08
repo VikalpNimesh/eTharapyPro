@@ -34,7 +34,7 @@ const Testimonials = () => {
             <span className="span-green">eTherapyPro</span>
           </h1>
 
-          <div className="icons-box">
+          <div className="icons-box d-none  d-md-flex ">
             <div className="next">
               {/* <i className="fa-solid fa-angle-right"></i> */}
               <PrevButton
@@ -72,7 +72,21 @@ const Testimonials = () => {
             </div>
           </div>
         </section>
-
+        <div className="icons-box  d-flex  d-md-none pt-3  justify-content-start  ">
+            <div className="next">
+              {/* <i className="fa-solid fa-angle-right"></i> */}
+              <PrevButton
+                onClick={onPrevButtonClick}
+                disabled={prevBtnDisabled}
+              />
+            </div>
+            <div className="prev">
+              <NextButton
+                onClick={onNextButtonClick}
+                disabled={nextBtnDisabled}
+              />
+            </div>
+          </div>
         {/* <div className="testimonial-section">
           <div className="testimonial-boxes">
             <p>

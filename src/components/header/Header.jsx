@@ -22,12 +22,12 @@ const Header = () => {
       <nav className="navbar navbar-expand-lg bg-body-tertiary p-wrapper  ">
         <div className="container-fluid p-0 ">
           <div className="header-logo-box">
-            <a
+            <Link
               className="navbar-brand header-logo d-flex  align-items-center "
-              href="#"
+              to="/"
             >
-              <Link to="/"><img src={logo} alt="logo" /></Link>
-            </a>
+             <img src={logo} alt="logo" />
+            </Link>
           </div>
           {/* ***********menu-btn ************** */}
           <button

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "./Questionaire.css";
+import { ProgressBar, QuestionHeading } from "../Questionaire";
 const Question5 = () => {
   const areasOfLife1 = ["Yes", "No"];
 
@@ -16,20 +17,9 @@ const Question5 = () => {
 
   return (
     <div className="row questionnaire-main flex wrapper">
-      <div className="col-12" style={{ textAlign: "center" }}>
-        {[...Array(8)].map((_, index) => (
-          <i key={index} className="fa fa-window-minimize progress-custom"></i>
-        ))}
-      </div>
-      <div className="col-sm-12 column p-0  m-0 ">
-        <div className="step-title-wrap ">
-          <h3 className=" quest-number text-center ">Question 5 of 15</h3>
-          <h4 className="h32 step-title text-center ">
-            Have you recently had any thoughts of self-harm or suicide?
-          </h4>
-        </div>
-      </div>
-
+      <ProgressBar />
+      <QuestionHeading num={ 5} question={" Have you recently had any thoughts of self-harm or suicide?"} />
+     
       <div className="  rating-icon-box gap-3 p-0 m-0 ">
         <div className="d-md-flex justify-content-between gap-3 p-0 m-0 ">
           <ProblemRow problems={areasOfLife1} />

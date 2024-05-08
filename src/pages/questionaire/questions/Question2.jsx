@@ -1,14 +1,13 @@
 import { Link } from "react-router-dom";
 import "./Questionaire.css";
+import { ProgressBar, QuestionHeading } from "../Questionaire";
 import { useState } from "react";
 
 const Question2 = () => {
   const [selectedOptions, setSelectedOptions] = useState([]);
   const [otherText, setOtherText] = useState("");
   const [IsOtherIputActive, setIsOtherIputActive] = useState(false);
-  // console.log(selectedOptions);
-  // console.log(otherText);
-  // console.log(IsOtherIputActive);
+
   const areasOfLife1 = [
     "Eating habits",
     "Finances",
@@ -20,27 +19,19 @@ const Question2 = () => {
     "Relationships",
     "Social Life",
     "Work-life balance",
-    "Other"
-  ]; 
-
-  // if (selectedOptions.includes("Other")) {
-  //   setSelectedOptions([...selectedOptions, otherText]);
-  // }
+    "Other",
+  ];
 
   const optionSelected = (problem) => {
     if (!selectedOptions.includes(problem)) {
       setSelectedOptions([...selectedOptions, problem]);
-        console.log(selectedOptions);
-
-      // if (selectedOptions.includes("Other")) {
-      setIsOtherIputActive(true);
-      // }
+      if (problem == "Other") {
+        setIsOtherIputActive(true);
+      }
     } else {
       if (selectedOptions.includes("Other")) {
-        console.log(selectedOptions.includes("Other"));
         setIsOtherIputActive(false);
       }
-
       setSelectedOptions(
         selectedOptions.filter((option) => option !== problem)
       );
@@ -79,20 +70,12 @@ const Question2 = () => {
 
   return (
     <div className="row questionnaire-main flex wrapper">
-      <div className="col-12" style={{ textAlign: "center" }}>
-        {[...Array(8)].map((_, index) => (
-          <i key={index} className="fa fa-window-minimize progress-custom"></i>
-        ))}
-      </div>
+      <ProgressBar />
 
-      <div className="col-sm-12 column p-0 m-0">
-        <div className="step-title-wrap">
-          <h3 className="quest-number text-center">Question 2 of 15</h3>
-          <h4 className="h32 step-title text-center">
-            Please share what areas of life you are hoping to improve
-          </h4>
-        </div>
-      </div>
+      <QuestionHeading
+        num={2}
+        question={"Please share what areas of life you are hoping to improve"}
+      />
 
       <div className="rating-icon-box gap-3 p-0 m-0">
         <ProblemRow problems={areasOfLife1} />

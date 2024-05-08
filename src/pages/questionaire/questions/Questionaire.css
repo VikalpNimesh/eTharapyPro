@@ -174,4 +174,8 @@ max-width: 1070px;
   .col-4-custum{
     width: 100%;
   }
+
+  .next-question-btn{
+    padding: 12px 18px;
+  }
 }

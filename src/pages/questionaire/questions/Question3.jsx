@@ -1,5 +1,6 @@
 import React from "react";
 import "./Questionaire.css";
+import { ProgressBar, QuestionHeading } from "../Questionaire";
 import { Link } from "react-router-dom";
 
 const EmotionalStruggles = [
@@ -47,19 +48,9 @@ const ProblemRow = ({ problems }) => (
 const Question3 = () => {
   return (
     <div className="row questionnaire-main flex wrapper  ">
-      <div className="col-12" style={{ textAlign: "center" }}>
-        {[...Array(8)].map((_, index) => (
-          <i key={index} className="fa fa-window-minimize progress-custom"></i>
-        ))}
-      </div>
-      <div className="col-sm-12 column p-0  m-0 ">
-        <div className="step-title-wrap ">
-          <h3 className=" quest-number text-center ">Question 3 of 15</h3>
-          <h4 className="h32 step-title text-center ">
-            Select any of these challenges you are facing
-          </h4>
-        </div>
-      </div>
+      <ProgressBar />
+      <QuestionHeading num={ 3} question={"Select any of these challenges you are facing "} />
+      
 
       <div className=" rating-icon-box gap-3 p-0 m-0 ">
         <ProblemRow problems={EmotionalStruggles} />

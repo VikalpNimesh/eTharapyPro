@@ -131,3 +131,10 @@
 height: 48px;
    }
 }
+
+@media (max-width: 768px) {
+
+.testimonial-top{
+padding-bottom: 20px ;
+}
+}

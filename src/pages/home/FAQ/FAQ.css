@@ -78,4 +78,8 @@ line-height: 21.6px;
 text-align: left;
 
   }
+
+  .faq-btn {
+    margin-bottom: 0px !important;
+  }
 }
