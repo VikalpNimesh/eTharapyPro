@@ -17,8 +17,7 @@ import Question15 from "./questions/Question15.jsx";
 
 const Questionnaire = () => {
   return (
-    <>
-       
+    <> 
       
       <Question1 />
       <Question2 />
@@ -36,7 +35,6 @@ const Questionnaire = () => {
       <Question14 />
       <Question15 />
 
-      
     </>
   );
 };

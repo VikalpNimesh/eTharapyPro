@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./RegistrationForm.css";
 const RegistrationForm = () => {
   return (
@@ -91,7 +92,7 @@ const RegistrationForm = () => {
         <div className="laststep-button ">
           <div className="row p-0  m-0 ">
             <div className="col-6 d-flex  align-items-center ">
-              <button className="p16 back-btn linkback">Back</button>
+              <button className="p16 back-btn linkback"><Link to="/question15">Back</Link></button>
             </div>
             <div className="col-6 text-right">
               <button

@@ -19,7 +19,6 @@ const EmotionalStruggles = [
   "Parenting",
   "Self-esteem",
   "Work",
-  "up",
   "Spirituality",
   "Stress",
   "Weight",
@@ -31,16 +30,13 @@ const EmotionalStruggles = [
   "OCD",
   "Procrastination",
   "Sexuality",
+  "Other"
 ];
-// const MentalChallenges = ["Depression", "Fatigue", "Trauma/PTSD", "Isomnia", "Stress", "Motivation", "Parenting","Stress", "Work", "Other"];
-// const PersonalReflections = ["Self-esteem", "Work", "up", "Spirituality", "Stress", "Weight", "Anxiety",];
-// const PsychologicalObstacles = ["Eating", "Disorder", "Grief/Loss", "Intimacy", "OCD", "Procrastination", "Sexuality"];
-// const LifePressures = ["Stress", "Work", "Other"];
 
 const ProblemRow = ({ problems }) => (
-  <div className="row g-3 border-black">
+  <div className=" Q3  ">
     {problems?.map((problem, index) => (
-      <div className="rating-icon col-3 border " key={index}>
+      <div className="rating-icon col-3-custom" key={index}>
         <i className="fa-regular fa-square"></i>
         <p className="p16">{problem}</p>
       </div>
@@ -50,7 +46,7 @@ const ProblemRow = ({ problems }) => (
 
 const Question3 = () => {
   return (
-    <div className="row questionnaire-main flex wrapper">
+    <div className="row questionnaire-main flex wrapper  ">
       <div className="col-12" style={{ textAlign: "center" }}>
         {[...Array(8)].map((_, index) => (
           <i key={index} className="fa fa-window-minimize progress-custom"></i>
@@ -67,12 +63,8 @@ const Question3 = () => {
 
       <div className=" rating-icon-box gap-3 p-0 m-0 ">
         <ProblemRow problems={EmotionalStruggles} />
-        {/* <ProblemRow problems={MentalChallenges} /> */}
-        {/* <ProblemRow problems={PersonalReflections} /> */}
-        {/* <ProblemRow problems={PsychologicalObstacles} /> */}
-        {/* <ProblemRow problems={LifePressures} /> */}
 
-        <div className=" d-flex justify-content-between  align-items-center pt-3">
+        <div className=" d-flex justify-content-between  align-items-center pt-3 ">
           <p className="p16 back-btn">
             <Link to="/question2">Back</Link>
           </p>

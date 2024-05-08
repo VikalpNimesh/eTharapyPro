@@ -2,20 +2,17 @@ import { Link } from "react-router-dom";
 import "./Questionaire.css";
 const Question10 = () => {
 
-  const areasOfLife1 = ["Single", "Dating", "Married", "Domestic Partnership"]
-  const areasOfLife2 = ["Open Relationship", "Separated", "Not Sure", "Divorced"]
-  const areasOfLife3 = ["It's complicated", "Polyamorous", "Widowed", "Other"]
+  const areasOfLife = ["Single", "Dating", "Married", "Domestic Partnership","Open Relationship", "Separated", "Not Sure", "Divorced","It's complicated", "Polyamorous", "Widowed", "Other"]
+
   const ProblemRow = ({ problems }) => (
-    <div className="row col-12 col-md-4  flex-column gap-3 pb-3  p-md-0 m-0 ">
-      {problems.map((problem, index) => (
-        <div className="col-12 m-0 p-0 " key={index}>
-          <div className="rating-icon column">
-            <i className="fa-regular fa-square"></i>
-            <p className="p16">{problem}</p>
-          </div>
+    <div className=" Q3  ">
+      {problems?.map((problem, index) => (
+        <div className="rating-icon col-4-custum" key={index}>
+          <i className="fa-regular fa-square"></i>
+          <p className="p16">{problem}</p>
         </div>
       ))}
-    </div> 
+    </div>
   );
   return (
     <div className="row questionnaire-main flex wrapper">
@@ -38,9 +35,8 @@ const Question10 = () => {
         
       >
         <div className="  d-md-flex  justify-content-between gap-3  p-0 m-0   ">
-          <ProblemRow problems={areasOfLife1} />
-          <ProblemRow problems={areasOfLife2} />
-          <ProblemRow problems={areasOfLife3} />
+          <ProblemRow problems={areasOfLife} />
+        
         </div>
      
       <div className=" d-flex justify-content-between  align-items-center pt-3">

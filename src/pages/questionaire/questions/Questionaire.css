@@ -42,12 +42,28 @@ height: auto;
   /* width: 100%; */
   height: auto;
   display: flex !important;
-  gap: 18px;
+  gap: 1.125rem;
 }
 
+.col-6-custom {
+  width: 49%;
+}
+.Q3{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  /* justify-content: space-between; */
+}
+
+.col-3-custom{
+  width: 23%;
+}
+
+.col-4-custum{
+  width: 32%;
+}
 .questionnaire-main .rating-icon-box{
-/* width: 95%; */
-max-width: 1070px;
+max-width: 1070px; 
 
 }
 
@@ -55,6 +71,27 @@ max-width: 1070px;
   background: #43b95d;
   color: white;
   cursor: pointer;
+}
+
+
+.rating-icon input{
+  border: 1px solid #dadada;
+  border-radius: 20px;
+  width: 100%;
+  height: auto;
+  outline: none;
+  border: none;
+}
+.hover-none{
+  background: white !important;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.check-green{
+  background: #43b95d;
+  color: white;
 }
 
 .questionnaire-main .rating-icon i {
@@ -65,6 +102,7 @@ max-width: 1070px;
   border: none;
   padding: 0;
 }
+
 
 .back-btn {
   color: #023856 !important;
@@ -85,7 +123,7 @@ max-width: 1070px;
 }
 
 .rating-icon-box select,
-.rating-icon-box textarea {
+.rating-icon-box textarea  {
   margin: auto;
   background: #fff;
   height: 60px;
@@ -105,8 +143,15 @@ max-width: 1070px;
   outline: none;
 }
 
+
 .rating-icon-box textarea {
   height: 200px;
+}
+@media (max-width: 888px) {
+  
+  .col-6-custom {
+    width: 48%;
+  }
 }
 @media (max-width: 768px) {
   .rating-icon-box select {
@@ -118,5 +163,15 @@ max-width: 1070px;
   }
   .step-title.h32 {
     font-size: 24px;
+  }
+
+  .col-3-custom{
+    width: 100%;
+  }
+  .col-6-custom {
+    width: 100%;
+  }
+  .col-4-custum{
+    width: 100%;
   }
 }

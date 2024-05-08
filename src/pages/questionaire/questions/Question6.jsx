@@ -3,27 +3,21 @@ import "./Questionaire.css";
 const Question6 = () => {
   const areasOfLife1 = [
     "Yes",
- 
-    
-  ];
-  const areasOfLife2 = [
     "No",
-  
     
   ];
+ 
 
   const ProblemRow = ({ problems }) => (
-    <div className="row col-12 col-md-6  flex-column gap-3 pb-3  p-md-0 m-0 gx-0 ">
+    <div className=" d-flex flex-wrap justify-content-between w-100   gap-3 p-md-0 m-0 ">
       {problems.map((problem, index) => (
-        <div className="col-12 m-0  p-0 " key={index}>
-          <div className="rating-icon column">
-            <i className="fa-regular fa-square"></i>
-            <p className="p16">{problem}</p>
-          </div>
+        <div className="rating-icon col-6-custom " key={index}>
+          <i className="fa-regular fa-square"></i>
+          <p className="p16">{problem}</p>
         </div>
       ))}
     </div>
-    );
+  );
     
   return (
     <div className="row questionnaire-main flex wrapper">
@@ -48,7 +42,7 @@ const Question6 = () => {
       >
         <div className="d-md-flex justify-content-between gap-3 p-0 m-0 ">
           <ProblemRow problems={areasOfLife1} />
-          <ProblemRow problems={areasOfLife2} />
+          {/* <ProblemRow problems={areasOfLife2} /> */}
         </div>
       <div className=" d-flex justify-content-between  align-items-center pt-3">
           <p className="p16 back-btn"><Link to="/question5">Back</Link></p>
