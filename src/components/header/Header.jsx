@@ -1,11 +1,18 @@
 import "./Header.css";
 import logo from "../../assets/images/etherapylogo.png";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const Header = () => {
+const [IsheaderTopOpen, setIsheaderTopOpen] = useState(true)
+
+  const closebtn = () => {
+    setIsheaderTopOpen(false)
+}
+
   return (
     <div className="header-main ">
-      <div className="header-close">
+      {IsheaderTopOpen && <div className="header-close">
         <div></div>
         <div>
           <span>
@@ -15,10 +22,10 @@ const Header = () => {
             <h2>for the first month with code JOURNEY</h2>
           </span>
         </div>
-        <div className="close-bar">
+        <div className="close-bar" onClick={closebtn}>
           <i className="fa-solid fa-xmark"></i>
         </div>
-      </div>
+      </div>}
       <nav className="navbar navbar-expand-lg bg-body-tertiary p-wrapper  ">
         <div className="container-fluid p-0 ">
           <div className="header-logo-box">

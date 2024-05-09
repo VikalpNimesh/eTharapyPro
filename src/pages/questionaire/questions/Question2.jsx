@@ -4,10 +4,6 @@ import { ProgressBar, QuestionHeading } from "../Questionaire";
 import { useState } from "react";
 
 const Question2 = () => {
-  const [selectedOptions, setSelectedOptions] = useState([]);
-  const [otherText, setOtherText] = useState("");
-  const [IsOtherIputActive, setIsOtherIputActive] = useState(false);
-
   const areasOfLife1 = [
     "Eating habits",
     "Finances",
@@ -21,6 +17,9 @@ const Question2 = () => {
     "Work-life balance",
     "Other",
   ];
+  const [selectedOptions, setSelectedOptions] = useState([]);
+  const [otherText, setOtherText] = useState("");
+  const [IsOtherIputActive, setIsOtherIputActive] = useState(false);
 
   const optionSelected = (problem) => {
     if (!selectedOptions.includes(problem)) {
@@ -46,7 +45,7 @@ const Question2 = () => {
     console.log(selectedOptions);
   };
   const ProblemRow = ({ problems }) => (
-    <div className="d-flex flex-wrap justify-content-between  gap-3 p-md-0 m-0">
+    <div className=" Q3">
       {problems.map((problem, index) => (
         <div
           className={`rating-icon col-6-custom ${
@@ -58,18 +57,24 @@ const Question2 = () => {
           <i
             className={
               selectedOptions.includes(problem)
-                ? "fa-regular fa-square-check "
+                ? "fa-regular fa-square-check text-light "
                 : "fa-regular fa-square"
             }
           ></i>
-          <p className="p16">{problem}</p>
+          <p
+            className={
+              selectedOptions.includes(problem) ? " p16 text-light " : " p16"
+            }
+          >
+            {problem}
+          </p>
         </div>
       ))}
     </div>
   );
 
   return (
-    <div className="row questionnaire-main flex wrapper">
+    <div className="row questionnaire-main flex wrapper ">
       <ProgressBar />
 
       <QuestionHeading
@@ -81,7 +86,7 @@ const Question2 = () => {
         <ProblemRow problems={areasOfLife1} />
         {IsOtherIputActive && (
           <div className="mx-auto col-12">
-            <div className="rating-icon hover-none">
+            <div className="rating-icon hover-none  ">
               <input
                 type="text"
                 placeholder="Other"

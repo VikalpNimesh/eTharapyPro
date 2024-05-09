@@ -24,6 +24,7 @@
 .close-bar i{
   color: var(--light-green);
   font-size: 30px;
+  cursor: pointer;
 }
 
 /* ************************header-box*************** */

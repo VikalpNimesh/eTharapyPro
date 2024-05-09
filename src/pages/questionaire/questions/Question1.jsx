@@ -3,9 +3,10 @@ import "./Questionaire.css";
 import { ProgressBar, QuestionHeading } from "../Questionaire";
 import { useState } from "react";
 const Question1 = () => {
+  const feelings = ["Awful", "Not Great", "Neutral", "Good", "Great"];
+
   const [selectedOptions, setSelectedOptions] = useState([]);
   console.log(selectedOptions);
-  const feelings = ["Awful", "Not Great", "Neutral", "Good", "Great"];
 
   const optionSelected = (feeling) => {
     if (!selectedOptions.includes(feeling)) {
@@ -16,15 +17,17 @@ const Question1 = () => {
   return (
     <div className="row questionnaire-main flex wrapper">
       <ProgressBar />
-    
+
       <QuestionHeading num={1} question={"How are you feeling today?"} />
-     
 
       <div className="rating-icon-box  gap-3 p-0  m-0 ">
         {feelings.map((feeling, index) => (
           <div
             key={index}
-            className="rating-icon column"
+           
+            className={`rating-icon  ${
+              selectedOptions.includes(feeling) ? "check-green" : ""
+            }`}
             onClick={() => optionSelected(feeling)}
           >
             <i className="fa-regular fa-face-frown-open"></i>

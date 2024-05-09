@@ -1,7 +1,16 @@
 import { Link } from "react-router-dom";
 import "./Questionaire.css";
 import { ProgressBar, QuestionHeading } from "../Questionaire";
+import { useState } from "react";
 const Question8 = () => {
+  const [selectedOptions, setSelectedOptions] = useState("");
+
+  console.log(selectedOptions);
+
+
+  const handleSelectChange = (event) => {
+    setSelectedOptions(event.target.value);
+  };
   return (
     <div className="row questionnaire-main flex wrapper">
       <ProgressBar />
@@ -10,8 +19,9 @@ const Question8 = () => {
 
       <div className="  rating-icon-box gap-3 p-0 m-0 ">
         <div className="d-md-flex justify-content-between gap-3 p-0 m-0 mx-auto w-100  ">
-          <select name="country" className=" custom-select w-50 ">
-            <option selected disabled value="default">
+          <select name="country" className=" custom-select w-50 " value={selectedOptions}
+            onChange={handleSelectChange}>
+            <option  disabled value="default">
               Select Country
             </option>
             <option value="Canada">Canada</option>

@@ -1,15 +1,43 @@
 import { Link } from "react-router-dom";
 import "./Questionaire.css";
 import { ProgressBar, QuestionHeading } from "../Questionaire";
+import { useState } from "react";
 const Question5 = () => {
   const areasOfLife1 = ["Yes", "No"];
 
+  const [selectedOptions, setSelectedOptions] = useState([]);
+  console.log(selectedOptions);
+
+  const optionSelected = (feeling) => {
+    if (!selectedOptions.includes(feeling)) {
+      setSelectedOptions([feeling]);
+    }
+  };
+
   const ProblemRow = ({ problems }) => (
-    <div className=" d-flex flex-wrap justify-content-between w-100   gap-3 p-md-0 m-0 ">
+    <div className=" Q3 ">
       {problems.map((problem, index) => (
-        <div className="rating-icon col-6-custom " key={index}>
-          <i className="fa-regular fa-square"></i>
-          <p className="p16">{problem}</p>
+        <div
+          className={`rating-icon col-6-custom ${
+            selectedOptions.includes(problem) ? "check-green" : ""
+          }`}
+          key={index}
+          onClick={() => optionSelected(problem)}
+        >
+          <i
+            className={
+              selectedOptions.includes(problem)
+                ? "fa-regular fa-square-check text-light "
+                : "fa-regular fa-square"
+            }
+          ></i>
+          <p
+            className={
+              selectedOptions.includes(problem) ? " p16 text-light " : " p16"
+            }
+          >
+            {problem}
+          </p>
         </div>
       ))}
     </div>

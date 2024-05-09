@@ -41,13 +41,6 @@ export const QuestionHeading = ({ num , question}) => {
 
 const Questionnaire = () => {
 
-
-
-  const QuestionResult = () => {
-    
-
-  } 
-
   return (
     <> 
       

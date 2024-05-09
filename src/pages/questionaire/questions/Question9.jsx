@@ -1,7 +1,17 @@
 import { Link } from "react-router-dom";
 import "./Questionaire.css";
 import { ProgressBar, QuestionHeading } from "../Questionaire";
+import { useState } from "react";
 const Question9 = () => {
+
+  const [selectedOptions, setSelectedOptions] = useState("");
+
+  console.log(selectedOptions);
+
+
+  const handleSelectChange = (event) => {
+    setSelectedOptions(event.target.value);
+  };
   return (
     <div className="row questionnaire-main flex wrapper">
       
@@ -15,9 +25,10 @@ const Question9 = () => {
         <div className="d-md-flex justify-content-between gap-3 p-0 m-0 mx-auto w-100  ">
         <select
               name="state"
-              className=" custom-select w-50 "
+              className=" custom-select w-50 " value={selectedOptions}
+            onChange={handleSelectChange}
             >
-              <option selected disabled value="default">
+              <option  disabled value="default">
                 Select state
               </option>
               <option value="uttrakhand">uttrakhand</option>

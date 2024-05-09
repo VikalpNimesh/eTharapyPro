@@ -52,14 +52,15 @@ height: auto;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  /* justify-content: space-between; */
+  justify-content: space-between;
+  width: 100%;
 }
 
 .col-3-custom{
   width: 23%;
 }
 
-.col-4-custum{
+.col-4-custom{
   width: 32%;
 }
 .questionnaire-main .rating-icon-box{
@@ -67,7 +68,7 @@ max-width: 1070px;
 
 }
 
-.questionnaire-main .rating-icon:hover ,.questionnaire-main .rating-icon:focus  {
+.questionnaire-main .rating-icon:hover  {
   background: #43b95d;
   color: white;
   cursor: pointer;
@@ -95,12 +96,19 @@ max-width: 1070px;
 }
 
 .questionnaire-main .rating-icon i {
-  font-size: 18px; /* Adjust font size */
+  font-size: 20px; 
+   color:  #023856;
+   border-radius: 6px !important;
 }
 
 .questionnaire-main .rating-icon p {
   border: none;
   padding: 0;
+  color: #023856;
+}
+
+.questionnaire-main .rating-icon:hover {
+  color: white;
 }
 
 

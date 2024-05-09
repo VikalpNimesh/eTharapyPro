@@ -10,7 +10,7 @@ const Question6 = () => {
  
 
   const ProblemRow = ({ problems }) => (
-    <div className=" d-flex flex-wrap justify-content-between w-100   gap-3 p-md-0 m-0 ">
+    <div className=" Q3">
       {problems.map((problem, index) => (
         <div className="rating-icon col-6-custom " key={index}>
           <i className="fa-regular fa-square"></i>

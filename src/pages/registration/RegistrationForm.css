@@ -6,6 +6,10 @@
   padding-top: 8.75rem;
   padding-bottom: 8.75rem;
   padding: 4.5rem 0;
+  background-image: url("/src/assets/images/questionaire/backRegister.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* height: auto; */
 }
 
 .formresgiter {
@@ -38,9 +42,10 @@
 /* *************************form************ */
 
 .register-main form div {
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 10px;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* padding-bottom: 10px; */
+  /* padding: 10px; */
 }
 
 .register-main label {
@@ -59,6 +64,7 @@
   border: 1px solid #ebebff;
   outline: none;
   font-size: 16px;
+  color: #023856
 }
 
 .register-main [ placeholder ]{
@@ -68,7 +74,7 @@
 
 .register-main .form-control:focus {
   color: #023856;
-  opacity: 40%;
+  /* opacity: 40%; */
   outline: none;
   border: none;
 }
@@ -80,10 +86,20 @@
 }
 
 .lets-begin-btn {
-  background: #ebebff;
-  color: #a3a3c2;
+  /* background: #ebebff; */
+  /* color: #a3a3c2; */
 }
 
+.forgot-password{
+
+  /* font-family: Gilmer; */
+font-size: 12px;
+font-weight: 600;
+line-height: 14.4px;
+text-align: right;
+  color: #62CF6E;
+  text-decoration: underline;
+}
 @media (max-width: 768px) {
   .formresgiter {
     padding: 0;

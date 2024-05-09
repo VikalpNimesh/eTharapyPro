@@ -18,6 +18,7 @@ import RegistrationForm from "./pages/registration/RegistrationForm";
 import PaymentDetailsForm from "./pages/PaymentDetailPage/PaymentDetailsForm";
 import PricingPage from "./pages/pricing page/PricingPage";
 import { Question1, Question10, Question11, Question12, Question13, Question14, Question15, Question2, Question3, Question4, Question5, Question6, Question7, Question8, Question9, } from "./pages/questionaire/index.js";
+import Profile from "./pages/user profile/Profile.jsx";
 
 
 
@@ -26,9 +27,10 @@ function App() {
   return (
     <CustomProvider theme="light">
       <BrowserRouter basename="/">
-      <Header />
+      {/* <Header /> */}
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/profile" element={<Profile />} />
           <Route path="/pricing-page" element={<PricingPage />} />
           <Route path="/payment-details-form" element={<PaymentDetailsForm />} />
           <Route path="/register" element={<RegistrationForm />} />
@@ -56,7 +58,7 @@ function App() {
           <Route path="/question14" element={<Question14 />} />
           <Route path="/question15" element={<Question15 />} />
         </Routes>
-      <Footer />
+      {/* <Footer /> */}
       </BrowserRouter>
     </CustomProvider>
   );
