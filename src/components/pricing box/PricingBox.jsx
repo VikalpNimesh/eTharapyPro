@@ -4,8 +4,8 @@ import Button from './button/Button';
 
 function PricingBox() {
   return (
-    <div className="price-box-outer">
-      <h5 >Save $60 on your first month</h5>
+    // <div className="price-box-outer">
+    //   <h5 >Save $60 on your first month</h5>
       <div className="price-box bestplan">
         <div className="pack-title">
           <h3 className=''>Monthly</h3>
@@ -33,7 +33,7 @@ function PricingBox() {
           </ul>
         </div>
       </div>
-    </div>
+    // </div>
   );
 }
 

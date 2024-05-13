@@ -5,14 +5,16 @@ import logo from "../../../assets/images/etherapylogo.png";
 
 const SideBar = () => {
   return (
-    <div className=" sidebar-main user-wrapper">
-      <div className="header-logo-box">
+    <div className="offcanvas offcanvas-start " data-bs-scroll="true" data-bs-backdrop="false" tabIndex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+      <div className=" sidebar-main user-wrapper">
+        <div className="header-logo-box flex justify-content-between  w-100 ">
         <Link
           className="navbar-brand header-logo d-flex  align-items-center "
           to="/"
         >
           <img src={logo} alt="logo" />
         </Link>
+        <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
 
       <div>
@@ -20,13 +22,13 @@ const SideBar = () => {
           <li  className=" d-flex gap-3  align-items-center  ">
               <i className="fa-regular fa-id-badge"></i>
             <h2>
-              <Link to="/aboutus">Subscription</Link>
+              <Link to="/profile/message">Subscription</Link>
             </h2>
           </li>
           <li  className=" d-flex gap-3  align-items-center  ">
             <i className="fa-regular fa-message"></i>
             <h2>
-              <Link to="/pricing-page">Messages</Link>
+              <Link to="/profile/message">Messages</Link>
             </h2>
           </li>
           <li  className=" d-flex gap-3  align-items-center  ">
@@ -44,7 +46,7 @@ const SideBar = () => {
           <li  className=" d-flex gap-3  align-items-center  ">
             <i className="fa-regular fa-user"></i>
             <h2>
-              <Link to="/faq">Account Settings</Link>
+              <Link to="/">Account Settings</Link>
             </h2>
           </li>
           <li  className=" d-flex gap-3  align-items-center  ">
@@ -71,6 +73,9 @@ const SideBar = () => {
         </div>
       </div>
     </div>
+    </div>
+    
+    
   );
 };
 

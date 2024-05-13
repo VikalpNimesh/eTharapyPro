@@ -27,20 +27,20 @@ function App() {
   return (
     <CustomProvider theme="light">
       <BrowserRouter basename="/">
-      {/* <Header /> */}
+      <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/profile" element={<Profile />} />
+          <Route path="/profile/*" element={<Profile />} />
           <Route path="/pricing-page" element={<PricingPage />} />
           <Route path="/payment-details-form" element={<PaymentDetailsForm />} />
           <Route path="/register" element={<RegistrationForm />} />
           <Route path="/aboutus" element={<AboutUs />} />
           <Route path="/landing-page" element={<LandingPage />} />
           <Route path="/faq" element={<FAQ />} />
-          {/* <Route path="/privacy" element={<PrivacyPolicy />} /> */}
           <Route path="/t&c" element={<TermAndService />} />
           <Route path="/article" element={<Article />} />
           <Route path="/contact-us" element={<ContactUs />} />
+          {/* <Route path="/privacy" element={<PrivacyPolicy />} /> */}
           <Route path="/questionaire" element={<Questionnaire />} />
           <Route path="/question1" element={<Question1 />} />
           <Route path="/question2" element={<Question2 />} />
@@ -58,7 +58,7 @@ function App() {
           <Route path="/question14" element={<Question14 />} />
           <Route path="/question15" element={<Question15 />} />
         </Routes>
-      {/* <Footer /> */}
+      <Footer />
       </BrowserRouter>
     </CustomProvider>
   );

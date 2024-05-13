@@ -1,5 +1,6 @@
 import "./Hero.css";
 import right from "../../../assets/images/hero-right.png";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -15,7 +16,7 @@ const Hero = () => {
             guidance.
           </p>
           <div className="hero-btn-box d-none d-sm-flex ">
-            <button className="start-therapy-btn">Start therapy</button>
+<Link to="/profile/"><button  className="start-therapy-btn">Start therapy</button></Link>
 
             <p className="price-content">
               From $5 <span>/ 3 days</span>

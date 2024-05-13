@@ -1,0 +1,122 @@
+.message-main{
+    padding-bottom: 0px !important;
+
+}
+.message-main {
+  height: 92vh;
+  background-image: url(../../../../assets/images/questionaire/backRegister.png);
+  background: contain;
+}
+.message-heading .right {
+  max-width: 295px;
+  gap: 8px;
+}
+.message-heading .right p {
+  /* //styleName: App/C1-14-medium; */
+  /* font-family: Gilmer; */
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  text-align: left;
+  color: #023856;
+  padding: 15px 24px;
+  background-color: white;
+  border-radius: 16px;
+}
+.message-heading .right .fa-video {
+  width: 3.5rem;
+  height: 48px;
+  font-size: 17px;
+  color: white;
+  border-radius: 12px;
+  padding: 24px;
+  background-color: #023856;
+}
+
+/* **************************************** */
+
+.upcoming-session {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  padding: 15px 16px;
+  background-color: #c0ecc5;
+  gap: 8px;
+  border-radius: 12px;
+}
+.upcoming-session i {
+  font-size: 13px;
+}
+.upcoming-session p {
+  /* font-family: Gilmer; */
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+  text-align: left;
+  color: #023856;
+}
+.upcoming-session span {
+  display: inline-block;
+  /* font-family: Gilmer; */
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.2px;
+  text-align: left;
+}
+
+.message-main .show-input-message {
+  /* font-family: Gilmer; */
+  max-width: 488px;
+  border-radius: 20px;
+  padding: 24px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+  color: #575875;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.message-sent-time{
+    height: 2.25rem;
+    justify-content: flex-start !important;
+    gap: 6px;
+    margin-top: 8px ;
+    color: #023856;
+}
+.message-sent-time small{
+font-size: 14px;
+font-weight: 400;
+line-height: 18px;
+text-align: left;
+color: #A3A3C2;
+}
+
+/* **************************************** */
+.input-message-box {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  gap: 12px;
+}
+.input-message-box i {
+  padding: 12px;
+  background: white;
+  border-radius: 12px;
+}
+.input-message-box textarea {
+  height: 40px;
+  padding: 12px 24px;
+  border-radius: 12px;
+  outline: none;
+  border: none;
+  /* font-family: Gilmer; */
+  float: inline-end;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20.8px;
+  text-align: left;
+  overflow-y: hidden;
+}

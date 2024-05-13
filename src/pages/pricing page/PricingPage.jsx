@@ -12,14 +12,17 @@ function PricingPage() {
         {/* You can create separate components for each pricing box */}
               {/* Example: <FreeTrial /> */}
         <div className="price-boxx">
+        <div className="price-box-outer">
+     <h5 >Save $60 on your first month</h5>
               <PricingBox/>
           {/* Contents of the pricing box */}
         </div>
-        <div className="price-boxx">
+        </div>
+        <div className="price-boxx align-items-end">
               <PricingBox/>
           {/* Contents of the pricing box */}
         </div>
-        <div className="price-boxx">
+        <div className="price-boxx align-items-end">
               <PricingBox/>
           {/* Contents of the pricing box */}
         </div>
