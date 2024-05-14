@@ -1,14 +1,8 @@
-import React from 'react'
-import "./Button.css"
-
+import React from "react";
+import "./Button.css";
 
 const Button = () => {
+  return <button className="start-therapy-btn">Start therapy</button>;
+};
 
-   
-  return (
-    <button  className="start-therapy-btn">Start therapy</button>
-
-  )
-}
-
-export default Button
+export default Button;
