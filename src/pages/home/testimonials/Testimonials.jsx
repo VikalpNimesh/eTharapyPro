@@ -1,23 +1,18 @@
-import pic from "../../../assets/images/testimonial-icon.png";
-// import EmblaCarousel from "./EmblaCarousel";
+import useEmblaCarousel from "embla-carousel-react";
+import "../../../utils/embla carausel/embla.css";
 import "./testimonials.css";
-
-const OPTIONS = { align: "start" , loop: true  };
+import pic from "../../../assets/images/testimonial-icon.png";
+const OPTIONS = { align: "start", loop: true };
 const SLIDE_COUNT = 8;
 const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
-
 import {
   PrevButton,
   NextButton,
   usePrevNextButtons,
-} from "./EmblaCarouselArrowButtons";
-import useEmblaCarousel from "embla-carousel-react";
-import "./embla.css";
+} from "../../../utils/embla carausel/EmblaCarouselArrowButtons";
 
 const Testimonials = () => {
-  // const { slides, options } = props
   const [emblaRef, emblaApi] = useEmblaCarousel(OPTIONS);
-
   const {
     prevBtnDisabled,
     nextBtnDisabled,
@@ -35,19 +30,17 @@ const Testimonials = () => {
           </h1>
 
           <div className="icons-box d-none  d-md-flex ">
-            <div className="next">
-              {/* <i className="fa-solid fa-angle-right"></i> */}
-              <PrevButton
-                onClick={onPrevButtonClick}
-                disabled={prevBtnDisabled}
-              />
-            </div>
-            <div className="prev">
-              <NextButton
-                onClick={onNextButtonClick}
-                disabled={nextBtnDisabled}
-              />
-            </div>
+            <PrevButton
+              className="next"
+              onClick={onPrevButtonClick}
+              disabled={prevBtnDisabled}
+            />
+
+            <NextButton
+              className="prev"
+              onClick={onNextButtonClick}
+              disabled={nextBtnDisabled}
+            />
           </div>
         </div>
 
@@ -73,20 +66,20 @@ const Testimonials = () => {
           </div>
         </section>
         <div className="icons-box  d-flex  d-md-none pt-3  justify-content-start  ">
-            <div className="next">
-              {/* <i className="fa-solid fa-angle-right"></i> */}
-              <PrevButton
-                onClick={onPrevButtonClick}
-                disabled={prevBtnDisabled}
-              />
-            </div>
-            <div className="prev">
-              <NextButton
-                onClick={onNextButtonClick}
-                disabled={nextBtnDisabled}
-              />
-            </div>
+          <div className="next">
+            {/* <i className="fa-solid fa-angle-right"></i> */}
+            <PrevButton
+              onClick={onPrevButtonClick}
+              disabled={prevBtnDisabled}
+            />
           </div>
+          <div className="prev">
+            <NextButton
+              onClick={onNextButtonClick}
+              disabled={nextBtnDisabled}
+            />
+          </div>
+        </div>
         {/* <div className="testimonial-section">
           <div className="testimonial-boxes">
             <p>

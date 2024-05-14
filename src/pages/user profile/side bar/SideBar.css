@@ -7,6 +7,7 @@
 }
 .profile-main {
   display: flex;
+  gap: 24px;
   height: 100%;
   width: 100%;
   background-color: #f6f6fe;

@@ -18,7 +18,7 @@ const RelatedPost = () => {
       </div>
 
       <div className="post-box-main d-flex row m-0 p-0 ">
-      <div className=" post-box col-12 col-md-6  ">
+      <div className=" post-box col-12 col-md-6 m-0 p-0  ">
           <img src={post} alt="" />
           <h1>The Benefits of Getting Online Marriage Counseling</h1>
           <div className="last d-flex flex-wrap gap-2">
@@ -27,7 +27,7 @@ const RelatedPost = () => {
             <p>Online</p>
           </div>
         </div>
-        <div className=" post-box col-12 col-md-6  ">
+        <div className=" post-box col-12 col-md-6 m-0 p-0  ">
           <img src={post} alt="" />
           <h1>The Benefits of Getting Online Marriage Counseling</h1>
           <div className="last d-flex flex-wrap gap-2">

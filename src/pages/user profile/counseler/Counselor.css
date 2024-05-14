@@ -1,0 +1,136 @@
+.counselor-main .left div {
+  padding: 11px 24px;
+  background: #62cf6e;
+  border-radius: 24px;
+  width: fit-content;
+  color: white;
+  left: 42%;
+  bottom: 20%;
+}
+.counselor-heading {
+  margin-bottom: 4.5rem;
+}
+.couselor-info {
+  padding: 40px;
+  background: white;
+  border-radius: 20px;
+}
+
+.name-box h3 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38px;
+  text-align: left;
+  color: #023856;
+}
+
+.counselor-main .right {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.counselor-main .infos h2 {
+  color: #023856;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  text-align: left;
+  margin-bottom: 0px;
+}
+
+.counselor-main .infos div p {
+  padding: 6px 12px;
+  border-radius: 20px;
+  background: #f6f6fe;
+  color: #023856;
+}
+/* **************.counselor-toggle***************** */
+
+.counselor-toggle {
+  padding: 12px;
+  gap: 12px;
+  border-radius: 14px;
+  background: white;
+  margin: 3rem 0;
+}
+
+.counselor-toggle button {
+  padding: 10px 24px;
+  background: #023856;
+  border-radius: 14px;
+  color: white;
+}
+
+/* *********************CounselorAbout******************* */
+
+.CounselorAbout {
+  padding: 40px;
+  border-radius: 14px;
+  background: white;
+  color: #023856;
+}
+
+.CounselorAbout p {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+  color: #575875;
+}
+/* *********************counselor-publication********************* */
+.counselor-publication .post-box h1 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+}
+
+.counselor-publication .post-box {
+  background: white;
+  /* width: 32%; */
+}
+.counselor-publication .post-box .last {
+  margin-top: 22px;
+  margin-bottom: 27px;
+  padding: 6px 12px;
+}
+.counselor-publication .post-box p {
+  background: #f6f6fe;
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  text-align: left;
+}
+
+/* *********************CounselorReviews*************** */
+
+.counselor-reviews .testimonial-main {
+  background: transparent;
+  margin: 0;
+}
+.counselor-reviews .testimonial-boxes {
+  background: white;
+  color: #023856;
+  height: auto;
+}
+.counselor-reviews .embla__container {
+  gap: 0px;
+}
+.counselor-reviews .embla {
+  --slide-size-lg: calc(100% / 3);
+  max-width: 85rem;
+}
+.counselor-reviews button {
+  padding: 16px;
+  border-radius: 10px;
+  width: 3.5rem;
+  height: 48px;
+}
+
+@media (max-width: 1000px) {
+  .counselor-reviews .testimonial-boxes {
+    width: 100% !important;
+  }
+}
