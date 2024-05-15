@@ -14,7 +14,7 @@ const HeroSection = () => {
             <h1>Gaslighting</h1>
             <div className="right col-12 col-lg-6 d-block d-md-none ">
             <img src={girl} alt="" />
-          </div>
+          </div>Gaslighters are seeking to gain power and control over the other person by distorting reality and forcing them to question their own judgment
             
             <div>
               <p className="  ">

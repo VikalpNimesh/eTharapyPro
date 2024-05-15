@@ -1,12 +1,9 @@
 import { Link } from "react-router-dom";
 import { ProgressBar, QuestionHeading } from "../Questionaire";
 import { useState } from "react";
-
 const Question6 = () => {
   const [selectedOptions, setSelectedOptions] = useState("");
-
   console.log(selectedOptions);
-
 
   const handleSelectChange = (event) => {
     setSelectedOptions(event.target.value);
