@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import Message from "./message/Message.jsx";
 import Counselor from "./counseler/Counselor.jsx";
 import Blog from "./blog/Blog.jsx";
+import AccountSettings from "./account settings/AccountSettings.jsx";
 // import Subscription from "./subscription/Subscription.jsx";
 // import Review from "./review/Review.jsx";
 
@@ -15,7 +16,8 @@ const Profile = () => {
         {/* <Subscription /> */}
         {/* <Review/> */}
         {/* <Counselor/> */}
-        <Blog/>
+        {/* <Blog/> */}
+        <AccountSettings/>
         {/* <button className="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Enable body scrolling</button> */}
       </div>
       

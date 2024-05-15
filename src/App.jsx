@@ -27,7 +27,7 @@ function App() {
   return (
     <CustomProvider theme="light">
       <BrowserRouter basename="/">
-      {/* <Header /> */}
+      <Header />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/profile/*" element={<Profile />} />
@@ -58,7 +58,7 @@ function App() {
           <Route path="/question14" element={<Question14 />} />
           <Route path="/question15" element={<Question15 />} />
         </Routes>
-      {/* <Footer /> */}
+      <Footer />
       </BrowserRouter>
     </CustomProvider>
   );
