@@ -1,3 +1,4 @@
+import "../review/Review.css";                  
 import useEmblaCarousel from "embla-carousel-react";
 import "../../../utils/embla carausel/embla.css";
 const OPTIONS = { align: "start", loop: true };
@@ -19,7 +20,7 @@ const CounselorReviews = () => {
   } = usePrevNextButtons(emblaApi);
   return (
     <div className=" counselor-reviews">
-      <div className="icons-box  mb-4  d-md-flex  justify-content-end ">
+      <div className="icons-box   mb-4  d-md-flex  justify-content-end ">
         <PrevButton
           className="next"
           onClick={onPrevButtonClick}
@@ -32,7 +33,7 @@ const CounselorReviews = () => {
           disabled={nextBtnDisabled}
         />
       </div>
-      <div className="testimonial-main   ">
+      <div className="testimonial-main ">
         <section className="embla">
           <div className="embla__viewport" ref={emblaRef}>
             <div className="embla__container">
@@ -58,9 +59,32 @@ const CounselorReviews = () => {
             </div>
           </div>
         </section>
-        
       </div>
-      
+      <div className=" right  ">
+        <div >
+          <h2 className="review-therapist">Review Therapist </h2>
+          <p className="p16">Your opinion is important to us, and we strive to continuously improve our services to better meet your needs.</p>
+        </div>
+
+      <div className="stars-box d-flex  counselor-stars-box">
+            <i className="fa-solid fa-star"></i>
+            <i className="fa-solid fa-star"></i>
+            <i className="fa-solid fa-star"></i>
+            <i className="fa-solid fa-star"></i>
+            <i className="fa-solid fa-star"></i>
+          </div>
+        <div className="textarea-box  ">
+          <textarea name="" rows={6} id="review"></textarea>
+          <div className=" d-flex ">
+            <input type="checkbox" name="" id="" />
+            <p>I am not a robot</p>
+          </div>
+        </div>
+        <button className="start-therapy-btn counselor-btn">
+          {" "}
+          Post Feedback
+        </button>
+      </div>
     </div>
   );
 };

@@ -192,6 +192,9 @@ button {
     font-weight: 700;
     line-height: 38.4px;
   }
+  .user-wrapper{
+    padding: 32px 20px;
+  }
   /* p,.p16,.p-18,.p22 {
     font-size: 16px;
   }

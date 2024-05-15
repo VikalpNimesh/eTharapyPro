@@ -3,7 +3,7 @@ import React from "react";
 const CounselorAbout = () => {
   return (
     <div className=" CounselorAbout">
-      <h3>About</h3>
+      <h3 className=" d-none  d-md-block ">About</h3>
       <p className="p16">
         My approach is grounded in empathy, compassion, and a deep understanding
         of the unique needs of each client.

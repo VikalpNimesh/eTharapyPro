@@ -5,7 +5,12 @@
   width: fit-content;
   color: white;
   left: 42%;
-  bottom: 20%;
+  bottom: 25%;
+  /* padding: 20px; */
+}
+
+.counselor-main .left{
+  padding: 20px;
 }
 .counselor-heading {
   margin-bottom: 4.5rem;
@@ -28,6 +33,7 @@
   display: flex;
   flex-direction: column;
   gap: 32px;
+  padding: 20px;
 }
 
 .counselor-main .infos h2 {
@@ -129,8 +135,103 @@
   height: 48px;
 }
 
+/* ************.counselor-reviews*************** */
+.counselor-reviews .right{
+  padding: 40px;
+  background: white;
+  margin-top: 40px;
+  border-radius: 20px;
+}
+
+.review-therapist{
+  /* font-family: Gilmer; */
+font-size: 28px;
+font-weight: 700;
+line-height: 34px;
+text-align: left;
+color: #023856;
+}
+.counselor-btn{
+  background: #43B95D;
+  width: fit-content !important;
+  padding: 19px 136px !important;
+  height: auto !important;
+  border-radius: 40px !important;
+
+}
+
+.counselor-stars-box{
+  gap: 0px !important;
+  justify-content:flex-start !important;
+}
+
+
 @media (max-width: 1000px) {
+
+  .couselor-info{
+    padding: 20px;
+  }
   .counselor-reviews .testimonial-boxes {
+    width: 100% !important;
+  }
+  
+  .counselor-reviews .right{
+    gap: 20px;
+        padding: 20px;
+      }
+      .counselor-btn{
+        padding: 16px !important;
+      }
+
+      .counselor-main .left div{
+        bottom: 0;
+        left: 40%;
+      }
+      .counselor-main .left {
+        padding: 20px;
+        width: 50%;
+        margin: auto;
+        margin-top: -78px;
+    }
+    .counselor-main .left div {
+      padding: 0px 12px;
+      background: #62cf6e;
+      left: 33%;
+      bottom: 11px;
+  }
+  .name-box h3{
+    /* font-family: Gilmer; */
+font-size: 24px;
+font-weight: 700;
+line-height: 24px;
+text-align: center;
+
+  }
+  .name-box h6{
+    
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    text-align: center;
+    
+  }
+  .counselor-toggle button{
+    padding: 6px 12px;
+    border-radius: 10px;
+  }
+
+  .counselor-main .textarea-box{
+    padding: 0;
+  }
+  .review-therapist{
+  
+font-size: 18px;
+font-weight: 700;
+line-height: 22px;
+text-align: left;
+
+  }
+  .counselor-btn{
     width: 100% !important;
   }
 }

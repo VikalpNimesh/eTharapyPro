@@ -18,9 +18,9 @@ const Counselor = () => {
         </div>
       </div>
 
-      <div className="couselor-info row gx-5 ">
+      <div className="couselor-info row m-0 p-0 ">
         <div className="left col-md-4  gap-2  position-relative ">
-          <img className=" w-100 " src={pic} alt="" ></img>
+          <img className=" w-100 rounded-circle  " src={pic} alt="" ></img>
           <div className=" d-flex  gap-2  position-absolute   align-items-center ">
             <i className="fa-solid fa-star"></i>
             <p>5.1</p>
@@ -34,7 +34,7 @@ const Counselor = () => {
 
           <div className=" infos d-flex  flex-column  gap-3 ">
             <h2 className="p18">Expertise</h2>
-            <div className="  d-flex  gap-2">
+            <div className="  d-flex  gap-2 flex-wrap ">
               <p className="p14">Eating disorders</p>
               <p className="p14">Eating disorders</p>
               <p className="p14">Eating disorders</p>
@@ -42,7 +42,7 @@ const Counselor = () => {
           </div>
           <div className=" infos d-flex  flex-column  gap-3 ">
             <h2 className="p18">Issues</h2>
-            <div className="  d-flex  gap-2">
+            <div className="  d-flex  gap-2 flex-wrap ">
               <p className="p14">Eating disorders</p>
               <p className="p14">Eating disorders</p>
               <p className="p14">Eating disorders</p>
@@ -60,14 +60,14 @@ const Counselor = () => {
         </div>
       </div>
 
-      <div className="counselor-toggle d-md-flex  ">
+      <div className="counselor-toggle d-flex  ">
         <button className=" p16">About</button>
         <button className=" p16">Publications</button>
         <button className=" p16">Reviews</button>
       </div>
       {/* <CounselorAbout /> */}
-      {/* <CounselorPublication/> */}
-      <CounselorReviews/>
+      <CounselorPublication/>
+      {/* <CounselorReviews/> */}
     </div>
   );
 };
