@@ -1,5 +1,303 @@
-.account-settings-main .counselor-toggle{
-    margin: 0px;
-    margin-top: 4.5rem;
-  margin-bottom: 24px;  
+.account-settings-main .counselor-toggle {
+  margin: 0px;
+  margin-top: 4.5rem;
+  margin-bottom: 24px;
+}
+
+.personal-info {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 40px;
+  border-radius: 20px;
+  background: white;
+  margin-bottom: 24px;
+}
+
+.personal-info P {
+  color: #023856;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+}
+
+.personal-img {
+  width: 108px;
+}
+.personal-img i {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  background: #023856;
+  color: white;
+  left: 74px;
+  bottom: 3px;
+  border-radius: 50%;
+}
+
+.personal-info form label {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #575875;
+  margin-bottom: 8px;
+}
+.personal-info form input {
+  border: 1px solid #62cf6e;
+  outline: none;
+  padding: 12px 14px;
+  border-radius: 10px;
+  color: #10131d;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+}
+
+.save-change-btn {
+  padding: 11px 70px;
+  color: white !important;
+}
+
+.personal-img .name {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  text-align: left;
+}
+.personal-img .bio {
+  width: 200px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+  color: #575875;
+  text-wrap: nowrap;
+}
+
+.red-flag-box {
+  padding: 24px;
+  border-radius: 16px;
+  background: #ffede8;
+}
+.red-flag-box i {
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 10px;
+  background: #f66868;
+  color: white;
+}
+
+.red-flag-box ol {
+  max-width: 850px;
+  color: #023856;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+  
+}
+
+.red-flag-box li {
+  margin-bottom: 24px;
+  list-style: decimal;
+  color: #575875  ;
+}
+
+@media (max-width: 768px) {
+  .personal-info .bio {
+    text-wrap: wrap;
+  }
+  .red-flag-box{
+    gap:  16px !important;
+  }
+  .red-flag-box li{
+    list-style: none;
+
+  }
+  .red-flag-box ol{
+    padding-left: 0px;
+  }
+  .counselor-toggle button{
+    /* font-family: Gilmer; */
+font-size: 13px;
+font-weight: 600;
+line-height: 18px;
+letter-spacing: 0.02em;
+text-align: left;
+
+  }
+}
+
+/* ***********************PaymentHistory************************ */
+
+.payment-history .personal-img {
+  width: 36px;
+}
+.payment-history .personal-img .name {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  width: 144px;
+}
+.payment-history .personal-img .bio {
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  width: 144px;
+}
+.payment-history .personal-img div {
+  width: 144px;
+}
+/* .payment-history table{
+  display: flex;
+  flex-direction: column;
+} */
+.payment-history th {
+  background: #f6f6fe;
+  padding: 16px 24px;
+  /* font-family: Gilmer; */
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 2%;
+  text-align: left;
+  color: #023856;
+}
+
+.th-r {
+  border-radius: 0 20px 0 0;
+}
+.th-l {
+  border-radius: 20px 0 0 0;
+}
+
+.payment-history td {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+  padding: 16px 24px;
+  color: #023856;
+}
+
+.download-speed-btn {
+  padding: 2px 6px;
+  border-radius: 20px;
+  /* font-family: Gilmer; */
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  background-color: #EBF5FF;
+  text-align: center;
+}
+
+.request-btn{
+
+padding: 6px 24px ;
+border-radius: 10px ;
+background: #023856;
+color: white !important;
+text-align: center;
+
+}
+.save-change-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.change-profile-pic {
+  color: #023856;
+cursor: pointer;
+}
+
+.change-profile-pic i{
+  padding-right: 10px;  color: #023856;
+
+}
+
+.monthly-plan-box{
+  padding: 16px;
+
+}
+
+.monthly-plan-box p{
+color: #023856;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 27.2px;
+  text-align: left;
+  
+}
+.monthly-plan-box i{
+background: #43B95D;
+color: white;
+width: 32px;
+padding: 6px;
+border-radius: 6px;
+
+}
+.monthly-plan-box .name{
+
+font-size: 14px;
+font-weight: 600;
+line-height: 18px;
+text-align: left;
+
+}
+.monthly-plan-box .bio{
+
+font-size: 14px;
+font-weight: 400;
+line-height: 18px;
+text-align: left;
+
+}
+
+.see-more{
+  /* font-family: Gilmer; */
+font-size: 14px;
+font-weight: 700;
+line-height: 23.8px;
+text-align: center;
+
+}
+@media (max-width: 768px) {
+  .personal-info {
+    padding: 24px;
+    gap: 20px;
+  }
+  .personal-info form label {
+    margin-bottom: 6px;
+    color: #023856;
+    /* font-family: Gilmer; */
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.2px;
+    text-align: left;
+  }
+  .personal-img .name{
+    text-wrap: nowrap;
+  }
+  .personal-info form input {
+    border-color: #ebebff;
+  }
+  .personal-img {
+    width: 56px;
+  }
+
+  .change-profile-pic {
+    padding: 16px 24px 16px 24px;
+    border-radius: 10px;
+    background: #ebebff;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+  }
 }

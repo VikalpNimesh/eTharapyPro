@@ -4,8 +4,8 @@ import Message from "./message/Message.jsx";
 import Counselor from "./counseler/Counselor.jsx";
 import Blog from "./blog/Blog.jsx";
 import AccountSettings from "./account settings/AccountSettings.jsx";
-// import Subscription from "./subscription/Subscription.jsx";
-// import Review from "./review/Review.jsx";
+import Subscription from "./subscription/Subscription.jsx";
+import Review from "./review/Review.jsx";
 
 const Profile = () => {
   return (
@@ -13,7 +13,7 @@ const Profile = () => {
       <SideBar />
       <div className="main-content user-wrapper">
         {/* <Message /> */}
-        {/* <Subscription /> */}
+        {/* <Subscription/> */}
         {/* <Review/> */}
         {/* <Counselor/> */}
         {/* <Blog/> */}

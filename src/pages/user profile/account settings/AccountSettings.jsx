@@ -1,6 +1,8 @@
 import React from "react";
-import "./AccountSettings.css"
-
+import "./AccountSettings.css";
+import YourTherapist from "./YourTherapist";
+import PaymentHistory from "./PaymentHistory";
+import PersonalInformation from "./PersonalInformation";
 const AccountSettings = () => {
   return (
     <div className="account-settings-main  ">
@@ -16,6 +18,10 @@ const AccountSettings = () => {
         <button className=" p16">Your Therapist</button>
         <button className=" p16">Payment History</button>
       </div>
+      {/* <PersonalInformation/> */}
+      {/* <YourTherapist /> */}
+      <PaymentHistory/>
+      
     </div>
   );
 };
