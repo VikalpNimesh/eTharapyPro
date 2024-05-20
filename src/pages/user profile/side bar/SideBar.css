@@ -62,3 +62,12 @@
   text-align: left;
   color: #023856;
 }
+
+@media (max-width: 625px) {
+  .sidebar-main {
+    width: 100%;
+    position: absolute;
+    z-index: 5;
+  }
+
+}

@@ -16,8 +16,9 @@ const Message = () => {
       <div className=" message-heading d-flex  justify-content-between  mb-3 ">
         <h2 className=" h32">Messages</h2>
         <div className=" right d-flex  align-items-center">
-          <p>Free messages available: 3</p>
+          <p className=" d-none  d-md-block " >Free messages available: 3</p>
           <i className="fa-solid fa-video flex" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="join video session"></i>
+          <i className="fa-solid fa-bars d-md-none flex "></i>
         </div>
       </div>
     

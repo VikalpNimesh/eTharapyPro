@@ -33,6 +33,10 @@
   background-color: #023856;
 }
 
+.message-heading .fa-bars{
+  font-size: 24px;
+  cursor: pointer;
+}
 /* **************************************** */
 
 .upcoming-session {
@@ -119,4 +123,15 @@ color: #A3A3C2;
   line-height: 20.8px;
   text-align: left;
   overflow-y: hidden;
+}
+
+@media (max-width:768px) {
+  .message-heading .h32{
+    font-size: 24px;
+  }
+  .message-heading .right .fa-video{
+    width: 40px;
+    height: 32px;
+    padding: 16px;
+  }
 }

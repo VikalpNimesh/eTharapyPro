@@ -6,8 +6,8 @@ import logo from "../../../assets/images/etherapylogo.png";
 const SideBar = () => {
   return (
     // <div className="offcanvas offcanvas-start " data-bs-scroll="true" data-bs-backdrop="false" tabIndex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
-  
     // </div>
+    
     <div className=" sidebar-main user-wrapper">
         <div className="header-logo-box flex justify-content-between  w-100 ">
         <Link

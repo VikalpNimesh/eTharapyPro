@@ -14,7 +14,8 @@ const Counselor = () => {
           </p>
         </div>
         <div className=" right d-flex  align-items-center">
-          <p>Credits available: 0</p>
+          <p className=" d-none  d-md-block ">Credits available: 0</p>
+          <i className="fa-solid fa-bars d-md-none flex "></i>
         </div>
       </div>
 
