@@ -45,7 +45,7 @@ const Question5 = () => {
 
   return (
     <div className="row questionnaire-main flex wrapper">
-      <ProgressBar />
+      
       <QuestionHeading num={ 5} question={" Have you recently had any thoughts of self-harm or suicide?"} />
      
       <div className="  rating-icon-box gap-3 p-0 m-0 ">
@@ -55,10 +55,10 @@ const Question5 = () => {
         </div>
         <div className=" d-flex justify-content-between  align-items-center pt-3">
           <p className="p16 back-btn">
-            <Link to="/question4">Back</Link>
+            <Link to="/questionnaire/question4">Back</Link>
           </p>
 
-          <Link to="/question6">
+          <Link to="/questionnaire/question7">
             <button className="next-question-btn">
               Next Question <i className="fa-solid fa-arrow-right"></i>{" "}
             </button>

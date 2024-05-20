@@ -72,7 +72,7 @@ const Question12 = () => {
   return (
     <div className="row questionnaire-main flex wrapper">
       
-     <ProgressBar />
+     
       <QuestionHeading num={12 } question={" Which best describes your sexual orientation?  "} />
      
 
@@ -98,9 +98,9 @@ const Question12 = () => {
           </div>
         )}
       <div className=" d-flex justify-content-between  align-items-center pt-3">
-          <p className="p16 back-btn"><Link to="/question11">Back</Link></p>
+          <p className="p16 back-btn"><Link to="/questionnaire/question11">Back</Link></p>
 
-          <Link to="/question13"><button className="next-question-btn" onClick={handleNextBtn}>
+          <Link to="/questionnaire/question13"><button className="next-question-btn" onClick={handleNextBtn}>
             Next Question <i className="fa-solid fa-arrow-right"></i>{" "}
           </button></Link>
         </div>

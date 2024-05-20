@@ -48,7 +48,7 @@ const Question15 = () => {
   return (
     <div className="row questionnaire-main flex wrapper">
       
-     <ProgressBar />
+     
       <QuestionHeading num={ 15} question={" Are you currently taking any medication?"} />
      
 
@@ -61,7 +61,7 @@ const Question15 = () => {
        
         </div>
       <div className=" d-flex justify-content-between  align-items-center pt-3">
-          <p className="p16 back-btn"><Link to="/question14">Back</Link></p>
+          <p className="p16 back-btn"><Link to="/questionnaire/question14">Back</Link></p>
 
           <Link to="/register"><button className="next-question-btn" >
             Next Question <i className="fa-solid fa-arrow-right"></i>{" "}

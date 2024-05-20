@@ -16,7 +16,7 @@ const Question1 = () => {
 
   return (
     <div className="row questionnaire-main flex wrapper">
-      <ProgressBar />
+      
 
       <QuestionHeading num={1} question={"How are you feeling today?"} />
 
@@ -40,7 +40,7 @@ const Question1 = () => {
             <Link to="/">Back</Link>
           </p>
 
-          <Link to="/question2">
+          <Link to="/questionnaire/question2">
             <button className="next-question-btn">
               Next Question <i className="fa-solid fa-arrow-right"></i>{" "}
             </button>

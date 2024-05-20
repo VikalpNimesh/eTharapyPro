@@ -32,7 +32,7 @@ const Message = () => {
 
         <div className=" show-input-message ">{first}</div>
         <div className="message-sent-time flex ">
-<img src="sdas" alt="E" srcset=""  className=" bg-black  h-100   rounded-circle  "/>
+<img src="sdas" alt="E"  className=" bg-black  h-100   rounded-circle  "/>
           <p>eTherapyPro</p>
           <small>Jan 3, 2023, 1:24 PM</small>
         </div>

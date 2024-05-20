@@ -20,14 +20,13 @@ import PricingPage from "./pages/pricing page/PricingPage";
 import { Question1, Question10, Question11, Question12, Question13, Question14, Question15, Question2, Question3, Question4, Question5, Question6, Question7, Question8, Question9, } from "./pages/questionaire/index.js";
 import Profile from "./pages/user profile/Profile.jsx";
 
-
-
+const user = localStorage.setItem("user",true)
 
 function App() {
   return (
     <CustomProvider theme="light">
       <BrowserRouter basename="/">
-      {/* <Header /> */}
+        {/* {!user && <Header />} */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/profile/*" element={<Profile />} />
@@ -41,24 +40,9 @@ function App() {
           <Route path="/article" element={<Article />} />
           <Route path="/contact-us" element={<ContactUs />} />
           {/* <Route path="/privacy" element={<PrivacyPolicy />} /> */}
-          <Route path="/questionaire" element={<Questionnaire />} />
-          <Route path="/question1" element={<Question1 />} />
-          <Route path="/question2" element={<Question2 />} />
-          <Route path="/question3" element={<Question3 />} />
-          <Route path="/question4" element={<Question4 />} />
-          <Route path="/question5" element={<Question5 />} />
-          <Route path="/question6" element={<Question6 />} />
-          <Route path="/question7" element={<Question7 />} />
-          <Route path="/question8" element={<Question8 />} />
-          <Route path="/question9" element={<Question9 />} />
-          <Route path="/question10" element={<Question10 />} />
-          <Route path="/question11" element={<Question11 />} />
-          <Route path="/question12" element={<Question12 />} />
-          <Route path="/question13" element={<Question13 />} />
-          <Route path="/question14" element={<Question14 />} />
-          <Route path="/question15" element={<Question15 />} />
+          <Route path="/questionnaire/*" element={<Questionnaire />} />
         </Routes>
-      {/* <Footer /> */}
+        {/* {!user && <Footer />}         */}
       </BrowserRouter>
     </CustomProvider>
   );

@@ -24,43 +24,43 @@ const SideBar = () => {
           <li  className=" d-flex gap-3  align-items-center  ">
               <i className="fa-regular fa-id-badge"></i>
             <h2>
-              <Link to="/profile/message">Subscription</Link>
+              <Link to="subscription">Subscription</Link>
             </h2>
           </li>
           <li  className=" d-flex gap-3  align-items-center  ">
             <i className="fa-regular fa-message"></i>
             <h2>
-              <Link to="/profile/message">Messages</Link>
+              <Link to="message">Messages</Link>
             </h2>
           </li>
           <li  className=" d-flex gap-3  align-items-center  ">
             <i className="fa-regular fa-calendar"></i>
             <h2>
-              <Link to="/">Session</Link>
+              <Link to="session">Session</Link>
             </h2>
           </li>
           <li  className=" d-flex gap-3  align-items-center  ">
             <i className="fa-regular fa-bookmark"></i>
             <h2>
-              <Link to="/">Blog</Link>
+              <Link to="blog">Blog</Link>
             </h2>
           </li>
           <li  className=" d-flex gap-3  align-items-center  ">
             <i className="fa-regular fa-user"></i>
             <h2>
-              <Link to="/">Account Settings</Link>
+              <Link to="account-settings">Account Settings</Link>
             </h2>
           </li>
           <li  className=" d-flex gap-3  align-items-center  ">
             <i className="fa-regular fa-star"></i>
             <h2>
-              <Link to="/"> Review</Link>
+              <Link to="review"> Review</Link>
             </h2>
           </li>
           <li  className=" d-flex gap-3  align-items-center  ">
             <i className="fa-regular fa-comment"></i>
             <h2>
-              <Link to="/"> Contact Us</Link>
+              <Link to="/profile"> Contact Us</Link>
             </h2>
           </li>
         </ul>
