@@ -1,4 +1,3 @@
-import React from 'react'
 import Modal from '../../../components/modal/Modal'
 
 const Session = () => {
@@ -6,15 +5,16 @@ const Session = () => {
       <div>
    {/* <!-- Button trigger modal --> */}
 
-   <button
+   {/* <button
         type="button"
         className="btn btn-primary"
         data-bs-toggle="modal"
         data-bs-target="#staticBackdrop"
       >
          modal
-      </button>
+      </button> */}
 {/* <!-- Modal --> */}
+
 <Modal  />
     </div>
   )
