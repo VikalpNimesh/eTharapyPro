@@ -15,7 +15,9 @@ const Counselor = () => {
         </div>
         <div className=" right d-flex  align-items-center">
           <p className=" d-none  d-md-block ">Credits available: 0</p>
-          <i className="fa-solid fa-bars d-md-none flex "></i>
+          <i className="fa-solid fa-bars d-md-none flex " onClick={()=>{
+            handleToggle(sidebar)
+          }}></i>
         </div>
       </div>
 

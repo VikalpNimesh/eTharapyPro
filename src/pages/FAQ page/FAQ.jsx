@@ -2,6 +2,7 @@ import "./FAQ.css";
 import { Accordion } from "rsuite";
 import CtaBanner from "./cta banner/CtaBanner";
 
+
 const FAQ = () => {
   return (
     <div className="faq-questions FAQ-main ">
