@@ -1,13 +1,16 @@
 import React from "react";
 import "./Review.css";
 import pic from "../../../assets/images/landing/searching-man.png";
-const Review = () => {
+const Review = ({handleToggle,sidebar}) => {
   return (
     <div className="review-main">
       <div className=" review-heading  message-heading d-flex  justify-content-between   ">
         <h2 className=" h32">Rate us</h2>
         <div className=" right d-flex  align-items-center">
-          <p className=" d-none  d-md-block ">Credits available: 0</p><i className="fa-solid fa-bars d-md-none flex "></i>
+          <p className=" d-none  d-md-block ">Credits available: 0</p>
+          <i className="fa-solid fa-bars d-md-none flex " onClick={()=>{
+            handleToggle(sidebar)
+          }}></i>
         </div>
       </div>
 
@@ -32,13 +35,13 @@ const Review = () => {
 
           <div className="textarea-box  ">
             <label htmlFor="review">Your review</label>
-            <textarea name=""  rows={6} id="review"></textarea>
+            <textarea name="" rows={6} id="review"></textarea>
             <div className=" d-flex ">
               <input type="checkbox" name="" id="" />
               <p>I authorise eTherapyPro to publish my review live</p>
             </div>
-                  </div>
-                  <button className="start-therapy-btn"> Send Feedback</button>
+          </div>
+          <button className="start-therapy-btn"> Send Feedback</button>
         </div>
       </div>
     </div>

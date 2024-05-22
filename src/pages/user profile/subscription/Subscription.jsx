@@ -1,13 +1,15 @@
 import React from "react";
 import PricingBox from "../../../components/pricing box/PricingBox";
 import "./Subscription.css";
-const Subscription = () => {
+const Subscription = ({handleToggle,sidebar}) => {
   return (
     <div className=" subscription-main">
       <div className=" subscription-heading  message-heading d-flex  justify-content-between   ">
         <h2 className=" h32">Chose Your Plan</h2>
         <div className=" right d-flex  align-items-center">
-          <p className=" d-none  d-md-block ">Free messages available: 3</p><i className="fa-solid fa-bars d-md-none flex "></i>
+          <p className=" d-none  d-md-block ">Free messages available: 3</p><i className="fa-solid fa-bars d-md-none flex " onClick={()=>{
+            handleToggle(sidebar)
+          }}></i>
         </div>
       </div>
 

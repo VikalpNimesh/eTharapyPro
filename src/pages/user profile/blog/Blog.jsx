@@ -1,6 +1,7 @@
 import React from "react";
 import "./Blog.css";
 
+
 import post from "../../../assets/images/article/post.png";
 // import "../../questionaire/questions/Questionaire.css";import post from "../../../assets/images/article/post.png";
 import useEmblaCarousel from "embla-carousel-react";
@@ -13,7 +14,7 @@ import {
   NextButton,
   usePrevNextButtons,
 } from "../../../utils/embla carausel/EmblaCarouselArrowButtons";
-const Blog = () => {
+const Blog = ({handleToggle,sidebar}) => {
   const [emblaRef, emblaApi] = useEmblaCarousel(OPTIONS);
   const {
     prevBtnDisabled,
@@ -27,7 +28,9 @@ const Blog = () => {
         <h2 className=" h32">Blog</h2>
         <div className=" right d-flex  align-items-center">
           <p className=" d-none  d-md-block ">Credits available: 0</p>
-          <i className="fa-solid fa-bars d-md-none flex "></i>
+          <i className="fa-solid fa-bars d-md-none flex " onClick={()=>{
+            handleToggle(sidebar)
+          }}></i>
         </div>
       </div>
 

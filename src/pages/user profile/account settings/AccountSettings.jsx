@@ -5,14 +5,16 @@ import PaymentHistory from "./PaymentHistory";
 import PersonalInformation from "./PersonalInformation";
 import { Link, Navigate, Route, Routes } from "react-router-dom";
 
-const AccountSettings = () => {
+const AccountSettings = ({handleToggle,sidebar}) => {
   return (
     <div className="account-settings-main">
-      <div className="d-flex justify-content-between">
+      <div className="message-heading d-flex justify-content-between">
         <h2 className="h32">Account Settings</h2>
         <div className="right d-flex align-items-center">
           <p className=" d-none  d-md-block ">Credits available: 0</p>
-          <i className="fa-solid fa-bars d-md-none flex "></i>
+          <i className="fa-solid fa-bars d-md-none flex " onClick={()=>{
+            handleToggle(sidebar)
+          }}></i>
         </div>
       </div>
 

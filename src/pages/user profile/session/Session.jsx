@@ -1,7 +1,7 @@
 import React from 'react'
 import Modal from '../../../components/modal/Modal'
 
-const Session = () => {
+const Session = ({handleToggle,sidebar}) => {
   return (
       <div>
    {/* <!-- Button trigger modal --> */}

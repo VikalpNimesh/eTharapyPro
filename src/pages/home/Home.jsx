@@ -7,6 +7,8 @@ import WhyTherapy from "./why therapy/WhyTherapy";
 import Testimonials from "./testimonials/Testimonials";
 import CtaBanner from "./cta banner/CtaBanner";
 import WhyUs from "./why us/WhyUs";
+import AppLayout from "../../components/layout/AppLayout";
+
 
 const Home = () => {
   return (
@@ -24,4 +26,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default AppLayout(Home);

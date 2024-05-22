@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import "./Message.css"
-const Message = () => {
+const Message = ({handleToggle,sidebar}) => {
   const [message, setMessage] = useState("")
   const [first, setFirst] = useState("")
   
-  console.log(message);
+  // console.log(message);
 
   const handleSendMessage = () => {
     // setMessage(message)
@@ -17,8 +17,10 @@ const Message = () => {
         <h2 className=" h32">Messages</h2>
         <div className=" right d-flex  align-items-center">
           <p className=" d-none  d-md-block " >Free messages available: 3</p>
-          <i className="fa-solid fa-video flex" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="join video session"></i>
-          <i className="fa-solid fa-bars d-md-none flex "></i>
+          <i className="fa-solid fa-video flex" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="join video session" ></i>
+          <i className="fa-solid fa-bars d-md-none flex " onClick={()=>{
+            handleToggle(sidebar)
+          }}></i>
         </div>
       </div>
     
