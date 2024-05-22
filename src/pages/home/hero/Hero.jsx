@@ -9,14 +9,16 @@ const Hero = () => {
         <div className="hero-left col-lg-6  col-md-12  p-0 justify-content-sm-center ">
           <h1>
             Your <span className="span-green span-ball"></span> Guide to
-            <span className="span-green">Happiness</span>
+            <span className="span-green">Happinesssssss</span>
           </h1>
           <p>
             Experience life's journey with eTherapyPro's online therapy
             guidance.
           </p>
           <div className="hero-btn-box d-none d-sm-flex ">
-<Link to="/profile/"><button  className="start-therapy-btn">Start therapy</button></Link>
+            <Link to="/profile/">
+              <button className="start-therapy-btn">Start therapy</button>
+            </Link>
 
             <p className="price-content">
               From $5 <span>/ 3 days</span>
@@ -67,7 +69,9 @@ const Hero = () => {
             We will individually match you with a therapist{" "}
             <span className="span-green">based on your needs.</span>
           </p>
-          <div className="col-lg-2 "><i className="fa-solid fa-angle-right"></i></div>
+          <div className="col-lg-2 ">
+            <i className="fa-solid fa-angle-right"></i>
+          </div>
         </div>
       </div>
     </div>
