@@ -1,4 +1,3 @@
-import React from "react";
 import pic from "../../../assets/images/user-admin/counselor.png";
 const SLIDES = Array.from(Array(6).keys());
 const PaymentHistory = () => {

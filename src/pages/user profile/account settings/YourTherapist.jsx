@@ -1,4 +1,3 @@
-import React from "react";
 import pic from "../../../assets/images/user-admin/counselor.png";
 const YourTherapist = () => {
   return (

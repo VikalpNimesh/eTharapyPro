@@ -1,4 +1,3 @@
-import React from "react";
 
 import "./CarinTravel.css"
 import travel from "./travel.png"

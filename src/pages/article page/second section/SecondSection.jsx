@@ -1,4 +1,3 @@
-import React from "react";
 import "./SecondSection.css";
 import twocycle from "../../../assets/images/article/twocycle.png";
 import climb from "../../../assets/images/article/Screenshot 2024-04-25 111611.png";

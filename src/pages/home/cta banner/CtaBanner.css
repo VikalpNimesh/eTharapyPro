@@ -50,7 +50,8 @@ max-width: 787px !important;
     }
 
     .ctaBanner-main>div{
-    padding: 80px 32px;
+    padding: 32px;
+    gap: 1.75em;
     }
 
     .ctabanner-btn{

@@ -1,4 +1,3 @@
-import React from "react";
 import "./CarinDetails.css";
 import pic1 from "../../../assets/images/aboutus/white-mountain.png"
 

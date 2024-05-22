@@ -1,4 +1,3 @@
-import React from "react";
 import post from "../../../assets/images/article/post.png";
 import useEmblaCarousel from "embla-carousel-react";
 import "../../../utils/embla carausel/embla.css";

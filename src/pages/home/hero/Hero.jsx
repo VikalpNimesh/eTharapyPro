@@ -52,7 +52,7 @@ const Hero = () => {
         </div>
       </div>
       <div className="hero-btn-box d-flex d-sm-none py-3  ">
-        <button className="start-therapy-btn">Start therapy</button>
+      <Link to="/profile/"><button  className="start-therapy-btn">Start therapy</button></Link>
 
         <p className="price-content">
           From $5 <span>/ 3 days</span>

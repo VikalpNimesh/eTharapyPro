@@ -1,4 +1,3 @@
-import React from "react";
 import CounselorAbout from "./CounselorAbout";
 import "./Counselor.css";
 import pic from "../../../assets/images/user-admin/counselor.png";

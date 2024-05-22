@@ -1,4 +1,3 @@
-import React from "react";
 import "./AccountSettings.css";
 import YourTherapist from "./YourTherapist";
 import PaymentHistory from "./PaymentHistory";

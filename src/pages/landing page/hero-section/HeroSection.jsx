@@ -1,4 +1,3 @@
-import React from "react";
 import "./HeroSection.css";
 import girl from "../../../assets/images/landing/girl.png";
 import man from "../../../assets/images/landing/one-man.png";

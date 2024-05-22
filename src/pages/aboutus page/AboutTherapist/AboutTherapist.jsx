@@ -1,4 +1,3 @@
-import React from "react";
 import "./AboutTherapist.css";
 import treeman from "../../../assets/images/aboutus/tree-man.png"
 

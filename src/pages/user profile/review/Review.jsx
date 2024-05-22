@@ -1,4 +1,3 @@
-import React from "react";
 import "./Review.css";
 import pic from "../../../assets/images/landing/searching-man.png";
 const Review = ({handleToggle,sidebar}) => {

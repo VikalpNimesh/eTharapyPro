@@ -17,7 +17,7 @@ console.log(sidebar);
     localStorage.setItem("user", "false"); 
   }, []);
 
-  const handleToggle = (sidebar) => {
+  const handleToggle = () => {
    if (window.innerWidth<625) {
     setSidebar(prev=>!prev)
    }

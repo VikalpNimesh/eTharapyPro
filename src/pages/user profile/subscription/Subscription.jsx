@@ -1,4 +1,3 @@
-import React from "react";
 import PricingBox from "../../../components/pricing box/PricingBox";
 import "./Subscription.css";
 const Subscription = ({handleToggle,sidebar}) => {

@@ -1,4 +1,3 @@
-import React from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 import Question1 from "./questions/Question1";
 import Question2 from "./questions/Question2";

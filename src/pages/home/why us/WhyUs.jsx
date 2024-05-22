@@ -1,4 +1,3 @@
-import React from "react";
 import "./WhyUs.css";
 import img from "../../../assets/images/whyus.png";
 

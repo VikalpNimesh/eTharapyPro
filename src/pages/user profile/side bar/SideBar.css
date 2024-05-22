@@ -12,7 +12,7 @@
 .sidebar-main {
   position: static;
   width: 283px;
-  height: 100%;
+  /* height: 100%; */
   background-color: white;
   /* height: 100vh;    */
   border-radius: 0px 20px 20px 0px;
@@ -68,6 +68,7 @@
     width: 100%;
     position: absolute;
     z-index: 5;
+    height: inherit;
   }
 }
 @media (max-width: 625px) {

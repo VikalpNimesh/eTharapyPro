@@ -62,6 +62,10 @@ h1 {
   color: var(--dark-blue);
   line-height: 72px;
 }
+h2{
+  line-height: inherit;
+  font-size:revert;
+}
 
 p{
   font-size: 18px;
@@ -69,6 +73,14 @@ p{
   line-height: 25.2px;
 }
 
+ul{
+  padding-left: 0px;
+}
+
+a:active, a:focus, a:hover {
+  text-decoration: none;
+  color: inherit;
+}
 .h32{
 font-size: 32px;
 font-weight: 700;
@@ -193,7 +205,7 @@ button {
     line-height: 38.4px;
   }
   .user-wrapper{
-    padding: 32px 20px;
+    padding: 28px 20px;
   }
   /* p,.p16,.p-18,.p22 {
     font-size: 16px;
