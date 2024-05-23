@@ -1,0 +1,40 @@
+.file-uploader {
+    position: relative;
+  }
+  
+  .file-input-label {
+    cursor: pointer;
+    display: inline-block;
+  }
+  
+  .file-input-label img {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .selected-files {
+    margin-top: 10px;
+  }
+  
+  .selected-files ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .selected-files li {
+    margin: 5px 0;
+  }
+  
+  .selected-files button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .selected-files button:hover {
+    background-color: #45a049;
+  }
+  

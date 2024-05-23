@@ -99,6 +99,7 @@ color: #A3A3C2;
 }
 
 /* **************************************** */
+
 .input-message-box {
   position: absolute;
   bottom: 0;
@@ -109,6 +110,7 @@ color: #A3A3C2;
   padding: 12px;
   background: white;
   border-radius: 12px;
+  cursor: pointer;
 }
 .input-message-box textarea {
   height: 40px;
