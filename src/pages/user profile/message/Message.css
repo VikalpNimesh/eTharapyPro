@@ -1,6 +1,5 @@
 .message-main{
     padding-bottom: 0px !important;
-
 }
 .message-main {
   height: 92vh;
@@ -113,7 +112,7 @@ color: #A3A3C2;
   cursor: pointer;
 }
 .input-message-box textarea {
-  height: 40px;
+  height: 40px ;
   padding: 12px 24px;
   border-radius: 12px;
   outline: none;
@@ -125,6 +124,35 @@ color: #A3A3C2;
   line-height: 20.8px;
   text-align: left;
   overflow-y: hidden;
+}
+.input-message-box .timer p {
+  height: 40px;
+  padding: 12px 24px;
+  border-radius: 12px;
+  background-color: white;
+  width: 600px;
+  outline: none;
+  border: none;
+  /* font-family: Gilmer; */
+  float: inline-end;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20.8px;
+  text-align: left;
+  overflow-y: hidden;
+}
+
+/* *****************************video ***************************** */
+
+.message-main video {
+  border-radius: 50%;
+  border: 10px solid #43B95D;
+  position: absolute;
+  z-index: 55;
+  top: 20%;
+  left: 25%;
+  width: 303px;
+  height: 303px;
 }
 
 @media (max-width:768px) {

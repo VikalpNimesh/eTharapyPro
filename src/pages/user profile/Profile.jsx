@@ -8,10 +8,11 @@ import Subscription from "./subscription/Subscription.jsx";
 import Review from "./review/Review.jsx";
 import { useEffect, useState } from "react";
 import Session from "./session/Session.jsx";
+import { WebCamProvider } from "../../context/WebContext/WebContext.jsx";
 
 const Profile = () => {
 const [sidebar, setSidebar] = useState(true)
-console.log(sidebar);
+// console.log(sidebar);
 
   useEffect(() => {
     localStorage.setItem("user", "false"); 
@@ -27,6 +28,7 @@ console.log(sidebar);
     <div className="profile-main position-relative">
       <SideBar handleToggle={handleToggle} sidebar={sidebar}/>
       <div className="main-content user-wrapper">
+      <WebCamProvider>
         <Routes>
         <Route path="/" element={<Navigate to="message" replace />} />
           <Route path="message" element={<Message handleToggle={handleToggle} sidebar={sidebar} />} />
@@ -36,6 +38,7 @@ console.log(sidebar);
           <Route path="session" element={<Session handleToggle={handleToggle} sidebar={sidebar}/>} />
           <Route path="account-settings/*" element={<AccountSettings handleToggle={handleToggle} sidebar={sidebar}/>} />
         </Routes>
+        </WebCamProvider>
       </div>
     </div>
   );
