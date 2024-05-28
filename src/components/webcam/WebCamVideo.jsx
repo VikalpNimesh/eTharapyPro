@@ -1,28 +1,37 @@
-import  {  useContext } from "react";
+import React, { useContext } from "react";
 import Webcam from "react-webcam";
 import { WebCamContext } from "../../context/WebContext/WebContext";
 
 export default function WebcamVideo() {
-    const {
-        img,
-        webcamRef,
-        capturing,
-        paused,
-        capture,
-        handleStartCaptureClick,
-        handleStopCaptureClick,
-        handlePauseCaptureClick,
-        handleResumeCaptureClick,
-        handleDownload,
-        videoConstraints,
-        recordedChunks,
-        setImg
-      } = useContext(WebCamContext);
+  const {
+    img,
+    webcamRef,
+    setCapturingVideo,
+    paused,
+    capture,
+    handleStartCaptureClick,
+    handleStopCaptureClick,
+    handlePauseCaptureClick,
+    handleResumeCaptureClick,
+    handleUpload,
+    handleDownload,
+    videoConstraints,
+    recordedChunks,
+    timer,
+    setImg,
+    videoURL,
+  } = useContext(WebCamContext);
+
+  const handleStartCaptureCli = () => {
+    handleStartCaptureClick();
+    capture();
+  };
+
   return (
     <div className="Container">
-      {img === null ? (
+      <div className="start-stop-box flex">
         <>
-          <Webcam
+        {!videoURL ? <Webcam
             audio={false}
             mirrored={true}
             height={400}
@@ -31,29 +40,48 @@ export default function WebcamVideo() {
             screenshotFormat="image/jpeg"
             videoConstraints={videoConstraints}
           />
-          <button onClick={capture}>Capture photo</button>
-        </>
-      ) : (
-        <>
-          <img src={img} alt="screenshot" />
-          <button onClick={() => setImg(null)}>Retake</button>
-        </>
-      )}
-      {capturing ? (
-        <>
-          <button className="video-btn" onClick={handleStopCaptureClick}>Stop Capture</button>
-          {paused ? (
-            <button className="video-btn" onClick={handleResumeCaptureClick}>Resume Capture</button>
-          ) : (
-            <button className="video-btn" onClick={handlePauseCaptureClick}>Pause Capture</button>
+:
+          (
+            <div>
+              <video
+                src={videoURL}
+                controls
+                style={{ width: "303px", height: "303px" , borderRadius:"0px" }}
+              />
+            </div>
           )}
         </>
-      ) : (
-        <button className="video-btn" onClick={handleStartCaptureClick}>Start Capture</button>
-      )}
-      {recordedChunks.length > 0 && (
-        <button onClick={handleDownload}>Download</button>
-      )}
+
+        {setCapturingVideo ? (
+          <>
+            <button className="video-btn" onClick={handleStopCaptureClick}>
+              Stop Capture
+            </button>
+            {paused ? (
+              <button className="video-btn" onClick={handleResumeCaptureClick}>
+                Resume Capture
+              </button>
+            ) : (
+              <button className="video-btn" onClick={handlePauseCaptureClick}>
+                Pause Capture
+              </button>
+            )}
+          </>
+        ) : (
+          <button className="video-btn" onClick={handleStartCaptureCli}>
+            Start Capture
+          </button>
+        )}
+        {recordedChunks.length > 0 && (<>
+          {/* <button className="video-btn" onClick={handleDownload}>
+            Download
+          </button> */}
+          <button className="video-btn" onClick={handleUpload}>
+            Upload
+          </button>
+          </>
+        )}
+      </div>
     </div>
   );
 }

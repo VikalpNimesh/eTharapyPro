@@ -111,6 +111,12 @@ color: #A3A3C2;
   border-radius: 12px;
   cursor: pointer;
 }
+
+.fa-pause{
+  background: #43B95D  !important;
+  color: white;
+width: 56px;
+}
 .input-message-box textarea {
   height: 40px ;
   padding: 12px 24px;
@@ -144,11 +150,24 @@ color: #A3A3C2;
 
 /* *****************************video ***************************** */
 
+.start-stop-box{
+  display: flex;
+  flex-direction: column;
+}
+
+.start-stop-box .video-btn  , .start-stop-box .audio-btn{
+  background: #43B95D;
+  color: white;
+  border-radius: 10px;
+  padding: 7px;
+margin: 3px 0;
+font-weight: 6  00;
+}
 .message-main video {
   border-radius: 50%;
   border: 10px solid #43B95D;
-  position: absolute;
-  z-index: 55;
+  /* position: absolute; */
+  z-index: 55; 
   top: 20%;
   left: 25%;
   width: 303px;
@@ -163,5 +182,9 @@ color: #A3A3C2;
     width: 40px;
     height: 32px;
     padding: 16px;
+  }
+
+  .input-message-box .timer p{
+    width: 100%;
   }
 }

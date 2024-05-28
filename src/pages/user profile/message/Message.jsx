@@ -3,41 +3,67 @@ import "./Message.css";
 import FileUploader from "../../../components/file uploader/FileUploader";
 import WebcamVideo from "../../../components/webcam/WebCamVideo";
 import { WebCamContext } from "../../../context/WebContext/WebContext";
+import Webcam from "react-webcam";
+import WebcamAudio from "../../../components/webcam/WebCamAudio";
 
 const Message = ({ handleToggle, sidebar }) => {
   const [isCameraOpen, setIsCameraOpen] = useState(false);
   const [isRecording, setIsRecording] = useState(false);
+  const [IsAudioRecorded, setIsAudioRecorded] = useState(false);
+  const [isSend, setIsSend] = useState(false);
   const [selectedFile, setSelectedFile] = useState(null);
   const [message, setMessage] = useState("");
   const [first, setFirst] = useState("");
-  const [timer, setTimer] = useState(0);
-  const [paused, setPaused] = useState(false);
+  // const [timer, setTimer] = useState(0);
+  const [timerPaused, setTimerPaused] = useState(false);
   const intervalRef = useRef(null);
-  const textareaRef = useRef(null); 
+  const textareaRef = useRef(null);
 
+  
+  // console.log("isCameraOpen", isCameraOpen);
+  // console.log("isRecording", isRecording);
   const {
     img,
-    capturing,
-    // paused,
+    webcamRef,
+    capturingVideo,
+    paused,
     capture,
     handleStartCaptureClick,
     handleStopCaptureClick,
     handlePauseCaptureClick,
     handleResumeCaptureClick,
     handleDownload,
+    videoConstraints,
+    recordedChunks,
+    audioChunks,
+    setImg,
+    setVideoURL,
+    timer,
+    videoURL,
+    audioURL,
   } = useContext(WebCamContext);
-  
+
+  console.log(recordedChunks)
+  console.log(audioChunks)
+
   const removeFile = () => {
     setSelectedFile(null);
   };
+
   const handleSendMessage = () => {
     setFirst(message);
+    setIsSend(true);
+    setMessage("");
+    // setTimer(0);
+    setIsCameraOpen(false);
+    setIsRecording(false);
+    // setVideoURL(null)
   };
 
   const adjustHeight = () => {
     const textarea = textareaRef.current;
     textarea.style.height = "0px";
-    textarea.style.height = `${textarea.scrollHeight -5 }px`;
+    textarea.style.height = `${textarea.scrollHeight - 5}px`;
     if (textarea.scrollHeight >= 300) {
       textarea.style.overflow = "auto";
     } else {
@@ -62,39 +88,29 @@ const Message = ({ handleToggle, sidebar }) => {
   const handleVideoMessage = () => {
     setIsCameraOpen(true);
     setIsRecording(true);
-    setPaused(false);
-
+    setTimerPaused(false);
+    // startTimer();
+    // handleStartCaptureClick()
+    // capture()
+  };
+  const handleAudioMessage = () => {
+    setIsAudioRecorded(true);
+    // setIsRecording(true);
+    setTimerPaused(false);
+    // startTimer();
+    // handleStartCaptureClick()
+    // capture()
   };
 
   const handleStopRecording = () => {
     setIsRecording(false);
-    // setIsCameraOpen(false);
-    setPaused(true);
-
-
+    setIsCameraOpen(false);
+    setTimerPaused(true);
+    setIsAudioRecorded(false)
+    // handleStopCaptureClick()
+    // stopTimer();
   };
 
-
-  const startTimer = () => {
-    intervalRef.current = setInterval(() => {
-      setTimer((prevTimer) => prevTimer + 1);
-    }, 1000);
-  };
-
-  const stopTimer = () => {
-    clearInterval(intervalRef.current);
-    // setTimer(0);
-  };
-
-  useEffect(() => {
-    if (isRecording && !paused) {
-      startTimer();
-    } else {
-      stopTimer();
-    }
-    return () => clearInterval(intervalRef.current);
-  }, [isRecording, paused]);
-  
   return (
     <div className="message-main position-relative container-fluid m-0 p-0">
       <div className="message-heading d-flex justify-content-between mb-3">
@@ -116,8 +132,6 @@ const Message = ({ handleToggle, sidebar }) => {
         </div>
       </div>
 
-      {isCameraOpen && <WebcamVideo />}
-
       <div className="upcoming-session mb-3">
         <i className="fa-regular fa-bell"></i>
         <p>
@@ -129,72 +143,121 @@ const Message = ({ handleToggle, sidebar }) => {
         {!selectedFile && <div className="show-input-message">{first}</div>}
         {selectedFile && (
           <div className="show-input-message d-flex justify-content-between">
-            <p>{selectedFile.name}</p>
+            {/* <p>{selectedFile.name}</p>
             <button onClick={removeFile}>
               <span className="material-symbols-rounded">delete</span>
-            </button>
+            </button> */}
           </div>
         )}
         <div className="message-sent-time flex">
-          <img
-            src="sdas"
-            alt="E"
-            className="bg-black h-100 rounded-circle"
-          />
+          <img src="sdas" alt="E" className="bg-black h-100 rounded-circle" />
           <p>eTherapyPro</p>
           <small>Jan 3, 2023, 1:24 PM</small>
         </div>
       </div>
 
       <div className="input-message-box position-absolute bott d-flex justify-content-between align-items-end w-100">
-        {!isCameraOpen ? (
+        {!selectedFile && !isCameraOpen ? (
           <FileUploader
             removeFile={removeFile}
             selectedFile={selectedFile}
             setSelectedFile={setSelectedFile}
           />
         ) : (
-          <i className="fa-solid fa-trash"></i>
+          <>
+            {selectedFile ? (
+              <i className="fa-solid fa-trash" onClick={removeFile}></i>
+            ) : (
+              <i className="fa-solid fa-trash"> </i>
+            )}
+          </>
+        )}
+ 
+        {!isCameraOpen ? (
+          <>
+            {!selectedFile ? (
+              <textarea
+                className="w-100"
+                name="message"
+                rows="auto"
+                placeholder="Enter text here"
+                value={message}
+                ref={textareaRef}
+                onChange={handleChange}
+                onKeyDown={adjustHeight}
+                onKeyUp={adjustHeight}
+                onPaste={adjustHeight}
+                onCut={adjustHeight}
+                style={{ overflow: "hidden" }}
+              ></textarea>
+            ) : (
+              <div className="timer d-flex">
+                <p>{selectedFile.name}</p>
+                {/* <button onClick={removeFile}>
+              <span className="material-symbols-rounded">delete</span>
+            </button> */}
+              </div>
+            )}
+          </>
+        ) : (
+          <div className="timer">
+            <p>{new Date(timer * 1000).toISOString().substr(11, 8)}</p>
+          </div>
         )}
 
-      
-        {!isCameraOpen ?
-        <textarea
-          className="w-100"
-          name="message"
-          rows="auto"
-          placeholder="Enter text here"
-          value={message}
-          ref={textareaRef}
-          onChange={handleChange}
-          onKeyDown={adjustHeight}
-          onKeyUp={adjustHeight}
-          onPaste={adjustHeight}
-          onCut={adjustHeight}
-          style={{ overflow: "hidden" }}
-        ></textarea>
-         :(
-        <div className="timer">
-          <p>{new Date(timer * 1000).toISOString().substr(11, 8)}</p>
-        </div>
-          )}
-        
-
-        {message.length > 0 &&  isRecording  &&(
+        {selectedFile ? (
           <i
             className="fa-regular fa-paper-plane"
             onClick={handleSendMessage}
           ></i>
-        )}
-        {!isCameraOpen  ? (
-          <i className="fa-solid fa-video" onClick={handleVideoMessage}></i>
         ) : (
-          <i className="fa-solid fa-pause" onClick={handleStopRecording}></i>
+          !isCameraOpen &&
+          message.length > 0 && (
+            <i
+              className="fa-regular fa-paper-plane"
+              onClick={handleSendMessage}
+            ></i>
+          )
         )}
-        <i className="fa-solid fa-microphone" onClick={handleSendMessage}></i>
+
+        {!videoURL && isCameraOpen ? (
+          <i
+            className="fa-solid fa-pause flex"
+            onClick={handleStopRecording}
+          ></i>
+        ) : (
+          <>
+            { videoURL && audioURL && (
+              <i
+                className="fa-regular fa-paper-plane"
+                onClick={handleSendMessage}
+              ></i>
+            )}
+          </>
+        )}
+
+        {timer > 0 && (
+          <i
+            className="fa-solid fa-pause flex"
+            onClick={handleStopRecording}
+          ></i>
+        )}
+
+        {!isCameraOpen && message.length === 0 && !selectedFile && timer == 0 && (
+          // !timer > 0  &&
+          <>
+            <i className="fa-solid fa-video" onClick={handleVideoMessage}></i>
+            <i
+              className="fa-solid fa-microphone"
+              onClick={handleAudioMessage}
+            ></i>
+          </>
+        )}
       </div>
 
-     
+      {isCameraOpen && <WebcamVideo />}
+
+      {IsAudioRecorded && <WebcamAudio />}
     </div>
   );
 };
