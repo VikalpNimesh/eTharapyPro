@@ -131,6 +131,14 @@ width: 56px;
   text-align: left;
   overflow-y: hidden;
 }
+.red-dot {
+  margin-right: 10px;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: red;
+}
 .input-message-box .timer p {
   height: 40px;
   padding: 12px 24px;
@@ -155,7 +163,7 @@ width: 56px;
   flex-direction: column;
 }
 
-.start-stop-box .video-btn  , .start-stop-box .audio-btn{
+.start-stop-box .video-btn  , .start-stop-box .audio-btn , .start-stop-box .upload-btn{
   background: #43B95D;
   color: white;
   border-radius: 10px;
@@ -186,5 +194,14 @@ font-weight: 6  00;
 
   .input-message-box .timer p{
     width: 100%;
+  }
+
+  .video-btn {
+    display: none;
+  }
+
+  .message-main video{
+    width: 200px;
+    height: 200px;
   }
 }

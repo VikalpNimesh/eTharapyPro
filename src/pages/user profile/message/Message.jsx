@@ -202,8 +202,8 @@ const Message = ({ handleToggle, sidebar }) => {
             )}
           </>
         ) : (
-          <div className="timer">
-            <p>{new Date(timer * 1000).toISOString().substr(11, 8)}</p>
+          <div className="timer d-flex">
+            <p><span className="red-dot"></span>{new Date(timer * 1000).toISOString().substr(11, 8)}</p>
           </div>
         )}
 

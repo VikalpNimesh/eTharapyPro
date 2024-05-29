@@ -54,7 +54,7 @@ export default function WebcamVideo() {
 
         {capturingVideo ? (
           <>
-            <button className="video-btn" onClick={handleStopCaptureClick}>
+            <button className="video-btn " onClick={handleStopCaptureClick}>
               Stop Capture
             </button>
             {paused ? (

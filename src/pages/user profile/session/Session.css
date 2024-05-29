@@ -1,0 +1,67 @@
+.session-main{
+    display: flex;
+    gap: 24px;
+}
+
+.react-datepicker__month-container {
+    float: left;
+    width: 300px;
+}
+
+.react-datepicker__week , .react-datepicker__day-names {
+    white-space: nowrap;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.session-main .price-box{
+    width: 300px;
+    padding: 32px 24px;
+    margin-top: 24px;
+}
+.session-main .price-box h3 {
+padding-bottom: 10px;
+}
+
+
+.session-main .pack-price h4 span{
+    left: 40px;
+}
+
+.session-main .price-box h3{
+  
+font-size: 20px;
+font-weight: 700;
+line-height: 24px;
+text-align: center;
+
+}
+
+.session-main .pack-features .list-feature li{
+
+font-size: 14px;
+font-weight: 600;
+line-height: 18px;
+text-align: left;
+
+}
+
+.session-main .dis-btn{
+    margin: 20px auto;
+padding: 6px 12px ;
+border-radius: 16px ;
+background-color: #C0ECC5;
+font-family: Inter;
+font-size: 14px;
+font-weight: 500;
+line-height: 16.94px;
+text-align: center;
+
+}
+
+.session-main .start-monthly-btn{
+    padding: 16px 32px;
+}
+.session-main .pack-features .list-feature li{
+    padding-bottom: 14px;
+}
