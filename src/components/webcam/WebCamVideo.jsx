@@ -7,6 +7,7 @@ export default function WebcamVideo() {
     img,
     webcamRef,
     setCapturingVideo,
+    capturingVideo,
     paused,
     capture,
     handleStartCaptureClick,
@@ -26,7 +27,6 @@ export default function WebcamVideo() {
     handleStartCaptureClick();
     capture();
   };
-
   return (
     <div className="Container">
       <div className="start-stop-box flex">
@@ -52,7 +52,7 @@ export default function WebcamVideo() {
           )}
         </>
 
-        {setCapturingVideo ? (
+        {capturingVideo ? (
           <>
             <button className="video-btn" onClick={handleStopCaptureClick}>
               Stop Capture

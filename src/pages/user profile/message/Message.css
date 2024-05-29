@@ -112,7 +112,7 @@ color: #A3A3C2;
   cursor: pointer;
 }
 
-.fa-pause{
+.fa-pause , .fa-play{
   background: #43B95D  !important;
   color: white;
 width: 56px;

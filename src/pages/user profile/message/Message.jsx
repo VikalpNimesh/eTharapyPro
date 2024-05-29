@@ -3,7 +3,6 @@ import "./Message.css";
 import FileUploader from "../../../components/file uploader/FileUploader";
 import WebcamVideo from "../../../components/webcam/WebCamVideo";
 import { WebCamContext } from "../../../context/WebContext/WebContext";
-import Webcam from "react-webcam";
 import WebcamAudio from "../../../components/webcam/WebCamAudio";
 
 const Message = ({ handleToggle, sidebar }) => {
@@ -14,52 +13,9 @@ const Message = ({ handleToggle, sidebar }) => {
   const [selectedFile, setSelectedFile] = useState(null);
   const [message, setMessage] = useState("");
   const [first, setFirst] = useState("");
-  // const [timer, setTimer] = useState(0);
   const [timerPaused, setTimerPaused] = useState(false);
   const intervalRef = useRef(null);
   const textareaRef = useRef(null);
-
-  
-  // console.log("isCameraOpen", isCameraOpen);
-  // console.log("isRecording", isRecording);
-  const {
-    img,
-    webcamRef,
-    capturingVideo,
-    paused,
-    capture,
-    handleStartCaptureClick,
-    handleStopCaptureClick,
-    handlePauseCaptureClick,
-    handleResumeCaptureClick,
-    handleDownload,
-    videoConstraints,
-    recordedChunks,
-    audioChunks,
-    setImg,
-    setVideoURL,
-    timer,
-    videoURL,
-    audioURL,
-  } = useContext(WebCamContext);
-
-  console.log(recordedChunks)
-  console.log(audioChunks)
-
-  const removeFile = () => {
-    setSelectedFile(null);
-  };
-
-  const handleSendMessage = () => {
-    setFirst(message);
-    setIsSend(true);
-    setMessage("");
-    // setTimer(0);
-    setIsCameraOpen(false);
-    setIsRecording(false);
-    // setVideoURL(null)
-  };
-
   const adjustHeight = () => {
     const textarea = textareaRef.current;
     textarea.style.height = "0px";
@@ -80,9 +36,55 @@ const Message = ({ handleToggle, sidebar }) => {
     };
   }, []);
 
+  const {
+    img,
+    webcamRef,
+    capturingVideo,
+    paused,
+    capture,
+    handleStartCaptureClick,
+    handleStopCaptureClick,
+    handlePauseCaptureClick,
+    handleResumeCaptureClick,
+    handleStartAudioCaptureClick,
+    handleStopAudioCaptureClick,
+    handleDownload,
+    videoConstraints,
+    recordedChunks,
+    audioChunks,
+    setImg,
+    stopTimer,
+    timer,
+    videoURL,
+    audioURL,setVideoURL ,setAudioURL
+  } = useContext(WebCamContext);
+
+  console.log(audioURL)
+  console.log(videoURL)
+  console.log("isCameraOpen", isCameraOpen);
+  console.log("isRecording", isRecording);
+
+
+  const removeFile = () => {
+    setSelectedFile(null);
+  };
+
+
   const handleChange = (e) => {
     setMessage(e.target.value);
     adjustHeight();
+  };
+
+  const handleSendMessage = () => {
+    setFirst(message);
+    setIsSend(true);
+    setMessage("");
+    setSelectedFile(null)
+    setIsCameraOpen(false);
+    setIsRecording(false);
+    setVideoURL(null)
+    setAudioURL(null)
+        setIsAudioRecorded(false)
   };
 
   const handleVideoMessage = () => {
@@ -95,20 +97,20 @@ const Message = ({ handleToggle, sidebar }) => {
   };
   const handleAudioMessage = () => {
     setIsAudioRecorded(true);
-    // setIsRecording(true);
+    setIsRecording(true);
     setTimerPaused(false);
-    // startTimer();
-    // handleStartCaptureClick()
-    // capture()
+    // handleStartAudioCaptureClick()
+
   };
 
   const handleStopRecording = () => {
-    setIsRecording(false);
-    setIsCameraOpen(false);
+    // setIsRecording(false);
+    // setIsCameraOpen(false);
     setTimerPaused(true);
-    setIsAudioRecorded(false)
-    // handleStopCaptureClick()
-    // stopTimer();
+    // setIsAudioRecorded(false)
+    handleStopCaptureClick()
+    // handleStopAudioCaptureClick()
+    stopTimer();
   };
 
   return (
@@ -173,7 +175,7 @@ const Message = ({ handleToggle, sidebar }) => {
           </>
         )}
  
-        {!isCameraOpen ? (
+        {!timer ? (
           <>
             {!selectedFile ? (
               <textarea
@@ -205,46 +207,29 @@ const Message = ({ handleToggle, sidebar }) => {
           </div>
         )}
 
-        {selectedFile ? (
+        {
+  (selectedFile || videoURL || audioURL || message.length>0) && (
+    <i
+      className="fa-regular fa-paper-plane"
+      onClick={handleSendMessage}
+    ></i>
+  )
+}
+        {timer == 0 && !capturingVideo  && !videoURL && !audioURL && isRecording   && (
           <i
-            className="fa-regular fa-paper-plane"
-            onClick={handleSendMessage}
+            className="fa-solid fa-play flex"
+            onClick={!IsAudioRecorded? handleStartCaptureClick : handleStartAudioCaptureClick}
           ></i>
-        ) : (
-          !isCameraOpen &&
-          message.length > 0 && (
-            <i
-              className="fa-regular fa-paper-plane"
-              onClick={handleSendMessage}
-            ></i>
-          )
-        )}
+        ) }
 
-        {!videoURL && isCameraOpen ? (
-          <i
-            className="fa-solid fa-pause flex"
-            onClick={handleStopRecording}
-          ></i>
-        ) : (
-          <>
-            { videoURL && audioURL && (
-              <i
-                className="fa-regular fa-paper-plane"
-                onClick={handleSendMessage}
-              ></i>
-            )}
-          </>
-        )}
-
-        {timer > 0 && (
+        {timer >  0 &&  (
           <i
             className="fa-solid fa-pause flex"
-            onClick={handleStopRecording}
+            onClick={!IsAudioRecorded ? handleStopRecording : handleStopAudioCaptureClick}
           ></i>
         )}
 
-        {!isCameraOpen && message.length === 0 && !selectedFile && timer == 0 && (
-          // !timer > 0  &&
+        {!isCameraOpen && message.length === 0 && !selectedFile && timer == 0 && !isRecording && (
           <>
             <i className="fa-solid fa-video" onClick={handleVideoMessage}></i>
             <i
@@ -256,7 +241,6 @@ const Message = ({ handleToggle, sidebar }) => {
       </div>
 
       {isCameraOpen && <WebcamVideo />}
-
       {IsAudioRecorded && <WebcamAudio />}
     </div>
   );

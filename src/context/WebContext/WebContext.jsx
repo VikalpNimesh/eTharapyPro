@@ -53,10 +53,10 @@ export const WebCamProvider = ({ children }) => {
 
 
   const handleStartCaptureClick = useCallback(() => {
+    startTimer();
     setCapturingVideo(true);
     setVideoURL(null);
     setPaused(false);
-    startTimer();
     mediaRecorderRef.current = new MediaRecorder(webcamRef.current.stream, {
       mimeType: "video/webm",
     });
@@ -65,9 +65,10 @@ export const WebCamProvider = ({ children }) => {
       handleDataAvailable
     );
     mediaRecorderRef.current.start();
+    
     const imageSrc = webcamRef.current.getScreenshot();
     setImg(imageSrc);
-  }, [webcamRef, handleDataAvailable]);
+  }, [ handleDataAvailable]);
 
   const handleStopCaptureClick = useCallback(() => {
     mediaRecorderRef.current.stop();
@@ -105,6 +106,7 @@ export const WebCamProvider = ({ children }) => {
       //   console.error("Error uploading file", error);
       // }
       setRecordedChunks([])
+      
     }
 
     if (audioChunks.length) {
@@ -134,11 +136,10 @@ export const WebCamProvider = ({ children }) => {
   }, []);
 
   const handleStartAudioCaptureClick = useCallback(async () => {
+    startTimer();
     setCapturingAudio(true);
     setAudioURL(null);
     setPaused(false);
-    startTimer();
-
     const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
     audioRecorderRef.current = new MediaRecorder(stream, {
       mimeType: "audio/webm",
@@ -148,6 +149,7 @@ export const WebCamProvider = ({ children }) => {
       handleAudioDataAvailable
     );
     audioRecorderRef.current.start();
+  
   }, [handleAudioDataAvailable]);
 
   const handleStopAudioCaptureClick = useCallback(() => {
@@ -197,7 +199,7 @@ export const WebCamProvider = ({ children }) => {
         handleStartAudioCaptureClick,
         handleStopAudioCaptureClick,
         videoConstraints,
-        timer,
+        timer,stopTimer,setVideoURL ,setAudioURL
       }}
     >
       {children}
