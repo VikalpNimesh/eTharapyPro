@@ -64,9 +64,9 @@ const [IsheaderTopOpen, setIsheaderTopOpen] = useState(true)
               <li><h2><Link to="/faq">FAQ</Link></h2></li>
             </ul>
             <div className="btn-box   mb-3 mb-md-0 ">
-              <button className="sign-btn">Sign in</button>
+              <button className="sign-btn"><Link to="/questionnaire/">Sign in</Link></button>
               <button className="nav-start-therapy-btn d-none  d-md-block ">
-              <Link to="/question1">Start therapy</Link>
+              <Link to="/questionnaire/">Start therapy</Link>
               </button>
             </div>
           </div>

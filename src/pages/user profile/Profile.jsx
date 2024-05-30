@@ -9,36 +9,83 @@ import Review from "./review/Review.jsx";
 import { useEffect, useState } from "react";
 import Session from "./session/Session.jsx";
 import { WebCamProvider } from "../../context/WebContext/WebContext.jsx";
+import {BookSessionProvider} from "../../context/BookSessionContext.jsx"
+import AppointmentSideBar from "./session/BookSessionSideBar.jsx";
 
 const Profile = () => {
-const [sidebar, setSidebar] = useState(true)
-// console.log(sidebar);
+  const [sidebar, setSidebar] = useState(true);
+  const [IsBookSidebar, setIsBookSidebar] = useState(false);
+  const [slotInfoData, setSetslotInfoData] = useState({});
+
+  const handleAppointBar = (value, slotInfo) => {
+    setIsBookSidebar((value) => !value);
+    setSetslotInfoData(slotInfo);
+  };
 
   useEffect(() => {
-    localStorage.setItem("user", "false"); 
+    localStorage.setItem("user", "false");
   }, []);
 
   const handleToggle = () => {
-   if (window.innerWidth<625) {
-    setSidebar(prev=>!prev)
-   }
-  }
+    if (window.innerWidth < 625) {
+      setSidebar((prev) => !prev);
+    }
+  };
 
   return (
     <div className="profile-main position-relative">
-      <SideBar handleToggle={handleToggle} sidebar={sidebar}/>
+      <SideBar handleToggle={handleToggle} sidebar={sidebar} />
+      <AppointmentSideBar
+        IsBookSidebar={IsBookSidebar}
+        slotInfoData={slotInfoData}
+        handleAppointBar={handleAppointBar}
+      />
       <div className="main-content user-wrapper">
-      <WebCamProvider>
-        <Routes>
-        <Route path="/" element={<Navigate to="message" replace />} />
-          <Route path="message" element={<Message handleToggle={handleToggle} sidebar={sidebar} />} />
-          <Route path="subscription" element={<Subscription handleToggle={handleToggle} sidebar={sidebar}/>} />
-          <Route path="review" element={<Review handleToggle={handleToggle} sidebar={sidebar}/>} />
-          <Route path="blog" element={<Blog handleToggle={handleToggle} sidebar={sidebar}/>} />
-          <Route path="session" element={<Session handleToggle={handleToggle} sidebar={sidebar}/>} />
-          <Route path="account-settings/*" element={<AccountSettings handleToggle={handleToggle} sidebar={sidebar}/>} />
-        </Routes>
-        </WebCamProvider>
+        <WebCamProvider>
+          <BookSessionProvider>
+          <Routes>
+            <Route path="/" element={<Navigate to="message" replace />} />
+            <Route
+              path="message"
+              element={
+                <Message handleToggle={handleToggle} sidebar={sidebar} />
+              }
+            />
+            <Route
+              path="subscription"
+              element={
+                <Subscription handleToggle={handleToggle} sidebar={sidebar} />
+              }
+            />
+            <Route
+              path="review"
+              element={<Review handleToggle={handleToggle} sidebar={sidebar} />}
+            />
+            <Route
+              path="blog"
+              element={<Blog handleToggle={handleToggle} sidebar={sidebar} />}
+            />
+            <Route
+              path="session"
+              element={
+                <Session
+                  handleAppointBar={handleAppointBar}
+                  handleToggle={handleToggle}
+                  sidebar={sidebar}
+                />
+              }
+            />
+            <Route
+              path="account-settings/*"
+              element={
+                <AccountSettings
+                  handleToggle={handleToggle}
+                  sidebar={sidebar}
+                />
+              }
+            />
+          </Routes>
+          </BookSessionProvider></WebCamProvider>
       </div>
     </div>
   );

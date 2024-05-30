@@ -63,6 +63,86 @@
   color: #023856;
 }
 
+/* *****************AppointmentSideBar********************** */
+
+.appointment-main .sidebar-main{
+  position: absolute;
+  right: 0px;
+  /* height: 100vh; */
+  gap: 72px;
+  width: 333px;
+  z-index: 556;
+}
+
+.appointment-main .sidebar-main i{
+  color: #43B95D;
+}
+.appointment-main .sidebar-main li{
+  padding: 6px 0 6px 18px ;
+
+}
+
+.appointment-main .fa-at{
+  color: #575875 !important;
+  font-size: 16px;
+}
+.appointment-main  .counseler-username{
+  color: #575875;
+
+font-size: 14px;
+font-weight: 600;
+line-height: 18px;
+text-align: left;
+
+}
+
+.appointment-main .termcheck{
+  padding: 6px 0 6px 18px;
+  gap: 16px;
+font-size: 14px;
+font-weight: 600;
+line-height: 18px;
+text-align: left;
+
+}
+
+.appointment-main .ctabanner-btn{
+  background: #023856;
+  color:white;
+  height: 60px;
+  padding: 20px 32px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.2px;
+  width: 100%;
+  margin-top: 32px;
+  margin-bottom: 54px;
+}
+
+.appointment-main .session-history{
+
+font-size: 20px;
+font-weight: 700;
+line-height: 24px;
+text-align: left;
+color: #10131D;
+margin-bottom: 22px;
+
+}
+
+.appointment-main .search-history-box{
+  margin-bottom: 18px;
+}
+
+.appointment-main .search-history-box p{
+
+font-size: 14px ;
+font-weight: 600;
+line-height: 18px;
+text-align: left;
+color: #575875;
+}
 @media (max-width: 625px) {
   .sidebar-main {
     width: 100%;

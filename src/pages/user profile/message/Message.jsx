@@ -59,10 +59,10 @@ const Message = ({ handleToggle, sidebar }) => {
     audioURL,setVideoURL ,setAudioURL
   } = useContext(WebCamContext);
 
-  console.log(audioURL)
-  console.log(videoURL)
-  console.log("isCameraOpen", isCameraOpen);
-  console.log("isRecording", isRecording);
+  // console.log(audioURL)
+  // console.log(videoURL)
+  // console.log("isCameraOpen", isCameraOpen);
+  // console.log("isRecording", isRecording);
 
 
   const removeFile = () => {
