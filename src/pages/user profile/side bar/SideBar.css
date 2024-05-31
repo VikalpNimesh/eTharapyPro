@@ -72,6 +72,7 @@
   gap: 72px;
   width: 333px;
   z-index: 556;
+  border-radius: 20px 0px 0px 20px
 }
 
 .appointment-main .sidebar-main i{

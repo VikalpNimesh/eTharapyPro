@@ -22,7 +22,7 @@ export default function WebcamAudio() {
     <div className="Container">
       <div className="start-stop-box flex">
         
-        {capturingAudio ? (
+        {/* {capturingAudio ? (
           <button className="audio-btn" onClick={handleStopAudioCaptureClick}>
             Stop Audio
           </button>
@@ -30,15 +30,15 @@ export default function WebcamAudio() {
           <button className="audio-btn" onClick={handleStartAudioCaptureClick}>
             Start Audio
           </button>
-        )}
+        )} */}
 
-        {(recordedChunks.length > 0 || audioChunks.length > 0) && (
+        {/* {(recordedChunks.length > 0 || audioChunks.length > 0) && (
           <>
             <button className="upload-btn" onClick={handleUpload}>
               Upload
             </button>
           </>
-        )}
+        )} */}
 
         {audioURL && (
           <div>

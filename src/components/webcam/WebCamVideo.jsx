@@ -52,7 +52,7 @@ export default function WebcamVideo() {
           )}
         </>
 
-        {capturingVideo ? (
+        {/* {capturingVideo ? (
           <>
             <button className="video-btn " onClick={handleStopCaptureClick}>
               Stop Capture
@@ -71,16 +71,16 @@ export default function WebcamVideo() {
           <button className="video-btn" onClick={handleStartCaptureCli}>
             Start Capture
           </button>
-        )}
-        {recordedChunks.length > 0 && (<>
-          {/* <button className="video-btn" onClick={handleDownload}>
+        )} */}
+        {/* {recordedChunks.length > 0 && (<>
+          <button className="video-btn" onClick={handleDownload}>
             Download
-          </button> */}
+          </button>
           <button className="video-btn" onClick={handleUpload}>
             Upload
           </button>
           </>
-        )}
+        )} */}
       </div>
     </div>
   );

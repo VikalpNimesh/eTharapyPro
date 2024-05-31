@@ -1,6 +1,8 @@
 .session-main{
     display: flex;
-    gap: 24px;
+    /* gap: 24px; 
+    */
+    flex-direction: column;
 }
 
 .react-datepicker__month-container {
@@ -59,9 +61,20 @@ text-align: center;
 
 }
 
+.available-slot{
+    padding: 5px 10px;
+    background-color: rgb(74, 227, 74);
+    color:  white;
+    border-radius: 10px;
+}
 .session-main .start-monthly-btn{
     padding: 16px 32px;
 }
 .session-main .pack-features .list-feature li{
     padding-bottom: 14px;
+}
+
+.rbc-calendar{
+height: 50vh !important;
+width: 100%;
 }

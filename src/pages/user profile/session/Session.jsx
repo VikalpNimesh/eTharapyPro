@@ -9,9 +9,7 @@ const localizer = momentLocalizer(moment);
 import "react-big-calendar/lib/css/react-big-calendar.css";
 import { BookSessionContext } from "../../../context/BookSessionContext.jsx";
 
-
-
-const Session = ({ handleAppointBar }) => {
+const Session = ({ handleAppointBar, handleToggle, sidebar }) => {
   const [startDate, setStartDate] = useState(new Date());
   const { myEventsList } = useContext(BookSessionContext);
 
@@ -21,7 +19,19 @@ const Session = ({ handleAppointBar }) => {
 
   return (
     <div className="session-main">
-      <div>
+      <div className="message-heading d-flex justify-content-between mb-3">
+        <h2 className="h32">Session</h2>
+        <div className="right d-flex align-items-center">
+          <i
+            className="fa-solid fa-bars d-md-none flex"
+            onClick={() => {
+              handleToggle(sidebar);
+            }}
+          ></i>
+        </div>
+      </div>
+      <div className=" d-flex gap-4">
+        {/* <div className=" d-none  d-md-block ">
         <DatePicker
           selected={startDate}
           onChange={(date) => setStartDate(date)}
@@ -68,20 +78,41 @@ const Session = ({ handleAppointBar }) => {
             </div>
           </div>
         </div>
+      </div> */}
+
+        <Calendar
+          localizer={localizer}
+          // events={myEventsList}
+          defaultView="month"
+          // date={startDate}
+          // onSelectSlot={onSelectSlot}
+          // selectable
+          startAccessor="start"
+          endAccessor="end"
+          
+          step={30}
+          timeslots={1}
+        />
       </div>
-
-      <Calendar
-        localizer={localizer}
-        events={myEventsList}
-        defaultView="day"
-        date={startDate}
-        onSelectSlot={onSelectSlot}
-        selectable
-        startAccessor="start"
-        endAccessor="end"
-        style={{ height: "95vh", width: "100%" }}
-      />
-
+      <div className="card timechoosec mt-4 pading-15">
+        <div className="row p-2">
+          <div className="col-12 flex justify-content-between ">
+            <p>Date: {"date"}</p>
+            <p >Select Timing</p>
+          </div>
+          <div className="col-12 text-left">
+            <hr />
+          </div>
+          <div className="col-12 text-right flex justify-content-between">
+            <div className=" available-slot">
+    10:00 pm 
+            </div>
+            <button type="button" className="btn btn-success">
+              Book
+            </button>
+          </div>
+        </div>
+      </div>
       <Modal />
     </div>
   );

@@ -63,10 +63,14 @@ const Message = ({ handleToggle, sidebar }) => {
   // console.log(videoURL)
   // console.log("isCameraOpen", isCameraOpen);
   // console.log("isRecording", isRecording);
-
+  // console.log("IsAudioRecorded", IsAudioRecorded)
+  // console.log(timer)
+  // console.log(selectedFile)
 
   const removeFile = () => {
     setSelectedFile(null);
+    setAudioURL(null)
+    setVideoURL(null)
   };
 
 
@@ -84,7 +88,9 @@ const Message = ({ handleToggle, sidebar }) => {
     setIsRecording(false);
     setVideoURL(null)
     setAudioURL(null)
-        setIsAudioRecorded(false)
+    setIsAudioRecorded(false)
+    const textarea = textareaRef.current;
+    textarea.style.height = "40px";
   };
 
   const handleVideoMessage = () => {
@@ -159,25 +165,21 @@ const Message = ({ handleToggle, sidebar }) => {
       </div>
 
       <div className="input-message-box position-absolute bott d-flex justify-content-between align-items-end w-100">
-        {!selectedFile && !isCameraOpen ? (
+        {!selectedFile && !isCameraOpen && !IsAudioRecorded && (
           <FileUploader
             removeFile={removeFile}
             selectedFile={selectedFile}
             setSelectedFile={setSelectedFile}
           />
-        ) : (
-          <>
-            {selectedFile ? (
+        ) }
+
+        {(selectedFile || isCameraOpen || IsAudioRecorded ) && (
               <i className="fa-solid fa-trash" onClick={removeFile}></i>
-            ) : (
-              <i className="fa-solid fa-trash"> </i>
             )}
-          </>
-        )}
  
-        {!timer ? (
+        {(!isCameraOpen) && (!IsAudioRecorded)  ? (
           <>
-            {!selectedFile ? (
+            {!selectedFile ?  (
               <textarea
                 className="w-100"
                 name="message"
@@ -192,14 +194,9 @@ const Message = ({ handleToggle, sidebar }) => {
                 onCut={adjustHeight}
                 style={{ overflow: "hidden" }}
               ></textarea>
-            ) : (
-              <div className="timer d-flex">
-                <p>{selectedFile.name}</p>
-                {/* <button onClick={removeFile}>
-              <span className="material-symbols-rounded">delete</span>
-            </button> */}
-              </div>
-            )}
+            ) : (<div className="timer d-flex">
+                <p>{selectedFile?.name}</p>
+          </div>)}
           </>
         ) : (
           <div className="timer d-flex">

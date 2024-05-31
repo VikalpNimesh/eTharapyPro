@@ -7,9 +7,9 @@ import { BookSessionContext } from "../../../context/BookSessionContext.jsx";
 
 const BookSessionSideBar = ({ IsBookSidebar, handleAppointBar, slotInfoData }) => {
   
-  // const {setMyEventsList } = useContext(BookSessionContext)
+  const {setMyEventsList , myEventsList   } = useContext(BookSessionContext)
   console.log(slotInfoData)
-  // console.log(setMyEventsList)
+  console.log(myEventsList )
   const sidebarStyle = {
     transform: IsBookSidebar ? "translate(0)" : "translate(100%)",
     transition: "transform 0.3s ease-in-out",
@@ -17,11 +17,12 @@ const BookSessionSideBar = ({ IsBookSidebar, handleAppointBar, slotInfoData }) =
   };
 
   const handleBookSession = () => {
-    // setMyEventsList((prev) => [...prev, {
-    //   start: moment(slotInfoData.start).toDate(),
-    //   end: moment(slotInfoData.end).toDate(),
-    //   title: "anniversary"
-    // } ])
+    setMyEventsList((prev) => [...prev, {
+      start: moment(slotInfoData.start).toDate(),
+      end: moment(slotInfoData.end).toDate(),
+      title: "anniversary"
+    }])
+    handleAppointBar(false)
   }
   return (
     <div className="appointment-main">
@@ -78,21 +79,14 @@ const BookSessionSideBar = ({ IsBookSidebar, handleAppointBar, slotInfoData }) =
           <button className="ctabanner-btn" onClick={handleBookSession}>Book Session</button>
 
           <h3 className="session-history">Session History</h3>
-                  <div className="search-history-box">
-                      <p>Wed, May 8</p>
-                      <p>12:30 PM - 1 PM</p>
+          {myEventsList.map((data) => (
+            <div className="search-history-box" key={data.start}>
+                      <p>{ data && moment(data.start).format("ddd,MMM DD")}</p>
+                      <p>{data && moment(data.start).format(" h:mm A")} - { data && moment(data.end).format(" h:mm A"  )}</p>
                       <p>Specialist: Alina Boyko</p>
                   </div>
-                  <div className="search-history-box">
-                      <p>Wed, May 8</p>
-                      <p>12:30 PM - 1 PM</p>
-                      <p>Specialist: Alina Boyko</p>
-                  </div>
-                  <div className="search-history-box">
-                      <p>Wed, May 8</p>
-                      <p>12:30 PM - 1 PM</p>
-                      <p>Specialist: Alina Boyko</p>
-                  </div>
+          ))}
+              
 
         </div>
       </div>

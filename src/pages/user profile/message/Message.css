@@ -139,12 +139,16 @@ width: 56px;
   border-radius: 50%;
   background: red;
 }
+.input-message-box .timer {
+
+  width: 100%;
+}
 .input-message-box .timer p {
   height: 40px;
   padding: 12px 24px;
   border-radius: 12px;
   background-color: white;
-  width: 600px;
+  width: 100%;
   outline: none;
   border: none;
   /* font-family: Gilmer; */

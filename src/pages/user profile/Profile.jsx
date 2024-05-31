@@ -8,8 +8,6 @@ import Subscription from "./subscription/Subscription.jsx";
 import Review from "./review/Review.jsx";
 import { useEffect, useState } from "react";
 import Session from "./session/Session.jsx";
-import { WebCamProvider } from "../../context/WebContext/WebContext.jsx";
-import {BookSessionProvider} from "../../context/BookSessionContext.jsx"
 import AppointmentSideBar from "./session/BookSessionSideBar.jsx";
 
 const Profile = () => {
@@ -41,8 +39,7 @@ const Profile = () => {
         handleAppointBar={handleAppointBar}
       />
       <div className="main-content user-wrapper">
-        <WebCamProvider>
-          <BookSessionProvider>
+
           <Routes>
             <Route path="/" element={<Navigate to="message" replace />} />
             <Route
@@ -85,7 +82,7 @@ const Profile = () => {
               }
             />
           </Routes>
-          </BookSessionProvider></WebCamProvider>
+        
       </div>
     </div>
   );
