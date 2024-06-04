@@ -10,13 +10,17 @@ import "react-big-calendar/lib/css/react-big-calendar.css";
 import { BookSessionContext } from "../../../context/BookSessionContext.jsx";
 
 const Session = ({ handleAppointBar, handleToggle, sidebar }) => {
-  const [startDate, setStartDate] = useState(new Date());
-  const { myEventsList } = useContext(BookSessionContext);
-
+  const [startDate, setStartDate] = useState();
+  // const { myEventsList } = useContext(BookSessionContext);
+console.log(new Date()) 
   const onSelectSlot = (slotInfo) => {
-    handleAppointBar(true, slotInfo);
+    // console.log(slotInfo?.start);
+    setStartDate(moment(slotInfo.start).format("DD-MM-YYYY"));
   };
-
+  
+  const handleAvailableSlot =(slotInfo)=>{
+    handleAppointBar(true, slotInfo);
+  }
   return (
     <div className="session-main">
       <div className="message-heading d-flex justify-content-between mb-3">
@@ -85,11 +89,10 @@ const Session = ({ handleAppointBar, handleToggle, sidebar }) => {
           // events={myEventsList}
           defaultView="month"
           // date={startDate}
-          // onSelectSlot={onSelectSlot}
-          // selectable
+          onSelectSlot={onSelectSlot}
+          selectable
           startAccessor="start"
           endAccessor="end"
-          
           step={30}
           timeslots={1}
         />
@@ -97,16 +100,18 @@ const Session = ({ handleAppointBar, handleToggle, sidebar }) => {
       <div className="card timechoosec mt-4 pading-15">
         <div className="row p-2">
           <div className="col-12 flex justify-content-between ">
-            <p>Date: {"date"}</p>
-            <p >Select Timing</p>
+            <p>Date:{startDate}</p>
+            <p>Select Timing</p>
           </div>
           <div className="col-12 text-left">
             <hr />
           </div>
           <div className="col-12 text-right flex justify-content-between">
-            <div className=" available-slot">
-    10:00 pm 
-            </div>
+            <div className=" d-flex gap-2">
+              
+            <div className=" available-slot" onClick={(slotInfo)=>handleAvailableSlot(slotInfo)}>10:00 pm</div>
+          
+          </div>
             <button type="button" className="btn btn-success">
               Book
             </button>

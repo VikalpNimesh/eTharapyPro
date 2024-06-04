@@ -8,8 +8,8 @@ import { BookSessionContext } from "../../../context/BookSessionContext.jsx";
 const BookSessionSideBar = ({ IsBookSidebar, handleAppointBar, slotInfoData }) => {
   
   const {setMyEventsList , myEventsList   } = useContext(BookSessionContext)
-  console.log(slotInfoData)
-  console.log(myEventsList )
+  // console.log(slotInfoData)
+  // console.log(myEventsList )
   const sidebarStyle = {
     transform: IsBookSidebar ? "translate(0)" : "translate(100%)",
     transition: "transform 0.3s ease-in-out",
