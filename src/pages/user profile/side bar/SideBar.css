@@ -66,13 +66,15 @@
 /* *****************AppointmentSideBar********************** */
 
 .appointment-main .sidebar-main{
-  position: absolute;
-  right: 0px;
+  /* position: absolute; */
+  /* right: 0px; */
+  /* top: 0px; */
   /* height: 100vh; */
   gap: 72px;
-  width: 333px;
-  z-index: 556;
+  /* width: 333px; */
+  /* z-index: 556; */
   border-radius: 20px 0px 0px 20px
+  
 }
 
 .appointment-main .sidebar-main i{

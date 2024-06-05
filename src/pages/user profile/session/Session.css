@@ -1,81 +1,129 @@
-.session-main{
-    display: flex;
-    /* gap: 24px; 
-    */
-    flex-direction: column;
+.session-main {
+  display: flex;
+  flex-direction: column;
+}
+.session-main .card{
+height: fit-content;
+flex-wrap: wrap;
+border: none;
+padding: 13px !important;
 }
 
 .react-datepicker__month-container {
-    float: left;
-    width: 300px;
+  float: left;
+  width: 100%;
+}
+.react-datepicker__navigation-icon {
+    top: 11px;
+
+}
+.react-datepicker {
+  border: none;
+  width: 100%;
+  height: max-content
+}
+.react-datepicker__current-month {
+    padding: 10px 0;
+
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  /* text-align: left; */
+  color: #023856;
+}
+.react-datepicker__week,
+.react-datepicker__day-names {
+  white-space: nowrap;
+  display: flex;
+  justify-content: space-around;
 }
 
-.react-datepicker__week , .react-datepicker__day-names {
-    white-space: nowrap;
-    display: flex;
-    justify-content: space-evenly;
+.react-datepicker__day,
+.react-datepicker__day-name {
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 17.43px;
+  text-align: center;
+}
+.react-datepicker__day--keyboard-selected,
+.react-datepicker__day:hover {
+  border-radius: 50%;
+  background-color: #023856;
+  color: white;
 }
 
-.session-main .price-box{
-    width: 300px;
-    padding: 32px 24px;
-    margin-top: 24px;
+.react-datepicker__header {
+  border: none;
+  background-color: transparent;
+}
+.react-datepicker__week,
+.react-datepicker__day-names {
+  white-space: nowrap;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.session-main .price-box {
+  width: 300px;
+  padding: 32px 24px;
+  margin-top: 24px;
 }
 .session-main .price-box h3 {
-padding-bottom: 10px;
+  padding-bottom: 10px;
 }
 
-
-.session-main .pack-price h4 span{
-    left: 40px;
+.session-main .pack-price h4 span {
+  left: 40px;
 }
 
-.session-main .price-box h3{
-  
-font-size: 20px;
-font-weight: 700;
-line-height: 24px;
-text-align: center;
-
+.session-main .price-box h3 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
 }
 
-.session-main .pack-features .list-feature li{
-
-font-size: 14px;
-font-weight: 600;
-line-height: 18px;
-text-align: left;
-
+.session-main .pack-features .list-feature li {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  text-align: left;
 }
 
-.session-main .dis-btn{
-    margin: 20px auto;
-padding: 6px 12px ;
-border-radius: 16px ;
-background-color: #C0ECC5;
-font-family: Inter;
-font-size: 14px;
-font-weight: 500;
-line-height: 16.94px;
-text-align: center;
-
+.session-main .dis-btn {
+  margin: 20px auto;
+  padding: 6px 12px;
+  border-radius: 16px;
+  background-color: #c0ecc5;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16.94px;
+  text-align: center;
 }
 
-.available-slot{
-    padding: 5px 10px;
-    background-color: rgb(74, 227, 74);
-    color:  white;
-    border-radius: 10px;
-    cursor: pointer;
-}
-.session-main .start-monthly-btn{
-    padding: 16px 32px;
-}
-.session-main .pack-features .list-feature li{
-    padding-bottom: 14px;
-}
+.available-slot {
+     margin-top:5px;
+  height: 35px;
+  padding: 5px 10px;
+  background-color: rgb(74, 227, 74);
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+      /* width: 50%; */
 
-.rbc-calendar{
-height: 50vh !important;
-width: 100%;
+}
+.btn-success {
+  height: 35px;
+}
+.session-main .start-monthly-btn {
+  padding: 16px 32px;
+}
+.session-main .pack-features .list-feature li {
+  padding-bottom: 14px;
 }

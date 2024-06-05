@@ -8,19 +8,29 @@ import moment from "moment";
 const localizer = momentLocalizer(moment);
 import "react-big-calendar/lib/css/react-big-calendar.css";
 import { BookSessionContext } from "../../../context/BookSessionContext.jsx";
+import AppointmentSideBar from "./BookSessionSideBar.jsx"
 
-const Session = ({ handleAppointBar, handleToggle, sidebar }) => {
-  const [startDate, setStartDate] = useState();
+const Session = ({  handleToggle, sidebar }) => {
+  const [startDate, setStartDate] = useState( new Date().toLocaleDateString());
+  const [slotInfoData, setSlotInfoData] = useState([]);
+  const [IsBookSidebar, setIsBookSidebar] = useState(false);
+
   // const { myEventsList } = useContext(BookSessionContext);
-console.log(new Date()) 
-  const onSelectSlot = (slotInfo) => {
-    // console.log(slotInfo?.start);
-    setStartDate(moment(slotInfo.start).format("DD-MM-YYYY"));
-  };
-  
-  const handleAvailableSlot =(slotInfo)=>{
+  // console.log(new Date());
+  // const onSelectSlot = (slotInfo) => {
+  //   // console.log(slotInfo?.start);
+  //   setSlotInfoData(slotInfo);
+  //   setStartDate(moment(slotInfo.start).format("DD-MM-YYYY"));
+  // };
+// console.log(startDate)
+  const handleAvailableSlot = (slotInfo) => {
     handleAppointBar(true, slotInfo);
-  }
+  };
+
+  const handleAppointBar = (value, slotInfo) => {
+    setIsBookSidebar((value) => !value);
+    // setSetslotInfoData(slotInfo);
+  };
   return (
     <div className="session-main">
       <div className="message-heading d-flex justify-content-between mb-3">
@@ -34,14 +44,13 @@ console.log(new Date())
           ></i>
         </div>
       </div>
-      <div className=" d-flex gap-4">
-        {/* <div className=" d-none  d-md-block ">
+      <div className=" col d-md-flex gap-4">
         <DatePicker
-          selected={startDate}
-          onChange={(date) => setStartDate(date)}
+          selected={startDate }
+          onChange={(date) => setStartDate(date.toLocaleDateString())}
           inline
         />
-        <div className="price-box bestplan">
+        {/* <div className="price-box bestplan">
           <div className="pack-title">
             <h3 className="">Monthly</h3>
           </div>
@@ -81,10 +90,8 @@ console.log(new Date())
               </a>
             </div>
           </div>
-        </div>
-      </div> */}
-
-        <Calendar
+        </div> */}
+        {/* <Calendar
           localizer={localizer}
           // events={myEventsList}
           defaultView="month"
@@ -95,30 +102,59 @@ console.log(new Date())
           endAccessor="end"
           step={30}
           timeslots={1}
-        />
-      </div>
-      <div className="card timechoosec mt-4 pading-15">
-        <div className="row p-2">
-          <div className="col-12 flex justify-content-between ">
-            <p>Date:{startDate}</p>
-            <p>Select Timing</p>
-          </div>
-          <div className="col-12 text-left">
-            <hr />
-          </div>
-          <div className="col-12 text-right flex justify-content-between">
-            <div className=" d-flex gap-2">
-              
-            <div className=" available-slot" onClick={(slotInfo)=>handleAvailableSlot(slotInfo)}>10:00 pm</div>
+        /> */}
+        <div className="card w-100 row p-2 w-100 m-0 mt-2 mt-md-0 ">
           
+            <div className="col-12  p-0">
+            <p>Date:{startDate}</p>
+            
+            <p className= "">Select Timing</p>
+            </div>
+            <br />
+            <br />
+            <div className="col-12 text-right my-2 p-0 ">
+                <div
+                  className=" available-slot"
+                  onClick={() => handleAvailableSlot(slotInfoData)}
+                >
+                  10:00 pm
+                </div>
+                <div
+                  className=" available-slot"
+                  onClick={() => handleAvailableSlot(slotInfoData)}
+                >
+                  10:00 pm
+                </div>
+                <div
+                  className=" available-slot"
+                  onClick={() => handleAvailableSlot(slotInfoData)}
+                >
+                  10:00 pm
+                </div>
+                <div
+                  className=" available-slot"
+                  onClick={() => handleAvailableSlot(slotInfoData)}
+                >
+                  10:00 pm
+                </div>
+              
           </div>
+          <br />
+           <br />
             <button type="button" className="btn btn-success">
-              Book
-            </button>
-          </div>
+                Book
+              </button>
+          
         </div>
+        <AppointmentSideBar 
+        IsBookSidebar={IsBookSidebar}
+        slotInfoData={slotInfoData}
+        handleAppointBar={handleAppointBar}
+      />
       </div>
+
       <Modal />
+   
     </div>
   );
 };

@@ -18,7 +18,7 @@ const SideBar = ({ handleToggle, sidebar }) => {
         >
           <img src={logo} alt="logo" />
         </Link>
-        <i className="fa-solid fa-close  d-sm-none " onClick={()=>handleToggle(sidebar)}></i>
+        <i className="fa-solid fa-close  d-md-none " onClick={()=>handleToggle(sidebar)}></i>
       </div>
 
       <div>

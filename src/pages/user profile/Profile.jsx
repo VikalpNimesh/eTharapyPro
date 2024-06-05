@@ -8,7 +8,7 @@ import Subscription from "./subscription/Subscription.jsx";
 import Review from "./review/Review.jsx";
 import { useEffect, useState } from "react";
 import Session from "./session/Session.jsx";
-import AppointmentSideBar from "./session/BookSessionSideBar.jsx";
+// import AppointmentSideBar from "./session/BookSessionSideBar.jsx";
 
 const Profile = () => {
   const [sidebar, setSidebar] = useState(true);
@@ -33,11 +33,11 @@ const Profile = () => {
   return (
     <div className="profile-main position-relative">
       <SideBar handleToggle={handleToggle} sidebar={sidebar} />
-      <AppointmentSideBar
+      {/* <AppointmentSideBar
         IsBookSidebar={IsBookSidebar}
         slotInfoData={slotInfoData}
         handleAppointBar={handleAppointBar}
-      />
+      /> */}
       <div className="main-content user-wrapper">
 
           <Routes>
