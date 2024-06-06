@@ -34,7 +34,7 @@ const BookSessionSideBar = ({ IsBookSidebar, handleAppointBar, slotInfoData }) =
           >
             <h3>Book Session</h3>
           </Link>
-          <i className="fa-solid fa-close " onClick={()=>handleAppointBar(true)} ></i>
+          <i className="fa-solid fa-close " onClick={()=>handleAppointBar(false)} ></i>
         </div>
 
         <div>

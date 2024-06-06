@@ -8,8 +8,8 @@ const SideBar = ({ handleToggle, sidebar }) => {
     transform: sidebar ?  'translate(0)' : 'translate(-100%)',
     transition: 'transform 0.3s ease-in-out'
   };
+  
   return (
-
     <div className=" sidebar-main user-wrapper" style={sidebarStyle}>
         <div className="header-logo-box flex justify-content-between  w-100 ">
         <Link

@@ -20,9 +20,7 @@ const Profile = () => {
     setSetslotInfoData(slotInfo);
   };
 
-  useEffect(() => {
-    localStorage.setItem("user", "false");
-  }, []);
+
 
   const handleToggle = () => {
     if (window.innerWidth < 625) {

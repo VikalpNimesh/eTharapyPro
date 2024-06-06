@@ -50,7 +50,7 @@ padding: 13px !important;
   line-height: 17.43px;
   text-align: center;
 }
-.react-datepicker__day--keyboard-selected,
+.react-datepicker__day--keyboard-selected,.react-datepicker__day--selected,
 .react-datepicker__day:hover {
   border-radius: 50%;
   background-color: #023856;
@@ -115,7 +115,13 @@ padding: 13px !important;
   color: white;
   border-radius: 10px;
   cursor: pointer;
-      /* width: 50%; */
+      width: fit-content;
+
+}
+
+.available-slot:hover , .available-slot-selected  {
+  background-color: #023856;
+  color: white;
 
 }
 .btn-success {

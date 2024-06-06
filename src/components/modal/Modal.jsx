@@ -3,9 +3,7 @@ import "./Modal.css"
 const Modal = ({ question }) => {
   return (
     <>
-   
-
-      <div
+      <div 
         className="modal fade"
         id="staticBackdrop"
         data-bs-backdrop="static"

@@ -1,5 +1,9 @@
+.modal{
+    height: auto;
+}
+
 .modal-content {
-    padding: 40px;
+    padding: 20px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -9,33 +13,66 @@
     background-color: var(--bs-modal-bg);
     background-clip: padding-box;
     border: var(--bs-modal-border-width) solid var(--bs-modal-border-color);
-    /* border-radius: var(--bs-modal-border-radius); */
-    outline: 0;
     border-radius: 24px;
+    width: 500px;
+    height: fit-content;
 }
-.modal-header{
+
+.modal-header {
     border: none;
     outline: none !important;
+    width: 100%;
+
 }
-.modal-footer{
+
+.modal-footer {
     border: none;
     outline: none !important;
 }
 
-.modal .modal-footer .start-therapy-btn{
+.modal .modal-footer .start-therapy-btn {
     width: 100% !important;
 }
 
-.modal-grey-btn{
+.modal-grey-btn {
     background: #EBEBFF;
     color: #A3A3C2 !important;
 }
-@media (max-width:768px) {
-    .modal-content{
+
+@media (max-width: 768px) {
+    .modal-content {
         padding: 20px;
-        border: none
+        border: none;
     }
-    .modal-title{
-        font-size: ;
+    .modal-title {
+        font-size: 18px;
     }
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+.table th, .table td {
+    padding: 12px;
+    vertical-align: middle;
+}
+
+.close {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+}
+
+.btnlightred {
+    background-color: #ff4d4d;
+    color: white;
+}
+
+.badge-success {
+    background-color: #28a745;
+}
+
+.badge-secondary {
+    background-color: #6c757d;
 }
