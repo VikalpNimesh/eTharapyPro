@@ -18,6 +18,15 @@
     height: fit-content;
 }
 
+.modal.show {
+    display: block;
+  }
+  
+  .modal.hide {
+    display: none;
+  }
+  
+
 .modal-header {
     border: none;
     outline: none !important;

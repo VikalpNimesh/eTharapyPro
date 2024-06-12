@@ -1,25 +1,20 @@
 import Modal from "../../../components/modal/Modal";
 import BookingModal from "../../../components/modal/BookingModal";
-import DatePicker from "react-datepicker";
 import { useContext, useState } from "react";
-import "react-datepicker/dist/react-datepicker.css";
 import "./Session.css";
-import { Calendar, momentLocalizer } from "react-big-calendar";
 import moment from "moment";
-const localizer = momentLocalizer(moment);
-import "react-big-calendar/lib/css/react-big-calendar.css";
 import { BookSessionContext } from "../../../context/BookSessionContext.jsx";
 import AppointmentSideBar from "./BookSessionSideBar.jsx"
-
+import 'react-calendar/dist/Calendar.css';
+// import { Calendar } from 'rsuite';
+import CalendarBox  from "./Calender.jsx";
 
 const Session = ({ handleToggle, sidebar }) => {
   const [startDate, setStartDate] = useState(moment().format("ddd,MMM DD"));
   const [slotInfoData, setSlotInfoData] = useState([]);
   const [IsBookSidebar, setIsBookSidebar] = useState(false);
-  const [selectedSlot, setSelectedSlot] = useState(null); // New state for selected slot
-
-  // console.log(slotInfoData);
-
+  const [selectedSlot, setSelectedSlot] = useState(null); 
+const [showModal, setshowModal] = useState(false)
   const handleAvailableSlot = (slotInfo) => {
     handleAppointBar(true, slotInfo );
   };
@@ -47,12 +42,15 @@ const Session = ({ handleToggle, sidebar }) => {
         </div>
       </div>
       <div className="col d-md-flex gap-4">
-        <DatePicker
+        {/* <DatePicker
           selected={startDate}
-          onChange={(date) => setStartDate(moment(date).format("ddd,MMM DD"))}
+          onChange={(date) => {setshowModal(true), setStartDate(moment(date).format("ddd,MMM DD"))}}
           inline
-        />
+          // className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+        /> */}
+        <CalendarBox setshowModal={setshowModal} setStartDate={setStartDate} />
 
+        {/* <CalendarBox /> */}
         <div className="card w-100 row p-2 w-100 m-0 mt-2 mt-md-0 ">
           <div className="col-12 p-0">
             <p>Date: {startDate}</p>
@@ -73,7 +71,7 @@ const Session = ({ handleToggle, sidebar }) => {
           </div>
           <br />
           <br />
-          <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" className="btn btn-success" onClick={() => handleAvailableSlot(slotInfoData)}>
+          <button type="button"  className="btn btn-success" onClick={() => handleAvailableSlot(slotInfoData)}>
             Book
           </button>
         </div>
@@ -83,11 +81,12 @@ const Session = ({ handleToggle, sidebar }) => {
           handleAppointBar={handleAppointBar}
         />
       </div>
+      
       {/* <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
   Launch static backdrop modal
 </button> */}
 
-      <BookingModal />
+      <BookingModal showModal={showModal} />
       
       {/* <Modal /> */}
 

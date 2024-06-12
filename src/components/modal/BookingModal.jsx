@@ -1,16 +1,17 @@
 import React from 'react';
 import './Modal.css';
 
-const BookingModal = ({bookingDetails,  handleClose }) => {
+const BookingModal = ({ bookingDetails, handleClose, showModal }) => {
   return (
     <div 
-        className="modal fade "
+        className={`modal fade `}
         id="staticBackdrop"
         data-bs-backdrop="static"
         data-bs-keyboard="false"
         tabIndex="-1"
         aria-labelledby="staticBackdropLabel"
-        aria-hidden="true"
+      aria-hidden="true"
+      // style={{display:'block'}}
       >
     <div className="modal-content modal-dialog modal-dialog-centered ">
       <div className="modal-header">
